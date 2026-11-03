@@ -1,0 +1,119 @@
+/* EDIT 현황의 밝은 화면 스타일. 데이터·섹션·계산은 app.js에서 그대로 유지한다. */
+:root,
+:root[data-theme] {
+  color-scheme: only light;
+  --bg: #f6f7f9;
+  --card: #fff;
+  --ink: #172024;
+  --sub: #68756d;
+  --mute: #7c857f;
+  --line: #e5e7eb;
+  --accent: #234d37;
+  --accent-soft: #eef6f1;
+  --row: #f9fafb;
+  --ok: #047857;
+  --ok-soft: #ecfdf5;
+  --wait: #b45309;
+  --wait-soft: #fffbeb;
+  --s1: #38654b;
+  --s2: #c89b58;
+  --shadow: 0 1px 3px #19251c03;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Pretendard", "Malgun Gothic", sans-serif;
+}
+
+.wrap {
+  max-width: 1600px;
+  padding: 40px max(36px, env(safe-area-inset-right, 0px)) 32px max(36px, env(safe-area-inset-left, 0px));
+  gap: 20px;
+}
+.box {
+  border: 1px solid var(--line);
+  padding: 20px;
+  border-radius: 16px;
+}
+.box.hd {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.eb { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: #697b73; }
+h1 { font-size: 28px; font-weight: 750; letter-spacing: -1.2px; margin: 8px 0; }
+h2 { font-size: 14px; font-weight: 700; color: #111827; }
+.h2sub { font-size: 12px; font-weight: 400; margin: 4px 0 16px; }
+.dsub { font-size: 12px; font-weight: 600; margin-top: 20px; }
+
+.team-tabs { gap: 24px; margin-top: 18px; border-color: #dfe4e1; }
+.team-tabs button {
+  padding: 12px 3px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c857f;
+  border-bottom-width: 2px;
+}
+.team-tabs button:hover { color: var(--accent); }
+.toolbar { margin: 18px 0 0; gap: 12px 20px; }
+.date { font-size: 12px; color: #77817b; }
+.actions { gap: 6px; }
+.actions a, .actions button, select {
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 7px 11px;
+}
+.actions a:hover, .actions button:hover { border-color: #c7dace; color: var(--accent); background: var(--accent-soft); }
+
+.kpis { gap: 12px; margin-top: 20px; }
+.kpi { background: var(--card); border-radius: 16px; padding: 18px 20px; text-align: left; box-shadow: var(--shadow); }
+.kpi b { color: #111827; font-size: 30px; font-weight: 800; line-height: 1.2; margin-bottom: 8px; }
+.kpi span { font-size: 11px; font-weight: 600; color: #6b7280; }
+.kpi em { margin-top: 5px; font-size: 11px; font-weight: 400; }
+.summary { margin-top: 18px; gap: 5px; font-size: 13px; color: var(--sub); }
+.summary strong { color: var(--ink); font-weight: 600; }
+.summary li::before { width: 4px; height: 4px; background: #8ba392; }
+.notice { font-size: 12px; font-weight: 500; padding: 10px 14px; }
+
+.section-gap { gap: 20px; }
+.tscroll { border-color: #edf0ed; border-radius: 10px; overscroll-behavior-x: contain; }
+table { font-size: 12px; }
+th, td { padding: 10px 12px; border-color: #f0f2f1; }
+th { color: #77817b; font-size: 11px; font-weight: 600; }
+td a, tr.click td:first-child { font-weight: 600; }
+tr.total td { font-weight: 700; }
+.tag { font-size: 10px; font-weight: 700; padding: 2px 8px; border-color: transparent; }
+.tscroll th:first-child, .tscroll td:first-child { box-shadow: inset -1px 0 0 #edf0ed; }
+.empty { padding: 24px 14px; font-size: 12px; }
+.fn, .source-note { font-size: 11px; line-height: 1.7; }
+.ccard { padding: 18px 20px; border-radius: 16px; }
+.ccard .t { font-size: 11px; font-weight: 600; }
+.ccard .v { font-size: 26px; font-weight: 800; color: #111827; }
+.ccard .s { font-size: 11px; font-weight: 400; }
+.stagebar { height: 8px; }
+.st4 { background: #d4dfd7; }
+.st5 { background: #a4bfae; }
+.st6 { background: #6e9a7f; }
+.st7 { background: #38654b; }
+.st8 { background: #234d37; }
+.foot { margin-top: 12px; font-size: 10px; color: #89928c; line-height: 1.8; }
+
+@media (max-width: 700px) {
+  .wrap { padding: 24px max(14px, env(safe-area-inset-right, 0px)) 24px max(14px, env(safe-area-inset-left, 0px)); gap: 16px; }
+  .box { padding: 16px 14px; }
+  h1 { font-size: 24px; }
+  .team-tabs { gap: 20px; }
+  .team-tabs button { font-size: 13px; padding: 12px 3px 15px; }
+  .toolbar { align-items: flex-start; }
+  .actions a, .actions button { font-size: 11px; padding: 7px 9px; }
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .kpi { padding: 16px 14px; }
+  .kpi b { font-size: 24px; overflow-wrap: anywhere; }
+  .summary { font-size: 12px; }
+  .section-gap { gap: 16px; }
+  .grid2 { grid-template-columns: 1fr; }
+}
+
+@media print {
+  body { background: #fff; }
+  .wrap { max-width: none; padding: 0; }
+  .box { box-shadow: none; }
+}

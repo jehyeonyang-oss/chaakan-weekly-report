@@ -83,7 +83,7 @@ css=re.search(r'<style>(.*?)</style>',html,re.S).group(1)
 @media(max-width:640px){.team-tabs button{padding:11px 14px}.ccards-four{grid-template-columns:1fr 1fr}}
 ''',encoding='utf-8')
 (ROOT/'docs/index.html').write_text('''<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><title>착한구두 · 팀별 주간보고</title><link rel="stylesheet" href="style.css"></head>
+<html lang="ko" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow"><title>착한구두 · 팀별 주간보고</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="edit-ui.css?v=20261103"></head>
 <body><main class="wrap"><header class="box hd"><div class="eb">착한구두 · 주간보고</div><h1 id="title">콘텐츠기획</h1>
 <nav class="team-tabs" role="tablist" aria-label="팀 선택"><button role="tab" id="tab-content" data-team="content" aria-selected="true" aria-controls="team-panel">콘텐츠기획</button><button role="tab" id="tab-marketing" data-team="marketing" aria-selected="false" aria-controls="team-panel">마케팅</button><button role="tab" id="tab-overseas" data-team="overseas" aria-selected="false" aria-controls="team-panel">해외시딩</button></nav>
 <div class="toolbar"><div class="date num" id="period">자료를 불러오는 중입니다.</div><div class="actions"><a id="source-link" target="_blank" rel="noopener" hidden>기존 운영 페이지</a><a id="download" download>팀 엑셀 양식</a><button id="refresh" type="button">새로고침</button></div></div>
