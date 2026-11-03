@@ -205,7 +205,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-22~2026-11-03",
+          "revenue_window": "2026-10-22~2026-11-04",
           "source": "live"
         },
         {
@@ -267,7 +267,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-31~2026-11-03",
+          "revenue_window": "2026-10-31~2026-11-04",
           "source": "live"
         },
         {
@@ -355,9 +355,9 @@
               "at": 1793587256366
             }
           },
-          "revenue": 589320,
-          "purchases": 8,
-          "revenue_window": "2026-10-30~2026-11-03",
+          "revenue": 805080,
+          "purchases": 11,
+          "revenue_window": "2026-10-30~2026-11-04",
           "source": "live"
         },
         {
@@ -447,7 +447,7 @@
           },
           "revenue": 121440,
           "purchases": 2,
-          "revenue_window": "2026-11-02~2026-11-03",
+          "revenue_window": "2026-11-02~2026-11-04",
           "source": "live"
         },
         {
@@ -509,7 +509,7 @@
           },
           "revenue": 153760,
           "purchases": 3,
-          "revenue_window": "2026-10-30~2026-11-03",
+          "revenue_window": "2026-10-30~2026-11-04",
           "source": "live"
         },
         {
@@ -571,7 +571,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-01~2026-11-03",
+          "revenue_window": "2026-11-01~2026-11-04",
           "source": "live"
         },
         {
@@ -633,7 +633,7 @@
           },
           "revenue": 79920,
           "purchases": 1,
-          "revenue_window": "2026-10-31~2026-11-03",
+          "revenue_window": "2026-10-31~2026-11-04",
           "source": "live"
         },
         {
@@ -730,7 +730,7 @@
           },
           "revenue": 447360,
           "purchases": 8,
-          "revenue_window": "2026-11-01~2026-11-03",
+          "revenue_window": "2026-11-01~2026-11-04",
           "source": "live"
         },
         {
@@ -806,7 +806,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": "2026-10-23~2026-11-03",
+          "revenue_window": "2026-10-23~2026-11-04",
           "source": "live"
         },
         {
@@ -1423,7 +1423,7 @@
           "campaign": "woongyange",
           "label": "웅냥이 @woongyange 풀문 키높이 퍼안감 방한 부츠 WTSDR4i006 카멜 230",
           "channel": "크리에이터 PA",
-          "period": "11-01 ~ 11-03",
+          "period": "11-01 ~ 11-04",
           "status": "○ 꺼짐 1개 광고",
           "spend": 92502.0,
           "impressions": 15277.0,
@@ -1442,15 +1442,15 @@
           "campaign": "u.yo0x",
           "label": "서유영 @u.yo0x 블래티 슬라우치 부츠 스웨이드 블랙 롱",
           "channel": "크리에이터 PA",
-          "period": "11-02 ~ 11-03",
+          "period": "11-02 ~ 11-04",
           "status": "● 켜짐 2개 광고",
-          "spend": 77631.0,
-          "impressions": 12230.0,
-          "clicks": 326.0,
-          "shares": 358.0,
+          "spend": 79020.0,
+          "impressions": 12412.0,
+          "clicks": 334.0,
+          "shares": 359.0,
           "saves": 122.0,
           "content_cost": 721560.0,
-          "total_cost": 799191.0,
+          "total_cost": 800580.0,
           "purchases": 1.0,
           "revenue": 42900.0,
           "source": "live",
@@ -1461,7 +1461,7 @@
           "campaign": "dlghdtj",
           "label": "홍서 @dlghdtj 무비 슬라우치 부츠 코코아 230",
           "channel": "크리에이터 PA",
-          "period": "11-02 ~ 11-03",
+          "period": "11-02 ~ 11-04",
           "status": "○ 꺼짐 2개 광고",
           "spend": 36509.0,
           "impressions": 5649.0,
@@ -1482,15 +1482,15 @@
           "key": "store:@hid_zip",
           "campaign": "@hid_zip",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 200원",
-          "period": "10-27 ~ 11-03",
-          "spend": 801089.0,
-          "impressions": 330539.0,
+          "status": "● 켜짐 오늘 -",
+          "period": "10-27 ~ 11-04",
+          "spend": 802824.0,
+          "impressions": 331217.0,
           "clicks": 516.0,
-          "shares": 2916.0,
-          "saves": 1073.0,
+          "shares": 2919.0,
+          "saves": 1075.0,
           "content_cost": 750000.0,
-          "total_cost": 1551089.0,
+          "total_cost": 1552824.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1499,15 +1499,15 @@
           "key": "store:@optatum_somnium",
           "campaign": "@optatum_somnium",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 340원",
-          "period": "10-24 ~ 11-03",
-          "spend": 771140.0,
-          "impressions": 255257.0,
+          "status": "● 켜짐 오늘 -",
+          "period": "10-24 ~ 11-04",
+          "spend": 771524.0,
+          "impressions": 255378.0,
           "clicks": 390.0,
-          "shares": 1513.0,
-          "saves": 1188.0,
+          "shares": 1515.0,
+          "saves": 1189.0,
           "content_cost": 500000.0,
-          "total_cost": 1271140.0,
+          "total_cost": 1271524.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1516,15 +1516,15 @@
           "key": "store:@popup_dangni",
           "campaign": "@popup_dangni",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 173원",
-          "period": "10-30 ~ 11-03",
-          "spend": 410434.0,
-          "impressions": 155170.0,
-          "clicks": 176.0,
-          "shares": 1817.0,
-          "saves": 829.0,
+          "status": "● 켜짐 오늘 -",
+          "period": "10-30 ~ 11-04",
+          "spend": 414256.0,
+          "impressions": 156572.0,
+          "clicks": 180.0,
+          "shares": 1834.0,
+          "saves": 839.0,
           "content_cost": 550000.0,
-          "total_cost": 960434.0,
+          "total_cost": 964256.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1567,15 +1567,15 @@
           "key": "store:@ha.liday",
           "campaign": "@ha.liday",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 260원",
-          "period": "11-02 ~ 11-03",
-          "spend": 32989.0,
-          "impressions": 12559.0,
-          "clicks": 12.0,
+          "status": "● 켜짐 오늘 -",
+          "period": "11-02 ~ 11-04",
+          "spend": 33428.0,
+          "impressions": 12729.0,
+          "clicks": 13.0,
           "shares": 79.0,
-          "saves": 59.0,
+          "saves": 60.0,
           "content_cost": 400000.0,
-          "total_cost": 432989.0,
+          "total_cost": 433428.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1585,7 +1585,7 @@
           "campaign": "@gamsung_queen",
           "channel": "매장광고",
           "status": "○ 꺼짐 수동",
-          "period": "11-02 ~ 11-03",
+          "period": "11-02 ~ 11-04",
           "spend": 30242.0,
           "impressions": 11693.0,
           "clicks": 23.0,
@@ -7473,6 +7473,6 @@
       "targets": {}
     }
   ],
-  "revision": "867d4d96c2e284c0",
-  "updated_at": "2026-11-04T00:01:15+09:00"
+  "revision": "c218bd1eda92ea14",
+  "updated_at": "2026-11-04T00:13:15+09:00"
 }
