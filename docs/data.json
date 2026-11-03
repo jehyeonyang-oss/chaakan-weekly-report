@@ -3,7 +3,7 @@
     {
       "slug": "content",
       "name": "콘텐츠기획",
-      "asof": "2026-11-03",
+      "asof": "2026-11-04",
       "period": "",
       "people": [
         {
@@ -1622,7 +1622,7 @@
     {
       "slug": "marketing",
       "name": "마케팅",
-      "asof": "2026-11-03",
+      "asof": "2026-11-04",
       "period": "원본 전체 기간 누적",
       "people": [
         {
@@ -2812,20 +2812,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/DezPyIEBX7f/",
-          "measured": "2026-11-02",
-          "views": 965.0,
+          "measured": "2026-11-03",
+          "views": 972.0,
           "likes": 23.0,
           "comments": 2.0,
           "shares": 0.0,
           "saves": 1.0,
           "windows": {
             "latest": {
-              "views": 965.0,
+              "views": 972.0,
               "likes": 23.0,
               "comments": 2.0,
               "shares": 0.0,
               "saves": 1.0,
-              "at": "2026-11-02T23:57:32+09:00"
+              "at": "2026-11-03T23:57:31+09:00"
             },
             "48h": {
               "views": 759.0,
@@ -7459,20 +7459,20 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-03T23:42:31+09:00",
-      "fetched_at": "2026-11-03T14:45:16.987Z",
+      "source_at": "2026-11-03T23:57:31+09:00",
+      "fetched_at": "2026-11-03T15:01:17.024Z",
       "cost_basis": "marketing_source"
     },
     {
       "slug": "overseas",
       "name": "해외시딩",
-      "asof": "2026-11-03",
+      "asof": "2026-11-04",
       "period": "",
       "people": [],
       "ads": [],
       "targets": {}
     }
   ],
-  "revision": "56479d07b7bc1e86",
-  "updated_at": "2026-11-03T23:45:15+09:00"
+  "revision": "867d4d96c2e284c0",
+  "updated_at": "2026-11-04T00:01:15+09:00"
 }
