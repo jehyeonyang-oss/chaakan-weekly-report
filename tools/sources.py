@@ -5,6 +5,7 @@ import re
 import urllib.request
 from urllib.parse import urlparse, parse_qs
 from bs4 import BeautifulSoup
+from marketing import marketing_source
 
 BASE = 'https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/'
 
@@ -131,5 +132,26 @@ def attach_sources(payload, old=None):
                 team.update(source_url=BASE,source_at=previous.get('source_at'),source_state='error',source_message='기존 운영 페이지를 불러오지 못해 마지막 정상 데이터를 표시합니다.')
                 # Keep diagnostic data local; no full URL parameters or filesystem paths in the published output.
         elif team['slug']=='marketing':
-            team.update(source_url='https://chaakan-creator-hub.web.app/',source_state='auth_required',source_message='기존 허브 자동연동은 읽기 권한 연결 대기 중입니다. 현재는 제출된 엑셀 실적만 표시합니다.')
+            try:
+                live = marketing_source()
+            except Exception:
+                previous = old_teams.get('marketing', {})
+                live = {
+                    'people': [r for r in previous.get('people', []) if r.get('source') == 'live'],
+                    'ads': [r for r in previous.get('ads', []) if r.get('source') == 'live'],
+                }
+                for key in ('source_at', 'fetched_at', 'period', 'cost_basis'):
+                    if key in previous:
+                        live[key] = previous[key]
+                live.update(source_url='https://chaakan-creator-hub.web.app/', source_state='error',
+                            source_message='마케팅 허브를 갱신하지 못해 마지막 정상 데이터를 표시합니다. 인증 상태를 확인해 주세요.')
+            existing = {post_key(r['post_url']) for r in team['people'] if r.get('post_url')}
+            if any(post_key(r['post_url']) in existing for r in live['people']):
+                raise ValueError('마케팅 허브와 엑셀의 게시물 중복')
+            live_names = {r['campaign'] for r in live['ads']}
+            if any(r.get('campaign') in live_names for r in team['ads']):
+                raise ValueError('마케팅 허브 누적 광고와 엑셀 일별 광고 중복')
+            team['people'] += live.pop('people')
+            team['ads'] += live.pop('ads')
+            team.update(live)
     return payload

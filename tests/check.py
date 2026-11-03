@@ -45,6 +45,21 @@ with sync_playwright() as pw:
  page.screenshot(path=str(OUT/'content.png'),full_page=True)
  page.locator('#tab-marketing').click();assert page.locator('#team-panel h2').first.inner_text()=='메타광고 성과'
  assert '국가별 조회수' not in page.locator('#team-panel').inner_text()
+ marketing=next(t for t in json.loads((ROOT/'docs/data.json').read_text(encoding='utf-8'))['teams'] if t['slug']=='marketing')
+ if marketing.get('source_state')=='ok' and marketing['ads']:
+  spend=sum(r['spend'] for r in marketing['ads']);revenue=sum(r['revenue'] for r in marketing['ads'])
+  assert page.locator('#kpis b').nth(0).inner_text()==f'{spend:,.0f}원'
+  assert page.locator('#kpis b').nth(1).inner_text()==f'{revenue:,.0f}원'
+  assert page.locator('#notice').is_hidden()
+  upload=page.locator('#team-panel > section').last
+  upload.locator('tr[data-detail]').first.click()
+  assert upload.locator('tr.sub tbody tr').count()==len(marketing['people'])
+  page.locator('#window').select_option('7d')
+  observed=page.evaluate('(t)=>ReportMath.aggregateUploads(t.people,t,false)',marketing)
+  measured=[r['windows']['7d'] for r in marketing['people'] if r.get('windows',{}).get('7d',{}).get('views') is not None and not r['free']]
+  assert observed['views']==sum(r['views'] for r in measured)
+  page.locator('#window').select_option('latest')
+  page.screenshot(path=str(OUT/'marketing-summary.png'))
  page.screenshot(path=str(OUT/'marketing.png'),full_page=True)
  page.locator('#tab-overseas').click();assert '국가별 조회수' in page.locator('#team-panel').inner_text()
  assert '2. 업로드 인사이트' in page.locator('#team-panel').inner_text()
@@ -60,6 +75,9 @@ with sync_playwright() as pw:
  p2=mobile.new_page();p2.goto(f'http://127.0.0.1:{server.server_port}/#overseas',wait_until='networkidle')
  assert p2.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
  p2.screenshot(path=str(OUT/'mobile.png'),full_page=True)
+ p2.goto(f'http://127.0.0.1:{server.server_port}/#marketing',wait_until='networkidle')
+ assert p2.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
+ p2.screenshot(path=str(OUT/'marketing-mobile.png'))
  browser.close()
 server.shutdown()
 assert not errors,errors

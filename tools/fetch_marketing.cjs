@@ -2,8 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
-const firebaseDir = path.join(process.env.APPDATA, 'npm', 'node_modules', 'firebase-tools', 'lib');
-const auth = require(path.join(firebaseDir, 'auth.js'));
+const authFile = path.join(root, 'runtime', 'marketing-auth.json');
 
 async function get(url, options = {}) {
   const response = await fetch(url, { ...options, signal: AbortSignal.timeout(30000) });
@@ -21,37 +20,37 @@ function decode(field) {
   return null;
 }
 async function main() {
-  const account = auth.getGlobalDefaultAccount();
-  if (!account?.user?.email?.endsWith('@chaakan.co.kr')) throw new Error('Company Firebase CLI account required');
-  const token = await auth.getAccessToken(account.tokens.refresh_token, []);
-  const home = await (await get('https://chaakan-creator-hub.web.app/')).text();
-  const script = home.match(/modulepreload[^>]+href="([^"]+)"/);
-  if (!script) throw new Error('Marketing app module not found');
-  const js = await (await get(new URL(script[1], 'https://chaakan-creator-hub.web.app/'))).text();
-  const config = js.match(/apiKey:[`"]([^`"]+)[`"],authDomain:[`"]chaakan-creator-hub\.firebaseapp\.com/);
-  if (!config) throw new Error('Marketing Firebase public config not found');
-  const response = await fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithIdp?key=${encodeURIComponent(config[1])}`, {
+  if (!fs.existsSync(authFile)) throw new Error('MARKETING_LOGIN_REQUIRED');
+  const auth = JSON.parse(fs.readFileSync(authFile, 'utf8'));
+  if (auth.projectId !== 'chaakan-creator-hub' || !/@(?:chaakan\.co\.kr|seoul-link\.com)$/.test(auth.email || '')) throw new Error('MARKETING_LOGIN_REQUIRED');
+  const response = await fetch(`https://securetoken.googleapis.com/v1/token?key=${encodeURIComponent(auth.apiKey)}`, {
     method: 'POST', headers: {'Content-Type': 'application/json'}, signal: AbortSignal.timeout(30000),
-    body: JSON.stringify({requestUri: 'https://chaakan-creator-hub.web.app/', postBody: new URLSearchParams({access_token: token.access_token, providerId: 'google.com'}).toString(), returnSecureToken: true})
+    body: JSON.stringify({grant_type: 'refresh_token', refresh_token: auth.refreshToken})
   });
   const login = await response.json();
-  if (!response.ok || !login.idToken) throw new Error(`Marketing sign-in failed: ${(login.error?.message || String(response.status)).replaceAll(token.access_token, '[token]').replace(/[A-Za-z0-9_-]{40,}/g, '[redacted]')}`);
+  if (!response.ok || !login.id_token) throw new Error('MARKETING_LOGIN_REQUIRED');
+  if (login.refresh_token && login.refresh_token !== auth.refreshToken) {
+    fs.writeFileSync(authFile + '.tmp', JSON.stringify({...auth, refreshToken: login.refresh_token}));
+    fs.renameSync(authFile + '.tmp', authFile);
+  }
   const output = {fetchedAt: new Date().toISOString()};
-  for (const collection of ['creators', 'contents', 'reels', 'adCreatives']) {
+  for (const collection of ['reels', 'people', 'brandazineLooks', 'adCreatives']) {
     let next = '', records = [];
     do {
       const url = new URL(`https://firestore.googleapis.com/v1/projects/chaakan-creator-hub/databases/(default)/documents/${collection}`);
       url.searchParams.set('pageSize', '300');
       if (next) url.searchParams.set('pageToken', next);
-      const data = await (await get(url, {headers: {Authorization: `Bearer ${login.idToken}`}})).json();
+      const data = await (await get(url, {headers: {Authorization: `Bearer ${login.id_token}`}})).json();
       records.push(...(data.documents || []).map(doc => ({id: doc.name.split('/').at(-1), ...Object.fromEntries(Object.entries(doc.fields || {}).map(([k, v]) => [k, decode(v)]))})));
       next = data.nextPageToken || '';
     } while (next);
     output[collection] = records;
   }
-  // Auth credentials stay in process memory; the private cache is excluded from git.
+  // Auth credentials and the raw source stay in gitignored runtime, never docs/.
   fs.mkdirSync(path.join(root, 'runtime'), {recursive: true});
-  fs.writeFileSync(path.join(root, 'runtime', 'marketing-source.json'), JSON.stringify(output));
+  const target = path.join(root, 'runtime', 'marketing-source.json');
+  fs.writeFileSync(target + '.tmp', JSON.stringify(output));
+  fs.renameSync(target + '.tmp', target);
   console.log(JSON.stringify({ok: true, counts: Object.fromEntries(Object.entries(output).filter(([,v]) => Array.isArray(v)).map(([k,v])=>[k,v.length]))}));
 }
 main().catch(error => { console.error(error.message); process.exitCode = 1; });

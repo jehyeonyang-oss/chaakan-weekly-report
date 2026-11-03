@@ -7,7 +7,7 @@ const won = x => num(x) === null ? '—' : n(x) + '원';
 const percent = x => num(x) === null ? '—' : (x * 100).toLocaleString('ko-KR', {maximumFractionDigits:1}) + '%';
 const ratio = (a,b) => num(a) !== null && num(b) !== null && b > 0 ? a/b : null;
 const sum = (rows,key) => { const a = rows.map(r => typeof key === 'function' ? key(r) : r[key]).filter(x=>num(x)!==null); return a.length ? a.reduce((x,y)=>x+y,0) : null; };
-const personKey = r => `${r.country}|${r.channel}|${r.id.toLowerCase()}`;
+const personKey = r => r.person_id || `${r.country}|${r.channel}|${r.id.toLowerCase()}`;
 const uniq = rows => [...new Map(rows.map(r=>[personKey(r),r])).values()];
 const safe = url => {try {const u=new URL(url);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password?u.href:'';}catch{return '';}};
 const link = (url,text) => safe(url) ? `<a href="${esc(safe(url))}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>` : esc(text||'—');
@@ -58,7 +58,7 @@ function aggregateUploads(rows,t,overseas){
 }
 function uploadDetail(rows,overseas,t){
   const values=overseas?rows:rows.map(observed);
-  const headers=['ID','국가','담당','캠페인·라인','업로드','측정일','게시물',overseas?'단가':'콘텐츠비','조회수','좋아요 · 댓글','예상 공유·저장','공유+저장','결과 CPV','예상 공유·저장 단가','공유·저장 단가'];
+  const headers=['ID','국가','담당','캠페인·라인','업로드','측정일','게시물',overseas?'단가':current==='marketing'?'비용 · 원본 기준':'콘텐츠비','조회수','좋아요 · 댓글','예상 공유·저장','공유+저장','결과 CPV','예상 공유·저장 단가','공유·저장 단가'];
   if(!overseas)headers.push('시딩 귀속매출','매출 집계기간');
   return table(headers,values.map(r=>{const ok=overseas?mature(r,t):true,c=overseas?r=>r.price:cost,p=r.free?null:c(r);return `<tr><td>${link(r.url,r.id)}</td><td>${esc(r.country)}</td><td>${esc(r.who)}</td><td>${esc(r.campaign)}</td><td>${esc(r.upload||'—')}</td><td>${esc(r.measured||'미수집')}</td><td>${link(r.post_url,'게시물 ↗')}</td><td>${r.free?'무상':won(p)}</td>${td(ok?r.views:null)}<td>${ok?`좋아요 ${n(r.likes)} · 댓글 ${n(r.comments)}`:'—'}</td>${td(r.exp_ss)}${td(ok?ss(r):null)}${td(ok?ratio(p,r.views):null,won)}${td(ratio(p,r.exp_ss),won)}${td(ok?ratio(p,ss(r)):null,won)}${!overseas?td(r.revenue,won)+`<td>${esc(r.revenue_window||'—')}</td>`:''}</tr>`;}).join(''));
 }
@@ -68,8 +68,8 @@ function uploads(t,overseas){
   const row=(label,rs,cls='')=>{const a=aggregateUploads(rs,t,overseas);const cells=overseas?[label,rs.length+'편',a.count+'편',won(a.price),n(a.views),n(a.exp),n(a.ss),won(a.cpv),won(a.expCost),won(a.ssCost)]:[label,rs.length+'편',a.count+'편',won(a.price),n(a.views),n(a.ss),won(a.ssCost),won(a.cpv),won(sum(rs,'revenue'))];return clickRow(cells,rs,r=>uploadDetail(r,overseas,t),cls);};
   const selector=!overseas?`<select id="window" aria-label="시딩 성과 측정 구간">${[['latest','최근 측정'],['48h','48시간'],['7d','7일'],['14d','14일']].map(([k,l])=>`<option value="${k}"${windowKey===k?' selected':''}>${l}</option>`).join('')}</select>`:'';
   return `<section class="box"><div class="toolbar"><h2>${overseas?'2. 업로드 인사이트':'크리에이터 시딩 성과'}</h2>${selector}</div><div class="h2sub">${overseas?'전체 · 국가별 줄을 누르면 게시물 세부내역이 펼쳐집니다. 합계는 업로드 7일 경과·조회수 확인·유상 게시물 기준입니다.':'캠페인·라인별 줄을 누르면 게시물별 성과가 펼쳐집니다. 선택한 측정 구간의 수치만 표시합니다.'}</div>`+
-  (rows.length?table(overseas?['구분 (누르면 세부내역)','업로드','결과 산출','단가 합','조회수','예상 공유·저장','공유+저장','결과 CPV','예상 공유·저장 단가','공유·저장 단가']:['캠페인·라인 (누르면 세부내역)','업로드','수치 확인','확인된 콘텐츠비','조회수','공유+저장','공유·저장 단가','CPV · 참고','시딩 귀속매출'],row('전체',rows,'total')+groups.map(g=>row(g,rows.filter(r=>(overseas?r.group:r.campaign||'미분류')===g))).join('')):'<div class="empty">아직 업로드된 게시물이 없습니다. 성과를 입력하면 이곳에 표시됩니다.</div>')+
-  `<div class="fn">${overseas?'결과 CPV = 원고료 ÷ 조회수 · 공유·저장 단가 = 원고료 ÷ (공유 + 저장) · 무상은 비용 지표에서 제외합니다.':'콘텐츠비 = 원고료 + 제품원가. 비용·반응이 모두 확인된 게시물끼리 단가를 계산합니다. 시딩 귀속매출은 메타광고 매출과 합산하지 않습니다.'} 공유·저장 중 미확인 값이 있으면 단가를 계산하지 않습니다.</div></section>`;
+  (rows.length?table(overseas?['구분 (누르면 세부내역)','업로드','결과 산출','단가 합','조회수','예상 공유·저장','공유+저장','결과 CPV','예상 공유·저장 단가','공유·저장 단가']:['캠페인·라인 (누르면 세부내역)','업로드','수치 확인',current==='marketing'?'확인된 비용 · 원본 기준':'확인된 콘텐츠비','조회수','공유+저장','공유·저장 단가','CPV · 참고','시딩 귀속매출'],row('전체',rows,'total')+groups.map(g=>row(g,rows.filter(r=>(overseas?r.group:r.campaign||'미분류')===g))).join('')):'<div class="empty">아직 업로드된 게시물이 없습니다. 성과를 입력하면 이곳에 표시됩니다.</div>')+
+  `<div class="fn">${overseas?'결과 CPV = 원고료 ÷ 조회수 · 공유·저장 단가 = 원고료 ÷ (공유 + 저장) · 무상은 비용 지표에서 제외합니다.':current==='marketing'?'브랜더진 비용 = 협업비 + 확인된 2차 활용비. 크리에이터 비용 = 관리시트의 귀속 월 건당 단가. 제품원가는 원본에 없어 포함하지 않습니다.':'콘텐츠비 = 원고료 + 제품원가. 비용·반응이 모두 확인된 게시물끼리 단가를 계산합니다. 시딩 귀속매출은 메타광고 매출과 합산하지 않습니다.'} 공유·저장 중 미확인 값이 있으면 단가를 계산하지 않습니다.</div></section>`;
 }
 function country(t){
   const p=t.people.filter(confirmed), groups=['일본','대만·홍콩','샤오홍슈',...['한국','기타'].filter(g=>p.some(r=>r.group===g)||num(t.targets[g])!==null)];
@@ -90,7 +90,7 @@ function ads(t,store=false){
   const rows=store?(t.store_ads||[]):t.ads.filter(r=>!r.date||r.date<=t.asof),a=adAgg(rows);
   const title=store?'매장 메타광고 · 별도 집계':'메타광고 성과';
   const body=rows.map(r=>`<tr><td>${link(r.url,r.campaign)}</td><td>${esc(r.channel||'메타')}</td><td>${esc(r.period||r.date||'—')}</td><td>${esc(r.status||r.objective||'—')}</td>${td(r.spend,won)}${td(adCost(r),won)}${td(r.impressions)}${td(r.clicks)}${td(ratio(r.clicks,r.impressions),percent)}${td(ss(r))}${td(ratio(r.spend,ss(r)),won)}${td(r.purchases)}${td(r.revenue,won)}${td(ratio(r.revenue,r.spend),percent)}${td(ratio(r.revenue,adCost(r)),percent)}</tr>`).join('');
-  return `<section class="box"><h2>${title}</h2><div class="h2sub">${store?'매장 광고는 크리에이터 PA와 구분합니다. 매출·구매는 매장 POS에서 별도로 확인합니다.':'광고비와 콘텐츠비 포함 비용을 함께 확인합니다. 기존 운영 페이지의 누적값과 엑셀 일별 실적은 중복 입력하지 않습니다.'}</div>`+
+  return `<section class="box"><h2>${title}</h2><div class="h2sub">${store?'매장 광고는 크리에이터 PA와 구분합니다. 매출·구매는 매장 POS에서 별도로 확인합니다.':current==='marketing'?'마케팅 허브의 파트너콘텐츠 광고 누적 실적입니다. 같은 소재의 광고를 합산하며, 구매·매출은 클릭 후 1일 귀속 기준입니다. 콘텐츠 비용의 광고별 배분이 없어 총비용 ROAS는 비워 둡니다.':'광고비와 콘텐츠비 포함 비용을 함께 확인합니다. 기존 운영 페이지의 누적값과 엑셀 일별 실적은 중복 입력하지 않습니다.'}</div>`+
   (rows.length?table(['크리에이터·캠페인','구분','기간','상태·목적','광고비','총비용','노출','클릭','CTR','공유+저장','광고 공유·저장당','구매','광고 귀속매출','광고비 ROAS','총비용 ROAS'],`<tr class="total"><td>합계</td><td>—</td><td>—</td><td>${rows.length}건</td>${td(a.spend,won)}${td(a.total,won)}${td(a.impressions)}${td(a.clicks)}${td(ratio(a.clicks,a.impressions),percent)}${td(a.ss)}${td(weighted(rows,ss,r=>r.spend).value,won)}${td(a.purchases)}${td(a.revenue,won)}${td(ratio(a.revenue,a.spend),percent)}${td(ratio(a.revenue,a.total),percent)}</tr>`+body):'<div class="empty">메타광고 성과가 아직 연결되지 않았습니다. 기존 운영 데이터가 연결되거나 팀 엑셀에 입력되면 표시됩니다.</div>')+
   '<div class="fn">총비용은 광고비와 확인된 콘텐츠 비용을 포함합니다. 비용 누락 시 총비용 ROAS는 산출하지 않습니다. 조회·클릭·공유·저장의 미확인은 0으로 처리하지 않습니다.</div></section>';
 }
@@ -104,12 +104,12 @@ function render(){
   $('source-link').hidden=!t.source_url;$('source-link').href=safe(t.source_url)||'#';
   const notice=t.source_state&&t.source_state!=='ok'?t.source_message:'';$('notice').textContent=notice||'';$('notice').hidden=!notice;
   const p=t.people.filter(confirmed),a=aggregateUploads(p.filter(r=>r.post_url),t,overseas),ad=adAgg(t.ads);
-  const kpis=overseas?[[uniq(p).length+'명','섭외 확정','협상 완료 이상'],[won(totalFee(p)),'확정 금액','원고료 합'],[n(sum(uniq(p),'avg')),'예상 조회수','평균 조회수 합'],[n(sum(p.filter(r=>mature(r,t)),'views')),'결과 조회수','업로드 7일 이후 수치']]:current==='marketing'?[[won(ad.spend),'메타 광고비','확인된 광고 실적'],[won(ad.revenue),'광고 귀속매출','광고관리자 귀속 기준'],[percent(ratio(ad.revenue,ad.total)),'총비용 ROAS','광고비 + 콘텐츠 비용'],[uniq(p).length+'명','시딩 확정','협상 완료 이상']]:[[uniq(p).length+'명','시딩 확정','협상 완료 이상'],[p.filter(r=>r.post_url).length+'편','시딩 업로드','게시물 링크 기준'],[won(a.ssCost),'공유·저장당 비용','확인된 콘텐츠비 기준'],[won(sum(p,'revenue')),'시딩 귀속매출','원본의 누적 귀속매출']];
-  const unavailable=current==='marketing'&&t.source_state==='auth_required'&&!t.people.length&&!t.ads.length;
+  const kpis=overseas?[[uniq(p).length+'명','섭외 확정','협상 완료 이상'],[won(totalFee(p)),'확정 금액','원고료 합'],[n(sum(uniq(p),'avg')),'예상 조회수','평균 조회수 합'],[n(sum(p.filter(r=>mature(r,t)),'views')),'결과 조회수','업로드 7일 이후 수치']]:current==='marketing'?[[won(ad.spend),'메타 광고비','원본 전체 기간 누적'],[won(ad.revenue),'광고 귀속매출','클릭 후 1일 귀속 기준'],[percent(ratio(ad.revenue,ad.spend)),'광고비 ROAS','광고 귀속매출 ÷ 광고비'],[uniq(p).length+'명','시딩 확정','같은 인물의 계정 중복 제외']]:[[uniq(p).length+'명','시딩 확정','협상 완료 이상'],[p.filter(r=>r.post_url).length+'편','시딩 업로드','게시물 링크 기준'],[won(a.ssCost),'공유·저장당 비용','확인된 콘텐츠비 기준'],[won(sum(p,'revenue')),'시딩 귀속매출','원본의 누적 귀속매출']];
+  const unavailable=current==='marketing'&&t.source_state!=='ok'&&!t.people.length&&!t.ads.length;
   $('kpis').innerHTML=kpis.map(([v,l,s])=>`<div class="kpi"><b>${unavailable?'—':v}</b><span>${l}</span><em>${unavailable?'데이터 연결 대기':s}</em></div>`).join('');
   const talking=t.people.filter(r=>['②','③'].includes(r.stage));
   $('summary').innerHTML=`<li>섭외 확정 <strong>${uniq(p).length}명</strong> · 업로드 <strong>${p.filter(r=>r.post_url).length}편</strong> · 소통·협상 중 ${uniq(talking).length}명</li>`+(t.source_at?`<li>기존 운영 데이터 기준 <strong>${stamp(t.source_at)}</strong></li>`:'');
-  if(unavailable)$('summary').innerHTML='<li>마케팅 허브 연결 대기 중입니다. 팀 엑셀에 입력한 실적은 자동으로 반영됩니다.</li>';
+  if(unavailable)$('summary').innerHTML='<li>마케팅 허브 데이터를 불러오지 못했습니다. 연결 상태를 확인해 주세요.</li>';
   const seed=seeding(t,overseas)+uploads(t,overseas),meta=ads(t)+(t.store_ads?.length?ads(t,true):'');
   $('team-panel').innerHTML=overseas?seed:current==='marketing'?meta+seed:seed+meta;
   $('foot').textContent=`착한구두 · ${t.name} · 실제 확인된 수치만 집계 · 페이지는 1분마다 새 자료를 확인합니다.`;
