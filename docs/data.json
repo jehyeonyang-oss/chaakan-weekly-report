@@ -205,7 +205,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-22~2026-11-04",
+          "revenue_window": "2026-10-22~2026-11-05",
           "source": "live"
         },
         {
@@ -267,7 +267,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-31~2026-11-04",
+          "revenue_window": "2026-10-31~2026-11-05",
           "source": "live"
         },
         {
@@ -357,7 +357,7 @@
           },
           "revenue": 1035820,
           "purchases": 14,
-          "revenue_window": "2026-10-30~2026-11-04",
+          "revenue_window": "2026-10-30~2026-11-05",
           "source": "live"
         },
         {
@@ -454,7 +454,7 @@
           },
           "revenue": 182160,
           "purchases": 3,
-          "revenue_window": "2026-11-02~2026-11-04",
+          "revenue_window": "2026-11-02~2026-11-05",
           "source": "live"
         },
         {
@@ -516,7 +516,7 @@
           },
           "revenue": 153760,
           "purchases": 3,
-          "revenue_window": "2026-10-30~2026-11-04",
+          "revenue_window": "2026-10-30~2026-11-05",
           "source": "live"
         },
         {
@@ -578,7 +578,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-01~2026-11-04",
+          "revenue_window": "2026-11-01~2026-11-05",
           "source": "live"
         },
         {
@@ -640,7 +640,7 @@
           },
           "revenue": 79920,
           "purchases": 1,
-          "revenue_window": "2026-10-31~2026-11-04",
+          "revenue_window": "2026-10-31~2026-11-05",
           "source": "live"
         },
         {
@@ -737,7 +737,7 @@
           },
           "revenue": 447360,
           "purchases": 8,
-          "revenue_window": "2026-11-01~2026-11-04",
+          "revenue_window": "2026-11-01~2026-11-05",
           "source": "live"
         },
         {
@@ -813,7 +813,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": "2026-10-23~2026-11-04",
+          "revenue_window": "2026-10-23~2026-11-05",
           "source": "live"
         },
         {
@@ -1565,15 +1565,15 @@
           "key": "store:@hid_zip",
           "campaign": "@hid_zip",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 456원",
+          "status": "● 켜짐 오늘 211원",
           "period": "10-27 ~ 11-05",
-          "spend": 885606.0,
-          "impressions": 361810.0,
-          "clicks": 551.0,
-          "shares": 3211.0,
-          "saves": 1201.0,
+          "spend": 886767.0,
+          "impressions": 362235.0,
+          "clicks": 553.0,
+          "shares": 3219.0,
+          "saves": 1202.0,
           "content_cost": 750000.0,
-          "total_cost": 1635606.0,
+          "total_cost": 1636767.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1582,15 +1582,15 @@
           "key": "store:@optatum_somnium",
           "campaign": "@optatum_somnium",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 115원",
+          "status": "● 켜짐 오늘 172원",
           "period": "10-24 ~ 11-05",
-          "spend": 784218.0,
-          "impressions": 259140.0,
+          "spend": 784560.0,
+          "impressions": 259240.0,
           "clicks": 393.0,
-          "shares": 1536.0,
+          "shares": 1537.0,
           "saves": 1211.0,
           "content_cost": 500000.0,
-          "total_cost": 1284218.0,
+          "total_cost": 1284560.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1599,15 +1599,15 @@
           "key": "store:@popup_dangni",
           "campaign": "@popup_dangni",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 180원",
+          "status": "● 켜짐 오늘 159원",
           "period": "10-30 ~ 11-05",
-          "spend": 626676.0,
-          "impressions": 227369.0,
-          "clicks": 286.0,
-          "shares": 2711.0,
-          "saves": 1216.0,
+          "spend": 631367.0,
+          "impressions": 228934.0,
+          "clicks": 287.0,
+          "shares": 2733.0,
+          "saves": 1226.0,
           "content_cost": 550000.0,
-          "total_cost": 1176676.0,
+          "total_cost": 1181367.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -1650,15 +1650,15 @@
           "key": "store:@ha.liday",
           "campaign": "@ha.liday",
           "channel": "매장광고",
-          "status": "● 켜짐 오늘 -",
+          "status": "● 켜짐 오늘 467원",
           "period": "11-02 ~ 11-05",
-          "spend": 50606.0,
-          "impressions": 18925.0,
+          "spend": 50895.0,
+          "impressions": 19034.0,
           "clicks": 24.0,
-          "shares": 134.0,
-          "saves": 92.0,
+          "shares": 135.0,
+          "saves": 93.0,
           "content_cost": 400000.0,
-          "total_cost": 450606.0,
+          "total_cost": 450895.0,
           "purchases": null,
           "revenue": null,
           "source": "live"
@@ -8126,6 +8126,6 @@
       "targets": {}
     }
   ],
-  "revision": "f85d59f994a9a658",
-  "updated_at": "2026-11-05T01:37:15+09:00"
+  "revision": "52257952d677f4ff",
+  "updated_at": "2026-11-05T01:39:15+09:00"
 }
