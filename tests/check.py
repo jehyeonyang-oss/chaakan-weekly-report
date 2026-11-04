@@ -25,22 +25,27 @@ assert len(merge_books([parsed,parsed])['people'])==1
 changed=json.loads(json.dumps(parsed));changed['people'][0]['views']=1
 try:merge_books([parsed,changed]);raise AssertionError('conflict not detected')
 except InputError:pass
-# Google Sheet path: values-only grid -> in-memory workbook (contact stage, XHS views estimated from likes).
-from report import values_book
+# Google Sheet path: one tab, one row = one post (sheet_rows gets the raw values grid).
+from report import sheet_rows, SHEET_HEAD, TARGET_ROWS
 from openpyxl.utils.datetime import to_excel
-grid=lambda ws:[[to_excel(x) if isinstance(x,datetime) else ('' if x is None else x) for x in row] for row in ws.iter_rows(values_only=True)]
-g['D5']=datetime(2026,11,3)
-for i,v in enumerate(['qa_002','테스트 담당','FW','xhs_creator','https://example.org/xhs','중국','샤오홍슈','샤오홍슈','업로드 완료','유상',200000,7500,None],1):p.cell(7,i,v)
-for i,v in enumerate(['qa_003','테스트 담당','FW','contact_creator','https://example.org/c','일본','인스타그램','일본','컨택','무상',0],1):p.cell(8,i,v)
-for col,value in {'A':'qa_002','I':datetime(2026,10,26),'J':'https://example.org/xhs-post','L':datetime(2026,11,2),'N':100}.items():s[f'{col}7']=value
-book=read_book(values_book([{'values':grid(wb[n])} for n in ['작성안내','1_섭외진행','2_업로드성과']]),'overseas')
-rows={r['key']:r for r in book['people']}
-assert book['asof']=='2026-11-03' and rows['qa_001']['upload']=='2026-10-26' and rows['qa_001']['url']=='https://example.org/profile'
-assert (rows['qa_002']['views'],rows['qa_002'].get('views_est'),rows['qa_002']['avg'])==(7500,True,7500),rows['qa_002']
-assert rows['qa_001'].get('views_est') is None and rows['qa_003']['stage']=='①'
-for r in (7,8):
- for col in range(1,20):p.cell(r,col).value=None
-for col in range(1,26):s.cell(7,col).value=None
+H=[h+'*' for h in SHEET_HEAD];D=lambda y,m,d:to_excel(datetime(y,m,d))
+T=[[g,v] for g,v in zip(TARGET_ROWS,[50000,'',8000,'',''])]
+base=['담당A','c_creator','https://example.org/c','일본','인스타그램','컨택','무상']
+xhs=['담당B','xhs_creator','https://example.org/x','중국','샤오홍슈','업로드 완료','유상',200000,100,'',D(2026,10,20),'성수점',D(2026,10,26),'https://example.org/xp',D(2026,11,2),100,30,10,'']
+tw=['담당C','tw_creator','','대만','인스타그램','협상 완료','유상',100000,'',5000]
+sb=sheet_rows([H,base,[],xhs,tw,tw[:5]+['촬영 완료']+tw[6:]],T,today=date(2026,11,3));rows={r['key']:r for r in sb['people']}
+assert sb['asof']=='2026-11-03' and sb['targets']=={'한국':50000,'대만·홍콩':8000} and len(sb['people'])==4,sb
+c,x=rows['c_creator'],rows['xhs_creator']
+assert (c['stage'],c['price'],c['free'],c['group'],c['exp_ss'])==('①',0,True,'일본',None),c
+assert (x['views'],x.get('views_est'),x['avg'],x.get('avg_est'),x['group'],x['upload'],x['measured'],x['shoot'],x['post_url'],x['shares'],x['saves'])==(7500,True,7500,True,'샤오홍슈','2026-10-26','2026-11-02','2026-10-20','https://example.org/xp',10,30),x
+assert rows['tw_creator']['group']=='대만·홍콩' and rows['tw_creator']['avg']==5000 and rows['tw_creator'].get('avg_est') is None
+assert rows['tw_creator_2']['id']=='tw_creator' and rows['tw_creator_2']['stage']=='⑥'
+assert len(merge_books([sb])['people'])==4
+for bad,msg in [([H,base[:6]+['무상',30000]],'무상'),([H,base[:3]+['']+base[4:]],'2행 필수'),([H[:3]+['x']+H[4:],base],'4열 머리글')]:
+ try:sheet_rows(bad,T);raise AssertionError('not rejected: '+msg)
+ except InputError as e:assert msg in str(e),(msg,str(e))
+try:sheet_rows([H],T[:4]);raise AssertionError('target table move not detected')
+except InputError:pass
 p.row_dimensions[6].hidden=True;wb.save(fixture)
 try:read_book(fixture,'overseas');raise AssertionError('hidden progress/orphan performance not detected')
 except InputError:pass
@@ -111,6 +116,18 @@ with sync_playwright() as pw:
  failed.screenshot(path=str(OUT/'overseas-sheet-fail.png'));failed.locator('#tab-content').click()
  assert failed.locator('#download').inner_text()=='팀 엑셀 양식' and failed.locator('#notice').inner_text()!=o['source_message']
  failed.close()
+ demo=json.loads(json.dumps(sheet_fail));ov=next(t for t in demo['teams'] if t['slug']=='overseas')
+ ov.update(source_state='ok',source_message='',people=sb['people'],targets=sb['targets'],asof='2026-11-03',period='')
+ pg=browser.new_page();pg.on('pageerror',lambda error:errors.append(str(error)))
+ pg.route('**/data.json*',lambda route:route.fulfill(content_type='application/json',body=json.dumps(demo,ensure_ascii=False)))
+ pg.route('**/status.json*',lambda route:route.fulfill(content_type='application/json',body='{"state":"ok","message":""}'))
+ pg.goto(f'http://127.0.0.1:{server.server_port}/#overseas',wait_until='networkidle');pg.wait_for_function("document.querySelectorAll('#kpis .kpi').length===4")
+ k=pg.locator('#kpis .kpi').nth(2).inner_text();assert '12,500' in k and '추정' in k,k
+ assert '7,500' in pg.locator('#kpis .kpi').nth(3).inner_text()
+ for row in pg.locator('tr[data-detail]').all():row.click()
+ body=pg.locator('#team-panel').inner_text();assert not any(w in body for w in ['NaN','undefined','null']),body
+ assert 'xhs_creator' in body and '추정' in body
+ pg.screenshot(path=str(OUT/'overseas-sheet-rows.png'),full_page=True);pg.close()
  mobile=browser.new_context(viewport={'width':390,'height':844},device_scale_factor=1,color_scheme='light')
  p2=mobile.new_page();p2.goto(f'http://127.0.0.1:{server.server_port}/#overseas',wait_until='networkidle')
  assert p2.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
@@ -122,4 +139,4 @@ with sync_playwright() as pw:
 server.shutdown()
 assert not errors,errors
 (OUT/'results.json').write_text(json.dumps({'passed':True,'page_errors':errors,'formulas':math,'tabs':['콘텐츠기획','마케팅','해외시딩']},ensure_ascii=False,indent=2),encoding='utf-8')
-print('PASS: workbook parsing, sheet failure isolation + download button, conflicting duplicates, hidden rows, 3 team tabs, stage expansion, aggregation math, mobile width, no browser errors')
+print('PASS: workbook parsing, one-row sheet parsing + estimate labels, sheet failure isolation + download button, conflicting duplicates, hidden rows, 3 team tabs, stage expansion, aggregation math, mobile width, no browser errors')

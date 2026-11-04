@@ -18,7 +18,7 @@ const cost = r => r.source==='live'?num(r.content_cost):num(r.content_cost);
 const confirmed = r => ['④','⑤','⑥','⑦','✅'].includes(r.stage);
 const totalFee=rows=>rows.length&&rows.every(r=>r.free||num(r.price)!==null)?sum(rows,r=>r.free?0:r.price):null;
 const due = r => addDays(r.upload,7);
-const est = rows => rows.some(r=>r.views_est)?' <small class="est" title="샤오홍슈 조회수 미표시: 좋아요×75로 추정">추정</small>':'';
+const est = (rows,k='views_est') => rows.some(r=>r[k])?` <small class="est" title="샤오홍슈 ${k==='avg_est'?'평균 ':''}조회수 미표시: 좋아요×75로 추정">추정</small>`:'';
 const mature = (r,t) => r.post_url && r.upload && due(r)<=t.asof && r.measured && r.measured>=due(r) && r.measured<=t.asof && num(r.views)!==null;
 let payload=null, current=['content','marketing','overseas'].includes(location.hash.slice(1))?location.hash.slice(1):'content', windowKey='latest', details={},seq=0;
 const STAGES=[['①','컨택','st1'],['④','협상 완료','st4'],['⑤','방문 일정 확정','st5'],['⑥','촬영 완료','st6'],['⑦','업로드 완료','st7'],['✅','완료','st8']];
@@ -32,7 +32,7 @@ function clickRow(cells,rows,renderer=peopleTable,extra=''){
 function peopleTable(rows){
   if(!rows.length)return '<div class="empty">이 단계 인원이 없습니다.</div>';
   if(current!=='overseas')return table(['ID','담당','캠페인·라인','진행상황','계약금액','업로드일','게시물'],rows.map(r=>`<tr><td>${link(r.url,r.id)}</td><td>${esc(r.who)}</td><td>${esc(r.campaign)}</td><td>${esc(r.status)}</td><td>${r.free?'무상':esc(r.fee_label||won(r.price))}</td><td>${esc(r.upload||'—')}</td><td>${link(r.post_url,r.post_url?'게시물 ↗':'—')}</td></tr>`).join(''));
-  return table(['ID','담당','국가 · 채널','진행상황','단가','평균 조회수','촬영일','매장','업로드'],rows.map(r=>`<tr><td>${link(r.url,r.id)}</td><td>${esc(r.who)}</td><td>${esc(r.country)} · ${esc(r.channel)}</td><td>${esc(r.status)}</td><td>${r.free?'무상':won(r.price)}</td>${td(r.avg)}<td>${esc(r.shoot||'—')}</td><td>${esc(r.store||'—')}</td><td>${link(r.post_url,r.upload||'—')}</td></tr>`).join(''));
+  return table(['ID','담당','국가 · 채널','진행상황','단가','평균 조회수','촬영일','매장','업로드'],rows.map(r=>`<tr><td>${link(r.url,r.id)}</td><td>${esc(r.who)}</td><td>${esc(r.country)} · ${esc(r.channel)}</td><td>${esc(r.status)}</td><td>${r.free?'무상':won(r.price)}</td>${num(r.avg)===null?td(null):`<td>${n(r.avg)}${est([r],'avg_est')}</td>`}<td>${esc(r.shoot||'—')}</td><td>${esc(r.store||'—')}</td><td>${link(r.post_url,r.upload||'—')}</td></tr>`).join(''));
 }
 function phase(rows){
   const p=rows.filter(confirmed);
@@ -77,8 +77,8 @@ function uploads(t,overseas){
 function country(t){
   const p=t.people.filter(confirmed), groups=['일본','대만·홍콩','샤오홍슈',...['한국','기타'].filter(g=>p.some(r=>r.group===g)||num(t.targets[g])!==null)];
   const stat=rows=>({count:uniq(rows).length,expected:sum(uniq(rows),'avg'),result:sum(rows.filter(r=>mature(r,t)),'views')});
-  const cards=groups.map(g=>{const a=stat(p.filter(r=>r.group===g)),goal=t.targets[g],scale=Math.max(goal||0,a.expected||0,a.result||0,1);return `<div class="ccard"><div class="t">${g} · ${a.count}명</div><div class="v">${n(a.expected)}</div><div class="s">예상 조회수 · 결과 ${n(a.result)}</div><div class="goal"><i class="e" style="width:${(a.expected||0)/scale*100}%"></i><i class="r" style="width:${(a.result||0)/scale*100}%"></i></div><div class="s">${goal?`목표 ${n(goal)} · 결과 ${percent(ratio(a.result,goal))}`:'목표 조회수 미정'}</div></div>`;}).join('');
-  const row=(g,rs,goal,cls='')=>{const a=stat(rs);return `<tr class="${cls}"><td>${g}</td><td>${a.count}명</td>${td(goal)}${td(a.expected)}${a.result===null?td(null):`<td>${n(a.result)}${est(rs.filter(r=>mature(r,t)))}</td>`}${td(ratio(a.result,goal),percent)}</tr>`;};
+  const cards=groups.map(g=>{const a=stat(p.filter(r=>r.group===g)),goal=t.targets[g],scale=Math.max(goal||0,a.expected||0,a.result||0,1);return `<div class="ccard"><div class="t">${g} · ${a.count}명</div><div class="v">${n(a.expected)}${est(uniq(p.filter(r=>r.group===g)),'avg_est')}</div><div class="s">예상 조회수 · 결과 ${n(a.result)}</div><div class="goal"><i class="e" style="width:${(a.expected||0)/scale*100}%"></i><i class="r" style="width:${(a.result||0)/scale*100}%"></i></div><div class="s">${goal?`목표 ${n(goal)} · 결과 ${percent(ratio(a.result,goal))}`:'목표 조회수 미정'}</div></div>`;}).join('');
+  const row=(g,rs,goal,cls='')=>{const a=stat(rs);return `<tr class="${cls}"><td>${g}</td><td>${a.count}명</td>${td(goal)}${a.expected===null?td(null):`<td>${n(a.expected)}${est(uniq(rs),'avg_est')}</td>`}${a.result===null?td(null):`<td>${n(a.result)}${est(rs.filter(r=>mature(r,t)))}</td>`}${td(ratio(a.result,goal),percent)}</tr>`;};
   return `<div class="dsub">국가별 조회수</div><div class="cgrid">${cards}</div>`+table(['국가','인원','목표 조회수','예상 조회수','결과 조회수','목표 달성'],groups.map(g=>row(g,p.filter(r=>r.group===g),t.targets[g])).join('')+row('합계',p,sum(groups,g=>t.targets[g]),'total'))+'<div class="fn">예상 조회수 = 확정 인원의 평균 조회수 합 · 결과 조회수 = 업로드 7일 뒤 확인된 조회수 합</div>';
 }
 function seeding(t,overseas){
@@ -107,7 +107,7 @@ function render(){
   $('source-link').hidden=!t.source_url;$('source-link').href=safe(t.source_url)||'#';
   const notice=t.source_state&&t.source_state!=='ok'?t.source_message:'';$('notice').textContent=notice||'';$('notice').hidden=!notice;
   const p=t.people.filter(confirmed),a=aggregateUploads(p.filter(r=>r.post_url),t,overseas),ad=adAgg(t.ads);
-  const kpis=overseas?[[uniq(p).length+'명','섭외 확정','협상 완료 이상'],[won(totalFee(p)),'확정 금액','원고료 합'],[n(sum(uniq(p),'avg')),'예상 조회수','평균 조회수 합'],[n(sum(p.filter(r=>mature(r,t)),'views')),'결과 조회수','업로드 7일 이후 수치']]:current==='marketing'?[[won(ad.spend),'메타 광고비','원본 전체 기간 누적'],[won(ad.revenue),'광고 귀속매출','클릭 후 1일 귀속 기준'],[percent(ratio(ad.revenue,ad.spend)),'광고비 ROAS','광고 귀속매출 ÷ 광고비'],[uniq(p).length+'명','시딩 확정','같은 인물의 계정 중복 제외']]:[[uniq(p).length+'명','시딩 확정','협상 완료 이상'],[p.filter(r=>r.post_url).length+'편','시딩 업로드','게시물 링크 기준'],[won(a.ssCost),'공유·저장당 비용','확인된 콘텐츠비 기준'],[won(sum(p,'revenue')),'시딩 귀속매출','원본의 누적 귀속매출']];
+  const kpis=overseas?[[uniq(p).length+'명','섭외 확정','협상 완료 이상'],[won(totalFee(p)),'확정 금액','원고료 합'],[n(sum(uniq(p),'avg'))+est(uniq(p),'avg_est'),'예상 조회수','평균 조회수 합'],[n(sum(p.filter(r=>mature(r,t)),'views')),'결과 조회수','업로드 7일 이후 수치']]:current==='marketing'?[[won(ad.spend),'메타 광고비','원본 전체 기간 누적'],[won(ad.revenue),'광고 귀속매출','클릭 후 1일 귀속 기준'],[percent(ratio(ad.revenue,ad.spend)),'광고비 ROAS','광고 귀속매출 ÷ 광고비'],[uniq(p).length+'명','시딩 확정','같은 인물의 계정 중복 제외']]:[[uniq(p).length+'명','시딩 확정','협상 완료 이상'],[p.filter(r=>r.post_url).length+'편','시딩 업로드','게시물 링크 기준'],[won(a.ssCost),'공유·저장당 비용','확인된 콘텐츠비 기준'],[won(sum(p,'revenue')),'시딩 귀속매출','원본의 누적 귀속매출']];
   const unavailable=current==='marketing'&&t.source_state!=='ok'&&!t.people.length&&!t.ads.length;
   $('kpis').innerHTML=kpis.map(([v,l,s])=>`<div class="kpi"><b>${unavailable?'—':v}</b><span>${l}</span><em>${unavailable?'데이터 연결 대기':s}</em></div>`).join('');
   const talking=t.people.filter(r=>['②','③'].includes(r.stage));

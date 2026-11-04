@@ -7,8 +7,8 @@ from pathlib import Path
 import re
 from urllib.parse import urlparse
 
-from openpyxl import Workbook, load_workbook
-from openpyxl.utils.datetime import from_excel
+from openpyxl import load_workbook
+from openpyxl.utils.datetime import from_excel, CALENDAR_WINDOWS_1900
 
 TEAMS = [('content', '콘텐츠기획'), ('marketing', '마케팅'), ('overseas', '해외시딩')]
 STAGES = {'컨택': '①', '소통 중': '②', '협상 중': '③', '협상 완료': '④', '일정 확정': '⑤',
@@ -54,7 +54,11 @@ def day(value, epoch=None, label='날짜'):
 
 
 def url(cell):
-    value = cell.hyperlink.target if cell.hyperlink else string(cell.value)
+    return url_value(cell.hyperlink.target if cell.hyperlink else cell.value)
+
+
+def url_value(value):
+    value = string(value)
     if value.startswith('=HYPERLINK('):
         found = re.match(r'=HYPERLINK\("([^"]+)"', value, re.I)
         value = found.group(1) if found else ''
@@ -78,11 +82,14 @@ def checked_header(ws, expected):
             raise InputError(f'{ws.title}: {col}열 머리글을 변경하지 마세요 ({prefix}).')
 
 
-SHEET_TABS = {'작성안내': 'A1:Z60', '1_섭외진행': 'A1:S', '2_업로드성과': 'A1:Y'}
+SHEET_HEAD = ['담당자', '인플루언서 ID', '프로필 링크', '국가', '채널', '진행 단계', '유·무상', '원고료', '평균 좋아요', '평균 조회수',
+              '방문일', '매장', '업로드일', '게시물 링크', '측정일', '좋아요', '저장', '공유', '조회수', '비고']
+TARGET_ROWS = ['한국', '일본', '대만·홍콩', '샤오홍슈', '기타']
+SHEET_RANGES = ["'해외시딩'!A1:T", "'작성안내'!A14:B18"]  # 목표 표 위치는 시트 작성안내 탭과 일치해야 합니다.
 
 
-def sheet_book(settings):
-    """Read the Google Sheet into an in-memory workbook with the same cell positions as the Excel template."""
+def sheet_book(settings, today=None):
+    """Read the one-tab Google Sheet (one row = one post) into the report's people format."""
     sheet_id, token = string(settings.get('sheet')), Path(string(settings.get('token')))
     if not re.fullmatch(r'[A-Za-z0-9_-]{20,}', sheet_id):
         raise InputError('구글 시트 ID 설정을 확인해 주세요.')
@@ -93,40 +100,81 @@ def sheet_book(settings):
         from google.auth.transport.requests import AuthorizedSession
         session = AuthorizedSession(Credentials.from_authorized_user_file(str(token)))
         res = session.get(f'https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values:batchGet', timeout=30,
-                          params={'ranges': [f"'{t}'!{r}" for t, r in SHEET_TABS.items()],
+                          params={'ranges': SHEET_RANGES,
                                   'valueRenderOption': 'UNFORMATTED_VALUE', 'dateTimeRenderOption': 'SERIAL_NUMBER'})
         res.raise_for_status()
-        ranges = res.json()['valueRanges']
+        ranges = [r.get('values', []) for r in res.json()['valueRanges']]
     except Exception as exc:
         # Generic message only: no token values, paths or response bodies in published status.
         raise InputError(f'구글 시트를 읽을 수 없습니다 ({type(exc).__name__}).') from exc
-    return values_book(ranges)
-
-
-def values_book(ranges):
-    if len(ranges) != len(SHEET_TABS):
+    if len(ranges) != len(SHEET_RANGES):
         raise InputError('구글 시트 탭 구성을 확인해 주세요.')
-    wb = Workbook()
-    wb.remove(wb.active)
-    for title, block in zip(SHEET_TABS, ranges):
-        ws = wb.create_sheet(title)
-        for r, line in enumerate(block.get('values', []), 1):
-            for c, value in enumerate(line, 1):
-                if value != '':
-                    ws.cell(r, c).value = value
-    return wb
+    return sheet_rows(*ranges, today=today)
+
+
+def sheet_rows(grid, target_grid, today=None):
+    name, epoch = '해외시딩 시트', CALENDAR_WINDOWS_1900
+    head = [string(x) for x in (grid[0] if grid else [])]
+    for col, prefix in enumerate(SHEET_HEAD):
+        if col >= len(head) or not head[col].startswith(prefix):
+            raise InputError(f'{name}: {col + 1}열 머리글을 변경하지 마세요 ({prefix}).')
+    out = {'asof': (today or date.today()).isoformat(), 'period': '', 'people': [], 'ads': [], 'targets': {}}
+    seen = {}
+    for row, line in enumerate(grid[1:], 2):
+        v = (list(line) + [''] * 20)[:20]
+        if not any(string(x) for x in v):
+            continue
+        labels = {0: '담당자', 1: '인플루언서 ID', 3: '국가', 4: '채널', 5: '진행 단계', 6: '유·무상'}
+        missing = [label for i, label in labels.items() if not string(v[i])]
+        if missing:
+            raise InputError(f'{name}: {row}행 필수 칸({", ".join(missing)})을 입력해 주세요.')
+        status, kind = string(v[5]), string(v[6])
+        if status not in STAGES:
+            raise InputError(f'{name}: {row}행 진행 단계를 목록에서 선택해 주세요.')
+        if kind not in ('유상', '무상'):
+            raise InputError(f'{name}: {row}행 유·무상을 선택해 주세요.')
+        n = lambda i, label: number(v[i], f'{row}행 {label}')
+        d = lambda i, label: day(v[i], epoch, f'{row}행 {label}')
+        price = n(7, '원고료')
+        if kind == '무상' and price not in (None, 0):
+            raise InputError(f'{name}: {row}행 무상인데 원고료가 있습니다. 0 또는 빈칸으로 적어 주세요.')
+        ident, country, channel = string(v[1]), string(v[3]), string(v[4])
+        xhs = channel == '샤오홍슈'
+        seen[ident] = seen.get(ident, 0) + 1
+        group = '샤오홍슈' if xhs else '대만·홍콩' if country in ('대만', '홍콩') else country if country in ('일본', '한국') else '기타'
+        avg_likes = n(8, '평균 좋아요')
+        rec = {
+            'key': ident if seen[ident] == 1 else f'{ident}_{seen[ident]}', 'id': ident, 'url': url_value(v[2]),
+            'who': string(v[0]), 'campaign': '', 'country': country, 'channel': channel, 'group': group,
+            'status': STAGES[status] + ' ' + status, 'stage': STAGES[status], 'free': kind == '무상',
+            'price': 0 if kind == '무상' else price, 'avg': (avg_likes * 75 if avg_likes is not None else None) if xhs else n(9, '평균 조회수'),
+            'exp_ss': None, 'shoot': d(10, '방문일'), 'store': string(v[11]), 'planned_upload': None,
+            'upload': d(12, '업로드일'), 'post_url': url_value(v[13]), 'measured': d(14, '측정일'),
+            'likes': n(15, '좋아요'), 'saves': n(16, '저장'), 'shares': n(17, '공유'), 'views': n(18, '조회수'),
+            'comments': None, 'content_cost': None,
+        }
+        if xhs and rec['avg'] is not None:
+            rec['avg_est'] = True
+        # Xiaohongshu hides views: estimate from likes (x75) and flag it for the page.
+        if xhs and rec['views'] is None and rec['likes'] is not None:
+            rec.update(views=rec['likes'] * 75, views_est=True)
+        out['people'].append(rec)
+    if [string(r[0]) if r else '' for r in target_grid] != TARGET_ROWS:
+        raise InputError(f'{name}: 작성안내 탭 목표 조회수 표(A14:A18 구분명)를 바꾸지 마세요.')
+    for r in target_grid:
+        value = number(r[1] if len(r) > 1 else None, f'{string(r[0])} 목표 조회수')
+        if value is not None:
+            out['targets'][string(r[0])] = value
+    return out
 
 
 def read_book(path, team: str, today=None):
     today = today or date.today()
-    if isinstance(path, Workbook):
-        wb, name = path, '구글 시트'
-    else:
-        name = path.name
-        try:
-            wb = load_workbook(path, data_only=False)
-        except Exception as exc:
-            raise InputError(f'{name}: 엑셀을 읽을 수 없습니다 ({type(exc).__name__}).') from exc
+    name = path.name
+    try:
+        wb = load_workbook(path, data_only=False)
+    except Exception as exc:
+        raise InputError(f'{name}: 엑셀을 읽을 수 없습니다 ({type(exc).__name__}).') from exc
     try:
         if '작성안내' not in wb:
             raise InputError(f'{name}: 작성안내 탭이 없습니다.')
@@ -256,7 +304,7 @@ def build(config, today=None, old=None):
         if settings.get('sheet'):
             team = {'slug': slug, 'name': name, 'sheet_url': f"https://docs.google.com/spreadsheets/d/{string(settings['sheet'])}/edit"}
             try:
-                team.update(merge_books([read_book(sheet_book(settings), slug, today)]))
+                team.update(merge_books([sheet_book(settings, today)]))
             except InputError as exc:
                 # Sheet failure is isolated: keep this team's last good data, other teams still refresh.
                 previous = next((t for t in (old or {}).get('teams', []) if t.get('slug') == slug), None)
