@@ -7,11 +7,11 @@ from pathlib import Path
 import re
 from urllib.parse import urlparse
 
-from openpyxl import load_workbook
+from openpyxl import Workbook, load_workbook
 from openpyxl.utils.datetime import from_excel
 
 TEAMS = [('content', '콘텐츠기획'), ('marketing', '마케팅'), ('overseas', '해외시딩')]
-STAGES = {'소통 중': '②', '협상 중': '③', '협상 완료': '④', '일정 확정': '⑤',
+STAGES = {'컨택': '①', '소통 중': '②', '협상 중': '③', '협상 완료': '④', '일정 확정': '⑤',
           '방문 일정 확정': '⑤', '촬영 완료': '⑥', '업로드 완료': '⑦', '완료': '✅', '보류': '보류', '취소': '취소'}
 GROUPS = ['한국', '일본', '대만·홍콩', '샤오홍슈', '기타']
 
@@ -78,26 +78,69 @@ def checked_header(ws, expected):
             raise InputError(f'{ws.title}: {col}열 머리글을 변경하지 마세요 ({prefix}).')
 
 
-def read_book(path: Path, team: str, today=None):
-    today = today or date.today()
+SHEET_TABS = {'작성안내': 'A1:Z60', '1_섭외진행': 'A1:S', '2_업로드성과': 'A1:Y'}
+
+
+def sheet_book(settings):
+    """Read the Google Sheet into an in-memory workbook with the same cell positions as the Excel template."""
+    sheet_id, token = string(settings.get('sheet')), Path(string(settings.get('token')))
+    if not re.fullmatch(r'[A-Za-z0-9_-]{20,}', sheet_id):
+        raise InputError('구글 시트 ID 설정을 확인해 주세요.')
+    if not token.is_file():
+        raise InputError('구글 시트 인증 파일이 없습니다.')
     try:
-        wb = load_workbook(path, data_only=False)
+        from google.oauth2.credentials import Credentials
+        from google.auth.transport.requests import AuthorizedSession
+        session = AuthorizedSession(Credentials.from_authorized_user_file(str(token)))
+        res = session.get(f'https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values:batchGet', timeout=30,
+                          params={'ranges': [f"'{t}'!{r}" for t, r in SHEET_TABS.items()],
+                                  'valueRenderOption': 'UNFORMATTED_VALUE', 'dateTimeRenderOption': 'SERIAL_NUMBER'})
+        res.raise_for_status()
+        ranges = res.json()['valueRanges']
     except Exception as exc:
-        raise InputError(f'{path.name}: 엑셀을 읽을 수 없습니다 ({type(exc).__name__}).') from exc
+        # Generic message only: no token values, paths or response bodies in published status.
+        raise InputError(f'구글 시트를 읽을 수 없습니다 ({type(exc).__name__}).') from exc
+    return values_book(ranges)
+
+
+def values_book(ranges):
+    if len(ranges) != len(SHEET_TABS):
+        raise InputError('구글 시트 탭 구성을 확인해 주세요.')
+    wb = Workbook()
+    wb.remove(wb.active)
+    for title, block in zip(SHEET_TABS, ranges):
+        ws = wb.create_sheet(title)
+        for r, line in enumerate(block.get('values', []), 1):
+            for c, value in enumerate(line, 1):
+                if value != '':
+                    ws.cell(r, c).value = value
+    return wb
+
+
+def read_book(path, team: str, today=None):
+    today = today or date.today()
+    if isinstance(path, Workbook):
+        wb, name = path, '구글 시트'
+    else:
+        name = path.name
+        try:
+            wb = load_workbook(path, data_only=False)
+        except Exception as exc:
+            raise InputError(f'{name}: 엑셀을 읽을 수 없습니다 ({type(exc).__name__}).') from exc
     try:
         if '작성안내' not in wb:
-            raise InputError(f'{path.name}: 작성안내 탭이 없습니다.')
+            raise InputError(f'{name}: 작성안내 탭이 없습니다.')
         g = wb['작성안내']
         declared = string(g['D7'].value)
         if declared and declared != dict(TEAMS)[team]:
-            raise InputError(f'{path.name}: 팀명과 저장한 팀 폴더가 다릅니다.')
+            raise InputError(f'{name}: 팀명과 저장한 팀 폴더가 다릅니다.')
         asof_value = g['D5'].value
         asof = today.isoformat() if not asof_value or str(asof_value).upper() == '=TODAY()' else day(asof_value, wb.epoch)
         out = {'asof': asof, 'period': string(g['D6'].value), 'people': [], 'ads': [], 'targets': {}}
         if team in dict(TEAMS):
             for required in ['1_섭외진행', '2_업로드성과']:
                 if required not in wb:
-                    raise InputError(f'{path.name}: {required} 탭이 없습니다.')
+                    raise InputError(f'{name}: {required} 탭이 없습니다.')
             p, s = wb['1_섭외진행'], wb['2_업로드성과']
             checked_header(p, {1: '관리번호', 4: '인플루언서 ID', 11: '원고료'})
             checked_header(s, {1: '관리번호', 9: '업로드일', 10: '게시물 링크', 13: '조회수'})
@@ -106,18 +149,18 @@ def read_book(path: Path, team: str, today=None):
                 v = [x.value for x in c]
                 key = string(v[0])
                 if key in progress:
-                    raise InputError(f'{path.name}: 관리번호 {key}가 중복입니다.')
+                    raise InputError(f'{name}: 관리번호 {key}가 중복입니다.')
                 if not string(v[3]):
-                    raise InputError(f'{path.name}: 섭외 {row}행의 인플루언서 ID가 없습니다.')
+                    raise InputError(f'{name}: 섭외 {row}행의 인플루언서 ID가 없습니다.')
                 status = string(v[8])
                 if status not in STAGES:
-                    raise InputError(f'{path.name}: 섭외 {row}행 진행 단계를 선택해 주세요.')
+                    raise InputError(f'{name}: 섭외 {row}행 진행 단계를 선택해 주세요.')
                 kind = string(v[9])
                 if kind not in ('유상', '무상'):
-                    raise InputError(f'{path.name}: 섭외 {row}행 유·무상을 선택해 주세요.')
+                    raise InputError(f'{name}: 섭외 {row}행 유·무상을 선택해 주세요.')
                 price = number(v[10], f'섭외 {row}행 원고료')
                 if kind == '무상' and price not in (None, 0, 1):
-                    raise InputError(f'{path.name}: 무상 행의 원고료는 0으로 적어 주세요.')
+                    raise InputError(f'{name}: 무상 행의 원고료는 0으로 적어 주세요.')
                 group = string(v[7]) or ('샤오홍슈' if string(v[6]) == '샤오홍슈' else string(v[5]))
                 if group not in GROUPS:
                     group = '기타'
@@ -137,10 +180,15 @@ def read_book(path: Path, team: str, today=None):
                 v = [x.value for x in c]
                 key = string(v[0])
                 if key not in progress or key in seen:
-                    raise InputError(f'{path.name}: 성과 {row}행의 관리번호 연결·중복을 확인해 주세요.')
+                    raise InputError(f'{name}: 성과 {row}행의 관리번호 연결·중복을 확인해 주세요.')
                 seen.add(key)
                 values = dict(zip(['views', 'likes', 'comments', 'shares', 'saves'], [number(x) for x in v[12:17]]))
                 progress[key].update(upload=day(v[8], wb.epoch), post_url=url(c[9]), measured=day(v[11], wb.epoch), **values)
+                rec = progress[key]
+                # Xiaohongshu hides views: estimate from likes (x75) and flag it for the page.
+                if (team == 'overseas' and '샤오홍슈' in (rec['channel'], rec['group'])
+                        and rec['views'] is None and rec['likes'] is not None):
+                    rec.update(views=rec['likes'] * 75, views_est=True)
             out['people'] = list(progress.values())
             for row in range(36, 41):
                 group = string(g.cell(row, 2).value)
@@ -149,13 +197,13 @@ def read_book(path: Path, team: str, today=None):
                     out['targets'][group] = value
         if team in ('content', 'marketing'):
             if '3_메타광고' not in wb:
-                raise InputError(f'{path.name}: 3_메타광고 탭이 없습니다.')
+                raise InputError(f'{name}: 3_메타광고 탭이 없습니다.')
             ws = wb['3_메타광고']
             checked_header(ws, {1: '일자', 2: '채널', 3: '캠페인', 5: '광고비', 12: '광고 귀속매출'})
             for row, c in rows(ws, 13):
                 v = [x.value for x in c]
                 if not string(v[1]) or not string(v[2]):
-                    raise InputError(f'{path.name}: 광고 {row}행의 채널·캠페인을 입력해 주세요.')
+                    raise InputError(f'{name}: 광고 {row}행의 채널·캠페인을 입력해 주세요.')
                 rec = {'date': day(v[0], wb.epoch), 'channel': string(v[1]), 'campaign': string(v[2]), 'objective': string(v[3])}
                 rec.update(dict(zip(['spend','creator_cost','product_cost','production_cost','impressions','clicks','purchases','revenue'], [number(x) for x in v[4:12]])))
                 rec['key'] = '|'.join([rec['date'], rec['channel'], rec['campaign']])
@@ -205,6 +253,9 @@ def build(config, today=None):
     result = {'teams': []}
     for slug, name in TEAMS:
         settings = config['sources'][slug]
+        if settings.get('sheet'):
+            result['teams'].append({'slug': slug, 'name': name, **merge_books([read_book(sheet_book(settings), slug, today)])})
+            continue
         primary = Path(settings['primary'])
         if not primary.is_file():
             raise InputError(f'{name}: 기본 엑셀 파일이 없습니다.')

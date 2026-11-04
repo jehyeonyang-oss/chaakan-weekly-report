@@ -18,9 +18,10 @@ const cost = r => r.source==='live'?num(r.content_cost):num(r.content_cost);
 const confirmed = r => ['④','⑤','⑥','⑦','✅'].includes(r.stage);
 const totalFee=rows=>rows.length&&rows.every(r=>r.free||num(r.price)!==null)?sum(rows,r=>r.free?0:r.price):null;
 const due = r => addDays(r.upload,7);
+const est = rows => rows.some(r=>r.views_est)?' <small class="est" title="샤오홍슈 조회수 미표시: 좋아요×75로 추정">추정</small>':'';
 const mature = (r,t) => r.post_url && r.upload && due(r)<=t.asof && r.measured && r.measured>=due(r) && r.measured<=t.asof && num(r.views)!==null;
 let payload=null, current=['content','marketing','overseas'].includes(location.hash.slice(1))?location.hash.slice(1):'content', windowKey='latest', details={},seq=0;
-const STAGES=[['④','협상 완료','st4'],['⑤','방문 일정 확정','st5'],['⑥','촬영 완료','st6'],['⑦','업로드 완료','st7'],['✅','완료','st8']];
+const STAGES=[['①','컨택','st1'],['④','협상 완료','st4'],['⑤','방문 일정 확정','st5'],['⑥','촬영 완료','st6'],['⑦','업로드 완료','st7'],['✅','완료','st8']];
 
 function table(headers,body){return `<div class="tscroll"><table class="num"><thead><tr>${headers.map(h=>`<th>${esc(h)}</th>`).join('')}</tr></thead><tbody>${body}</tbody></table></div>`;}
 const td=(value,formatter=n)=>`<td${value==null?' class="na"':''}>${formatter(value)}</td>`;
@@ -38,9 +39,11 @@ function phase(rows){
   // One creator appears in only one stage; multiple deliverables stay at their earliest unfinished stage.
   const rank=['④','⑤','⑥','⑦','✅'];const best=new Map();
   p.forEach(r=>{const k=personKey(r),old=best.get(k);if(!old||rank.indexOf(r.stage)<rank.indexOf(old.stage))best.set(k,r);});
-  const buckets=STAGES.map(([k,label,color])=>({k,label:current!=='overseas'&&k==='⑤'?'제품 발송':current!=='overseas'&&k==='⑥'?'초안·검수':label,color,rows:p.filter(r=>best.get(personKey(r)).stage===k)}));
-  return `<div class="dsub">단계별</div><div class="stagebar">${buckets.filter(b=>b.rows.length).map(b=>`<i class="${b.color}" style="width:${uniq(b.rows).length/Math.max(1,best.size)*100}%" title="${esc(b.label)} ${uniq(b.rows).length}명"></i>`).join('')}</div>`+
-    table(['단계 (누르면 인원 목록)','인원','금액'],buckets.map(b=>clickRow([`<span class="dot ${b.color}"></span>${b.k} ${b.label}`,uniq(b.rows).length+'명',won(totalFee(b.rows))],b.rows)).join('')+clickRow(['합계',best.size+'명',won(totalFee(p))],p,peopleTable,'total'))+'<div class="fn">같은 인원은 중복 제외합니다. 계약금액·배분액이 모두 확인된 경우에만 금액 합계를 표시합니다.</div>';
+  // ① 컨택 is shown for overseas only and stays out of the confirmed total.
+  const contact=rows.filter(r=>r.stage==='①'&&!best.has(personKey(r)));
+  const buckets=STAGES.filter(([k])=>k!=='①'||current==='overseas').map(([k,label,color])=>({k,label:current!=='overseas'&&k==='⑤'?'제품 발송':current!=='overseas'&&k==='⑥'?'초안·검수':label,color,rows:k==='①'?contact:p.filter(r=>best.get(personKey(r)).stage===k)}));
+  return `<div class="dsub">단계별</div><div class="stagebar">${buckets.filter(b=>b.rows.length&&b.k!=='①').map(b=>`<i class="${b.color}" style="width:${uniq(b.rows).length/Math.max(1,best.size)*100}%" title="${esc(b.label)} ${uniq(b.rows).length}명"></i>`).join('')}</div>`+
+    table(['단계 (누르면 인원 목록)','인원','금액'],buckets.map(b=>clickRow([`<span class="dot ${b.color}"></span>${b.k} ${b.label}`,uniq(b.rows).length+'명',won(totalFee(b.rows))],b.rows)).join('')+clickRow(['합계',best.size+'명',won(totalFee(p))],p,peopleTable,'total'))+'<div class="fn">같은 인원은 중복 제외합니다.'+(current==='overseas'?' ① 컨택은 합계에 포함하지 않습니다.':'')+' 계약금액·배분액이 모두 확인된 경우에만 금액 합계를 표시합니다.</div>';
 }
 function observed(r){
   if(r.source!=='live')return r;
@@ -60,12 +63,12 @@ function uploadDetail(rows,overseas,t){
   const values=overseas?rows:rows.map(observed);
   const headers=['ID','국가','담당','캠페인·라인','업로드','측정일','게시물',overseas?'단가':current==='marketing'?'비용 · 원본 기준':'콘텐츠비','조회수','좋아요 · 댓글','예상 공유·저장','공유+저장','결과 CPV','예상 공유·저장 단가','공유·저장 단가'];
   if(!overseas)headers.push('시딩 귀속매출','매출 집계기간');
-  return table(headers,values.map(r=>{const ok=overseas?mature(r,t):true,c=overseas?r=>r.price:cost,p=r.free?null:c(r);return `<tr><td>${link(r.url,r.id)}</td><td>${esc(r.country)}</td><td>${esc(r.who)}</td><td>${esc(r.campaign)}</td><td>${esc(r.upload||'—')}</td><td>${esc(r.measured||'미수집')}</td><td>${link(r.post_url,'게시물 ↗')}</td><td>${r.free?'무상':won(p)}</td>${td(ok?r.views:null)}<td>${ok?`좋아요 ${n(r.likes)} · 댓글 ${n(r.comments)}`:'—'}</td>${td(r.exp_ss)}${td(ok?ss(r):null)}${td(ok?ratio(p,r.views):null,won)}${td(ratio(p,r.exp_ss),won)}${td(ok?ratio(p,ss(r)):null,won)}${!overseas?td(r.revenue,won)+`<td>${esc(r.revenue_window||'—')}</td>`:''}</tr>`;}).join(''));
+  return table(headers,values.map(r=>{const ok=overseas?mature(r,t):true,c=overseas?r=>r.price:cost,p=r.free?null:c(r);return `<tr><td>${link(r.url,r.id)}</td><td>${esc(r.country)}</td><td>${esc(r.who)}</td><td>${esc(r.campaign)}</td><td>${esc(r.upload||'—')}</td><td>${esc(r.measured||'미수집')}</td><td>${link(r.post_url,'게시물 ↗')}</td><td>${r.free?'무상':won(p)}</td>${ok&&num(r.views)!==null?`<td>${n(r.views)}${est([r])}</td>`:td(null)}<td>${ok?`좋아요 ${n(r.likes)} · 댓글 ${n(r.comments)}`:'—'}</td>${td(r.exp_ss)}${td(ok?ss(r):null)}${td(ok?ratio(p,r.views):null,won)}${td(ratio(p,r.exp_ss),won)}${td(ok?ratio(p,ss(r)):null,won)}${!overseas?td(r.revenue,won)+`<td>${esc(r.revenue_window||'—')}</td>`:''}</tr>`;}).join(''));
 }
 function uploads(t,overseas){
   const rows=t.people.filter(r=>r.post_url&&r.upload&&r.stage!=='보류');
   const groups=overseas?['일본','대만·홍콩','샤오홍슈',...['한국','기타'].filter(g=>rows.some(r=>r.group===g))]:[...new Set(rows.map(r=>r.campaign||'미분류'))];
-  const row=(label,rs,cls='')=>{const a=aggregateUploads(rs,t,overseas);const cells=overseas?[label,rs.length+'편',a.count+'편',won(a.price),n(a.views),n(a.exp),n(a.ss),won(a.cpv),won(a.expCost),won(a.ssCost)]:[label,rs.length+'편',a.count+'편',won(a.price),n(a.views),n(a.ss),won(a.ssCost),won(a.cpv),won(sum(rs,'revenue'))];return clickRow(cells,rs,r=>uploadDetail(r,overseas,t),cls);};
+  const row=(label,rs,cls='')=>{const a=aggregateUploads(rs,t,overseas);const cells=overseas?[label,rs.length+'편',a.count+'편',won(a.price),n(a.views)+est(a.rows),n(a.exp),n(a.ss),won(a.cpv),won(a.expCost),won(a.ssCost)]:[label,rs.length+'편',a.count+'편',won(a.price),n(a.views),n(a.ss),won(a.ssCost),won(a.cpv),won(sum(rs,'revenue'))];return clickRow(cells,rs,r=>uploadDetail(r,overseas,t),cls);};
   const selector=!overseas?`<select id="window" aria-label="시딩 성과 측정 구간">${[['latest','최근 측정'],['48h','48시간'],['7d','7일'],['14d','14일']].map(([k,l])=>`<option value="${k}"${windowKey===k?' selected':''}>${l}</option>`).join('')}</select>`:'';
   return `<section class="box"><div class="toolbar"><h2>${overseas?'2. 업로드 인사이트':'크리에이터 시딩 성과'}</h2>${selector}</div><div class="h2sub">${overseas?'전체 · 국가별 줄을 누르면 게시물 세부내역이 펼쳐집니다. 합계는 업로드 7일 경과·조회수 확인·유상 게시물 기준입니다.':'캠페인·라인별 줄을 누르면 게시물별 성과가 펼쳐집니다. 선택한 측정 구간의 수치만 표시합니다.'}</div>`+
   (rows.length?table(overseas?['구분 (누르면 세부내역)','업로드','결과 산출','단가 합','조회수','예상 공유·저장','공유+저장','결과 CPV','예상 공유·저장 단가','공유·저장 단가']:['캠페인·라인 (누르면 세부내역)','업로드','수치 확인',current==='marketing'?'확인된 비용 · 원본 기준':'확인된 콘텐츠비','조회수','공유+저장','공유·저장 단가','CPV · 참고','시딩 귀속매출'],row('전체',rows,'total')+groups.map(g=>row(g,rows.filter(r=>(overseas?r.group:r.campaign||'미분류')===g))).join('')):'<div class="empty">아직 업로드된 게시물이 없습니다. 성과를 입력하면 이곳에 표시됩니다.</div>')+
@@ -75,7 +78,7 @@ function country(t){
   const p=t.people.filter(confirmed), groups=['일본','대만·홍콩','샤오홍슈',...['한국','기타'].filter(g=>p.some(r=>r.group===g)||num(t.targets[g])!==null)];
   const stat=rows=>({count:uniq(rows).length,expected:sum(uniq(rows),'avg'),result:sum(rows.filter(r=>mature(r,t)),'views')});
   const cards=groups.map(g=>{const a=stat(p.filter(r=>r.group===g)),goal=t.targets[g],scale=Math.max(goal||0,a.expected||0,a.result||0,1);return `<div class="ccard"><div class="t">${g} · ${a.count}명</div><div class="v">${n(a.expected)}</div><div class="s">예상 조회수 · 결과 ${n(a.result)}</div><div class="goal"><i class="e" style="width:${(a.expected||0)/scale*100}%"></i><i class="r" style="width:${(a.result||0)/scale*100}%"></i></div><div class="s">${goal?`목표 ${n(goal)} · 결과 ${percent(ratio(a.result,goal))}`:'목표 조회수 미정'}</div></div>`;}).join('');
-  const row=(g,rs,goal,cls='')=>{const a=stat(rs);return `<tr class="${cls}"><td>${g}</td><td>${a.count}명</td>${td(goal)}${td(a.expected)}${td(a.result)}${td(ratio(a.result,goal),percent)}</tr>`;};
+  const row=(g,rs,goal,cls='')=>{const a=stat(rs);return `<tr class="${cls}"><td>${g}</td><td>${a.count}명</td>${td(goal)}${td(a.expected)}${a.result===null?td(null):`<td>${n(a.result)}${est(rs.filter(r=>mature(r,t)))}</td>`}${td(ratio(a.result,goal),percent)}</tr>`;};
   return `<div class="dsub">국가별 조회수</div><div class="cgrid">${cards}</div>`+table(['국가','인원','목표 조회수','예상 조회수','결과 조회수','목표 달성'],groups.map(g=>row(g,p.filter(r=>r.group===g),t.targets[g])).join('')+row('합계',p,sum(groups,g=>t.targets[g]),'total'))+'<div class="fn">예상 조회수 = 확정 인원의 평균 조회수 합 · 결과 조회수 = 업로드 7일 뒤 확인된 조회수 합</div>';
 }
 function seeding(t,overseas){

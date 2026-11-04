@@ -25,6 +25,22 @@ assert len(merge_books([parsed,parsed])['people'])==1
 changed=json.loads(json.dumps(parsed));changed['people'][0]['views']=1
 try:merge_books([parsed,changed]);raise AssertionError('conflict not detected')
 except InputError:pass
+# Google Sheet path: values-only grid -> in-memory workbook (contact stage, XHS views estimated from likes).
+from report import values_book
+from openpyxl.utils.datetime import to_excel
+grid=lambda ws:[[to_excel(x) if isinstance(x,datetime) else ('' if x is None else x) for x in row] for row in ws.iter_rows(values_only=True)]
+g['D5']=datetime(2026,11,3)
+for i,v in enumerate(['qa_002','테스트 담당','FW','xhs_creator','https://example.org/xhs','중국','샤오홍슈','샤오홍슈','업로드 완료','유상',200000,7500,None],1):p.cell(7,i,v)
+for i,v in enumerate(['qa_003','테스트 담당','FW','contact_creator','https://example.org/c','일본','인스타그램','일본','컨택','무상',0],1):p.cell(8,i,v)
+for col,value in {'A':'qa_002','I':datetime(2026,10,26),'J':'https://example.org/xhs-post','L':datetime(2026,11,2),'N':100}.items():s[f'{col}7']=value
+book=read_book(values_book([{'values':grid(wb[n])} for n in ['작성안내','1_섭외진행','2_업로드성과']]),'overseas')
+rows={r['key']:r for r in book['people']}
+assert book['asof']=='2026-11-03' and rows['qa_001']['upload']=='2026-10-26' and rows['qa_001']['url']=='https://example.org/profile'
+assert (rows['qa_002']['views'],rows['qa_002'].get('views_est'),rows['qa_002']['avg'])==(7500,True,7500),rows['qa_002']
+assert rows['qa_001'].get('views_est') is None and rows['qa_003']['stage']=='①'
+for r in (7,8):
+ for col in range(1,20):p.cell(r,col).value=None
+for col in range(1,26):s.cell(7,col).value=None
 p.row_dimensions[6].hidden=True;wb.save(fixture)
 try:read_book(fixture,'overseas');raise AssertionError('hidden progress/orphan performance not detected')
 except InputError:pass

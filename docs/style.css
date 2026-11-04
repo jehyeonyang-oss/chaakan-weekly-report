@@ -107,7 +107,7 @@ tr.sub .tscroll{background:var(--card)}
 .notice{font-size:12.5px;font-weight:700;color:var(--wait);background:var(--wait-soft);border-radius:10px;padding:8px 12px;margin-top:14px}
 .stagebar{display:flex;height:12px;border-radius:6px;overflow:hidden;background:var(--row);margin:4px 0 10px}
 .stagebar i{display:block;height:100%}
-.st4{background:#9db8e8}.st5{background:#5f95e6}.st6{background:#3182F6}.st7{background:#12b886}.st8{background:#0b8a66}
+.st1{background:#c3c8cf}.st4{background:#9db8e8}.st5{background:#5f95e6}.st6{background:#3182F6}.st7{background:#12b886}.st8{background:#0b8a66}
 .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
 .ccard{border:1px solid var(--line);border-radius:12px;padding:14px}
 .ccard .t{font-size:13px;font-weight:800;color:var(--sub)}
@@ -139,3 +139,4 @@ tr.sub .tscroll{background:var(--card)}
 .source-note{font-size:12px;color:var(--sub);margin:8px 0}.bad{color:var(--wait)}.good{color:var(--ok)}
 .ccards-four{grid-template-columns:repeat(4,1fr)}.detail-wrap{max-width:100%;overflow:auto}
 @media(max-width:640px){.team-tabs button{padding:11px 14px}.ccards-four{grid-template-columns:1fr 1fr}}
+.est{font-size:11px;color:var(--sub);font-weight:600}
