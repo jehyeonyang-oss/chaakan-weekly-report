@@ -78,15 +78,15 @@ with sync_playwright() as pw:
  assert page.locator('#team-panel h2').first.inner_text()=='크리에이터 시딩 진행현황'
  page.locator('tr[data-detail]').first.click();assert page.locator('tr.sub').count()==1
  page.screenshot(path=str(OUT/'content.png'),full_page=True)
- page.locator('#tab-marketing').click();assert page.locator('#team-panel h2').first.inner_text()=='메타광고 성과'
+ page.locator('#tab-marketing').click();assert page.locator('#team-panel h2').first.inner_text()=='크리에이터 시딩 진행현황'
  assert '국가별 조회수' not in page.locator('#team-panel').inner_text()
  marketing=next(t for t in json.loads((ROOT/'docs/data.json').read_text(encoding='utf-8'))['teams'] if t['slug']=='marketing')
  if marketing.get('source_state')=='ok' and marketing['ads']:
   spend=sum(r['spend'] for r in marketing['ads']);revenue=sum(r['revenue'] for r in marketing['ads'])
-  assert page.locator('#kpis b').nth(0).inner_text()==f'{spend:,.0f}원'
-  assert page.locator('#kpis b').nth(1).inner_text()==f'{revenue:,.0f}원'
+  assert page.locator('#kpis b').nth(1).inner_text()==f'{spend:,.0f}원'
+  assert page.locator('#kpis b').nth(2).inner_text()==f'{revenue:,.0f}원'
   assert page.locator('#notice').is_hidden()
-  upload=page.locator('#team-panel > section').last
+  upload=page.locator('#team-panel > section').filter(has_text='크리에이터 시딩 성과')
   upload.locator('tr[data-detail]').first.click()
   assert upload.locator('tr.sub tbody tr').count()==len(marketing['people'])
   page.locator('#window').select_option('7d')

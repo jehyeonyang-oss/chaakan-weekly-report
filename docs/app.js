@@ -107,14 +107,14 @@ function render(){
   $('source-link').hidden=!t.source_url;$('source-link').href=safe(t.source_url)||'#';
   const notice=t.source_state&&t.source_state!=='ok'?t.source_message:'';$('notice').textContent=notice||'';$('notice').hidden=!notice;
   const p=t.people.filter(confirmed),a=aggregateUploads(p.filter(r=>r.post_url),t,overseas),ad=adAgg(t.ads);
-  const kpis=overseas?[[uniq(p).length+'명','섭외 확정','협상 완료 이상'],[won(totalFee(p)),'확정 금액','원고료 합'],[n(sum(uniq(p),'avg'))+est(uniq(p),'avg_est'),'예상 조회수','평균 조회수 합'],[n(sum(p.filter(r=>mature(r,t)),'views')),'결과 조회수','업로드 7일 이후 수치']]:current==='marketing'?[[won(ad.spend),'메타 광고비','원본 전체 기간 누적'],[won(ad.revenue),'광고 귀속매출','클릭 후 1일 귀속 기준'],[percent(ratio(ad.revenue,ad.spend)),'광고비 ROAS','광고 귀속매출 ÷ 광고비'],[uniq(p).length+'명','시딩 확정','같은 인물의 계정 중복 제외']]:[[uniq(p).length+'명','시딩 확정','협상 완료 이상'],[p.filter(r=>r.post_url).length+'편','시딩 업로드','게시물 링크 기준'],[won(a.ssCost),'공유·저장당 비용','확인된 콘텐츠비 기준'],[won(sum(p,'revenue')),'시딩 귀속매출','원본의 누적 귀속매출']];
+  const kpis=overseas?[[uniq(p).length+'명','섭외 확정','협상 완료 이상'],[won(totalFee(p)),'확정 금액','원고료 합'],[n(sum(uniq(p),'avg'))+est(uniq(p),'avg_est'),'예상 조회수','평균 조회수 합'],[n(sum(p.filter(r=>mature(r,t)),'views')),'결과 조회수','업로드 7일 이후 수치']]:current==='marketing'?[[uniq(p).length+'명','시딩 확정','같은 인물의 계정 중복 제외'],[won(ad.spend),'메타 광고비','원본 전체 기간 누적'],[won(ad.revenue),'광고 귀속매출','클릭 후 1일 귀속 기준'],[percent(ratio(ad.revenue,ad.spend)),'광고비 ROAS','광고 귀속매출 ÷ 광고비']]:[[uniq(p).length+'명','시딩 확정','협상 완료 이상'],[p.filter(r=>r.post_url).length+'편','시딩 업로드','게시물 링크 기준'],[won(a.ssCost),'공유·저장당 비용','확인된 콘텐츠비 기준'],[won(sum(p,'revenue')),'시딩 귀속매출','원본의 누적 귀속매출']];
   const unavailable=current==='marketing'&&t.source_state!=='ok'&&!t.people.length&&!t.ads.length;
   $('kpis').innerHTML=kpis.map(([v,l,s])=>`<div class="kpi"><b>${unavailable?'—':v}</b><span>${l}</span><em>${unavailable?'데이터 연결 대기':s}</em></div>`).join('');
   const talking=t.people.filter(r=>['②','③'].includes(r.stage));
   $('summary').innerHTML=`<li>섭외 확정 <strong>${uniq(p).length}명</strong> · 업로드 <strong>${p.filter(r=>r.post_url).length}편</strong> · 소통·협상 중 ${uniq(talking).length}명</li>`+(t.source_at?`<li>기존 운영 데이터 기준 <strong>${stamp(t.source_at)}</strong></li>`:'');
   if(unavailable)$('summary').innerHTML='<li>마케팅 허브 데이터를 불러오지 못했습니다. 연결 상태를 확인해 주세요.</li>';
   const seed=seeding(t,overseas)+uploads(t,overseas),meta=ads(t)+(t.store_ads?.length?ads(t,true):'');
-  $('team-panel').innerHTML=overseas?seed:current==='marketing'?meta+seed:seed+meta;
+  $('team-panel').innerHTML=overseas?seed:seed+meta;
   $('foot').textContent=`착한구두 · ${t.name} · 실제 확인된 수치만 집계 · 페이지는 1분마다 새 자료를 확인합니다.`;
   $('window')?.addEventListener('change',e=>{windowKey=e.target.value;render();});
 }
