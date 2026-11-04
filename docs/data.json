@@ -3537,7 +3537,7 @@
           "exp_ss": null,
           "upload": "2026-10-11",
           "post_url": "https://www.instagram.com/reel/DeWCBh8hbOL/",
-          "measured": "2026-11-03",
+          "measured": "2026-11-04",
           "views": 2413.0,
           "likes": 28.0,
           "comments": 2.0,
@@ -3550,7 +3550,7 @@
               "comments": 2.0,
               "shares": 15.0,
               "saves": 11.0,
-              "at": "2026-11-03T15:42:34+09:00"
+              "at": "2026-11-04T15:42:31+09:00"
             },
             "48h": {
               "views": 1907.0,
@@ -7543,8 +7543,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-04T14:27:31+09:00",
-      "fetched_at": "2026-11-04T06:29:18.239Z",
+      "source_at": "2026-11-04T15:42:31+09:00",
+      "fetched_at": "2026-11-04T06:45:20.011Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -7558,6 +7558,6 @@
       "targets": {}
     }
   ],
-  "revision": "8ee2135e277c88d5",
-  "updated_at": "2026-11-04T15:41:16+09:00"
+  "revision": "85eff7559b32f660",
+  "updated_at": "2026-11-04T15:45:16+09:00"
 }
