@@ -3,7 +3,7 @@
     {
       "slug": "content",
       "name": "콘텐츠기획",
-      "asof": "2026-11-04",
+      "asof": "2026-11-05",
       "period": "",
       "people": [
         {
@@ -1705,7 +1705,7 @@
     {
       "slug": "marketing",
       "name": "마케팅",
-      "asof": "2026-11-04",
+      "asof": "2026-11-05",
       "period": "원본 전체 기간 누적",
       "people": [
         {
@@ -2903,20 +2903,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/DezPyIEBX7f/",
-          "measured": "2026-11-03",
-          "views": 972.0,
+          "measured": "2026-11-04",
+          "views": 986.0,
           "likes": 23.0,
           "comments": 2.0,
           "shares": 0.0,
           "saves": 1.0,
           "windows": {
             "latest": {
-              "views": 972.0,
+              "views": 986.0,
               "likes": 23.0,
               "comments": 2.0,
               "shares": 0.0,
               "saves": 1.0,
-              "at": "2026-11-03T23:57:31+09:00"
+              "at": "2026-11-04T23:57:31+09:00"
             },
             "48h": {
               "views": 759.0,
@@ -7550,15 +7550,15 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-04T23:42:38+09:00",
-      "fetched_at": "2026-11-04T14:45:18.579Z",
+      "source_at": "2026-11-04T23:57:31+09:00",
+      "fetched_at": "2026-11-04T15:01:20.565Z",
       "cost_basis": "marketing_source"
     },
     {
       "slug": "overseas",
       "name": "해외시딩",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1qZ0Goun7uHdukWa1xFqyikBRWuVf5zxNjeZq-KPUvSY/edit",
-      "asof": "2026-11-04",
+      "asof": "2026-11-05",
       "period": "",
       "people": [
         {
@@ -8126,6 +8126,6 @@
       "targets": {}
     }
   ],
-  "revision": "7844872971f547b5",
-  "updated_at": "2026-11-04T23:45:15+09:00"
+  "revision": "abf505b5d5d1aed4",
+  "updated_at": "2026-11-05T00:01:16+09:00"
 }
