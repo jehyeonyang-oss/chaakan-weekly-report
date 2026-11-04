@@ -249,12 +249,22 @@ def merge_books(books):
     return merged
 
 
-def build(config, today=None):
-    result = {'teams': []}
+def build(config, today=None, old=None):
+    result = {'teams': [], 'errors': {}}
     for slug, name in TEAMS:
         settings = config['sources'][slug]
         if settings.get('sheet'):
-            result['teams'].append({'slug': slug, 'name': name, **merge_books([read_book(sheet_book(settings), slug, today)])})
+            team = {'slug': slug, 'name': name, 'sheet_url': f"https://docs.google.com/spreadsheets/d/{string(settings['sheet'])}/edit"}
+            try:
+                team.update(merge_books([read_book(sheet_book(settings), slug, today)]))
+            except InputError as exc:
+                # Sheet failure is isolated: keep this team's last good data, other teams still refresh.
+                previous = next((t for t in (old or {}).get('teams', []) if t.get('slug') == slug), None)
+                previous = previous or {'asof': (today or date.today()).isoformat(), 'period': '', 'people': [], 'ads': [], 'targets': {}}
+                team.update({k: v for k, v in previous.items() if k not in team})
+                team.update(source_state='error', source_message=f'{name} 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다.')
+                result['errors'][slug] = str(exc)
+            result['teams'].append(team)
             continue
         primary = Path(settings['primary'])
         if not primary.is_file():

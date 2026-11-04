@@ -44,6 +44,20 @@ for col in range(1,26):s.cell(7,col).value=None
 p.row_dimensions[6].hidden=True;wb.save(fixture)
 try:read_book(fixture,'overseas');raise AssertionError('hidden progress/orphan performance not detected')
 except InputError:pass
+# Sheet failure isolation: overseas keeps last good data + error flag, Excel teams still parse.
+from report import build
+T=ROOT/'docs/templates'
+cfg={'sources':{'content':{'primary':str(T/'콘텐츠기획_주간보고.xlsx'),'inbox':str(OUT/'none')},'marketing':{'primary':str(T/'마케팅_주간보고.xlsx'),'inbox':str(OUT/'none')},
+ 'overseas':{'sheet':'A'*30,'token':str(OUT/'missing-token.json')}}}
+prev={'slug':'overseas','name':'해외시딩','asof':'2026-11-01','period':'P','people':[{'key':'old_1'}],'ads':[],'targets':{}}
+built=build(cfg,old={'teams':[prev]});teams={t['slug']:t for t in built['teams']}
+assert 'source_state' not in teams['content'] and 'source_state' not in teams['marketing'],teams
+o=teams['overseas'];assert o['people']==[{'key':'old_1'}] and o['asof']=='2026-11-01' and o['source_state']=='error' and '시트 읽기 실패' in o['source_message'],o
+assert o['sheet_url']=='https://docs.google.com/spreadsheets/d/'+'A'*30+'/edit' and 'overseas' in built['errors']
+assert build(cfg)['teams'][2]['people']==[]
+sheet_fail=json.loads((ROOT/'docs/data.json').read_text(encoding='utf-8'))
+for t in sheet_fail['teams']:
+ if t['slug']=='overseas':t.update(source_state='error',source_message=o['source_message'],sheet_url=o['sheet_url'])
 class Quiet(SimpleHTTPRequestHandler):
  def log_message(self,*args):pass
 server=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT/'docs')))
@@ -87,6 +101,16 @@ with sync_playwright() as pw:
  return {ss:a.ss,cpv:a.cpv,exp:a.expCost,cost:a.ssCost,partial:m.ss({...r,saves:null}),zero:m.ratio(1,0),tooEarly:m.mature({...r,measured:'2026-10-27'},{asof:'2026-11-03'}),missingRevenue:m.adAgg([{spend:10,revenue:20,total_cost:10},{spend:20,revenue:null,total_cost:20}]).revenue};
  }''')
  assert math=={'ss':600,'cpv':3,'exp':400,'cost':500,'partial':None,'zero':None,'tooEarly':False,'missingRevenue':None},math
+ assert page.locator('#download').inner_text()==('팀 시트 열기' if next(t for t in json.loads((ROOT/'docs/data.json').read_text(encoding='utf-8'))['teams'] if t['slug']=='overseas').get('sheet_url') else '팀 엑셀 양식')
+ page.locator('#tab-content').click();assert page.locator('#download').inner_text()=='팀 엑셀 양식' and page.locator('#download').get_attribute('download') is not None
+ failed=browser.new_page();failed.route('**/data.json*',lambda route:route.fulfill(content_type='application/json',body=json.dumps(sheet_fail,ensure_ascii=False)))
+ failed.route('**/status.json*',lambda route:route.fulfill(content_type='application/json',body='{"state":"ok","message":""}'))
+ failed.goto(f'http://127.0.0.1:{server.server_port}/#overseas',wait_until='networkidle');failed.wait_for_function("document.querySelectorAll('#kpis .kpi').length===4")
+ assert '시트 읽기 실패' in failed.locator('#notice').inner_text() and failed.locator('#notice').is_visible()
+ d=failed.locator('#download');assert (d.inner_text(),d.get_attribute('href'),d.get_attribute('target'),d.get_attribute('download'))==('팀 시트 열기',o['sheet_url'],'_blank',None)
+ failed.screenshot(path=str(OUT/'overseas-sheet-fail.png'));failed.locator('#tab-content').click()
+ assert failed.locator('#download').inner_text()=='팀 엑셀 양식' and failed.locator('#notice').inner_text()!=o['source_message']
+ failed.close()
  mobile=browser.new_context(viewport={'width':390,'height':844},device_scale_factor=1,color_scheme='light')
  p2=mobile.new_page();p2.goto(f'http://127.0.0.1:{server.server_port}/#overseas',wait_until='networkidle')
  assert p2.evaluate('document.documentElement.scrollWidth <= innerWidth+2')
@@ -98,4 +122,4 @@ with sync_playwright() as pw:
 server.shutdown()
 assert not errors,errors
 (OUT/'results.json').write_text(json.dumps({'passed':True,'page_errors':errors,'formulas':math,'tabs':['콘텐츠기획','마케팅','해외시딩']},ensure_ascii=False,indent=2),encoding='utf-8')
-print('PASS: workbook parsing, conflicting duplicates, hidden rows, 3 team tabs, stage expansion, aggregation math, mobile width, no browser errors')
+print('PASS: workbook parsing, sheet failure isolation + download button, conflicting duplicates, hidden rows, 3 team tabs, stage expansion, aggregation math, mobile width, no browser errors')

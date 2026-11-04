@@ -103,7 +103,7 @@ function render(){
   document.querySelectorAll('[data-team]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.team===current));b.tabIndex=b.dataset.team===current?0:-1;});
   $('team-panel').setAttribute('aria-labelledby','tab-'+current);
   $('period').textContent=`${t.period?t.period+' · ':''}${t.asof} 기준 · 마지막 반영 ${stamp(payload.updated_at)}`;
-  $('download').href=`templates/${encodeURIComponent(t.name+'_주간보고.xlsx')}`;
+  const sheet=safe(t.sheet_url),dl=$('download');dl.href=sheet||`templates/${encodeURIComponent(t.name+'_주간보고.xlsx')}`;dl.textContent=sheet?'팀 시트 열기':'팀 엑셀 양식';dl.toggleAttribute('download',!sheet);dl.target=sheet?'_blank':'';dl.rel=sheet?'noopener noreferrer':'';
   $('source-link').hidden=!t.source_url;$('source-link').href=safe(t.source_url)||'#';
   const notice=t.source_state&&t.source_state!=='ok'?t.source_message:'';$('notice').textContent=notice||'';$('notice').hidden=!notice;
   const p=t.people.filter(confirmed),a=aggregateUploads(p.filter(r=>r.post_url),t,overseas),ad=adAgg(t.ads);

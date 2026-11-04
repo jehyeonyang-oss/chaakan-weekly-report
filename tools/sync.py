@@ -54,7 +54,9 @@ def main():
         now = datetime.now().astimezone().isoformat(timespec='seconds')
         file = ROOT / 'docs/data.json'
         old = json.loads(file.read_text(encoding='utf-8')) if file.exists() else {}
-        data = attach_sources(build(config), old)
+        built = build(config, old=old)
+        team_errors = built.pop('errors')  # local health only, never published
+        data = attach_sources(built, old)
         canonical = json.dumps(data, ensure_ascii=False, sort_keys=True)
         revision = hashlib.sha256(canonical.encode()).hexdigest()[:16]
         changed = old.get('revision') != revision
@@ -69,8 +71,8 @@ def main():
         if '--local-only' not in sys.argv:
             # No force push, no reset or automatic conflict resolution.
             publish(['docs/data.json', 'docs/status.json'])
-        atomic_json(RUNTIME / 'health.json', {'state': 'ok', 'checked_at': now, 'changed': changed, 'revision': revision})
-        print(json.dumps({'state': 'ok', 'changed': changed, 'revision': revision}, ensure_ascii=False))
+        atomic_json(RUNTIME / 'health.json', {'state': 'ok', 'checked_at': now, 'changed': changed, 'revision': revision, 'team_errors': team_errors})
+        print(json.dumps({'state': 'ok', 'changed': changed, 'revision': revision, 'team_errors': list(team_errors)}, ensure_ascii=False))
     except Exception as exc:
         atomic_json(RUNTIME / 'health.json', {'state': 'error', 'checked_at': datetime.now().astimezone().isoformat(), 'error': str(exc)})
         with (RUNTIME / 'sync.log').open('a', encoding='utf-8') as f:
