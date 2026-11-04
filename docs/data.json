@@ -1457,6 +1457,44 @@
           "url": "https://www.instagram.com/reel/DfHXE3Tz6hv/"
         },
         {
+          "key": "pa:└ 참여",
+          "campaign": "└ 참여",
+          "label": "└ 참여",
+          "channel": "크리에이터 PA",
+          "period": "11-02 ~ 11-04",
+          "status": "꺼짐",
+          "spend": 39648.0,
+          "impressions": 7662.0,
+          "clicks": 63.0,
+          "shares": 325.0,
+          "saves": 95.0,
+          "content_cost": null,
+          "total_cost": null,
+          "purchases": 1.0,
+          "revenue": 42900.0,
+          "source": "live",
+          "url": ""
+        },
+        {
+          "key": "pa:└ 판매",
+          "campaign": "└ 판매",
+          "label": "└ 판매",
+          "channel": "크리에이터 PA",
+          "period": "11-03 ~ 11-04",
+          "status": "꺼짐",
+          "spend": 48818.0,
+          "impressions": 6063.0,
+          "clicks": 320.0,
+          "shares": 43.0,
+          "saves": 35.0,
+          "content_cost": null,
+          "total_cost": null,
+          "purchases": 0.0,
+          "revenue": 0.0,
+          "source": "live",
+          "url": ""
+        },
+        {
           "key": "pa:dlghdtj",
           "campaign": "dlghdtj",
           "label": "홍서 @dlghdtj 무비 슬라우치 부츠 코코아 230",
@@ -1474,6 +1512,44 @@
           "revenue": 0.0,
           "source": "live",
           "url": "https://www.instagram.com/reel/DfMrQ14SbIf/"
+        },
+        {
+          "key": "pa:└ 참여",
+          "campaign": "└ 참여",
+          "label": "└ 참여",
+          "channel": "크리에이터 PA",
+          "period": "11-02 ~ 11-04",
+          "status": "꺼짐",
+          "spend": 33941.0,
+          "impressions": 5333.0,
+          "clicks": 38.0,
+          "shares": 142.0,
+          "saves": 50.0,
+          "content_cost": null,
+          "total_cost": null,
+          "purchases": 0.0,
+          "revenue": 0.0,
+          "source": "live",
+          "url": ""
+        },
+        {
+          "key": "pa:└ 판매",
+          "campaign": "└ 판매",
+          "label": "└ 판매",
+          "channel": "크리에이터 PA",
+          "period": "11-03 ~ 11-04",
+          "status": "꺼짐",
+          "spend": 2568.0,
+          "impressions": 316.0,
+          "clicks": 14.0,
+          "shares": 2.0,
+          "saves": 3.0,
+          "content_cost": null,
+          "total_cost": null,
+          "purchases": 0.0,
+          "revenue": 0.0,
+          "source": "live",
+          "url": ""
         }
       ],
       "targets": {},
@@ -7481,6 +7557,6 @@
       "targets": {}
     }
   ],
-  "revision": "9bc024d1d2e61351",
-  "updated_at": "2026-11-04T09:21:16+09:00"
+  "revision": "b432c2f95ead4723",
+  "updated_at": "2026-11-04T09:25:17+09:00"
 }
