@@ -1781,19 +1781,19 @@
           "upload": "2026-11-01",
           "post_url": "https://www.instagram.com/reel/DfKbhTrBOvt/",
           "measured": "2026-11-05",
-          "views": 2406.0,
+          "views": 2410.0,
           "likes": 19.0,
           "comments": 0.0,
           "shares": 11.0,
           "saves": 6.0,
           "windows": {
             "latest": {
-              "views": 2406.0,
+              "views": 2410.0,
               "likes": 19.0,
               "comments": 0.0,
               "shares": 11.0,
               "saves": 6.0,
-              "at": "2026-11-05T06:12:31+09:00"
+              "at": "2026-11-05T12:12:31+09:00"
             },
             "48h": {
               "views": 2343.0,
@@ -1831,19 +1831,19 @@
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHMWdByse6/",
           "measured": "2026-11-05",
-          "views": 2560.0,
+          "views": 2563.0,
           "likes": 15.0,
           "comments": 0.0,
           "shares": 10.0,
           "saves": 14.0,
           "windows": {
             "latest": {
-              "views": 2560.0,
+              "views": 2563.0,
               "likes": 15.0,
               "comments": 0.0,
               "shares": 10.0,
               "saves": 14.0,
-              "at": "2026-11-05T06:12:31+09:00"
+              "at": "2026-11-05T12:12:31+09:00"
             },
             "48h": {
               "views": 2502.0,
@@ -7550,8 +7550,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-05T11:42:41+09:00",
-      "fetched_at": "2026-11-05T03:01:20.128Z",
+      "source_at": "2026-11-05T12:12:31+09:00",
+      "fetched_at": "2026-11-05T03:17:18.389Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8126,6 +8126,6 @@
       "targets": {}
     }
   ],
-  "revision": "1df853b8ce4b2fa2",
-  "updated_at": "2026-11-05T12:11:16+09:00"
+  "revision": "47603a2f702ea8b7",
+  "updated_at": "2026-11-05T12:17:16+09:00"
 }
