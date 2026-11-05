@@ -1754,7 +1754,7 @@
           "url": "https://www.instagram.com/hndoldol/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "파라 키높이 스트랩 메리제인 플랫",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -2933,20 +2933,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey5to7zwQd/",
-          "measured": "2026-11-04",
-          "views": 22265.0,
-          "likes": 214.0,
+          "measured": "2026-11-05",
+          "views": 22317.0,
+          "likes": 215.0,
           "comments": 54.0,
           "shares": 285.0,
-          "saves": 149.0,
+          "saves": 151.0,
           "windows": {
             "latest": {
-              "views": 22265.0,
-              "likes": 214.0,
+              "views": 22317.0,
+              "likes": 215.0,
               "comments": 54.0,
               "shares": 285.0,
-              "saves": 149.0,
-              "at": "2026-11-04T20:57:31+09:00"
+              "saves": 151.0,
+              "at": "2026-11-05T20:57:31+09:00"
             },
             "48h": {
               "views": 19346.0,
@@ -7638,8 +7638,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-05T20:42:31+09:00",
-      "fetched_at": "2026-11-05T11:51:18.500Z",
+      "source_at": "2026-11-05T20:57:31+09:00",
+      "fetched_at": "2026-11-05T12:07:30.345Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8214,6 +8214,6 @@
       "targets": {}
     }
   ],
-  "revision": "cfa2d4206e5d206f",
-  "updated_at": "2026-11-05T20:51:15+09:00"
+  "revision": "6d953cb32a417667",
+  "updated_at": "2026-11-05T21:07:22+09:00"
 }
