@@ -1747,6 +1747,48 @@
       "period": "원본 전체 기간 누적",
       "people": [
         {
+          "key": "marketing:DfW4zlfTyOA",
+          "id": "hndoldol",
+          "name": "양현선",
+          "person_id": "marketing:person:mcv9XV8gTebY0NljxIKA",
+          "url": "https://www.instagram.com/hndoldol/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 70000.0,
+          "secondary_cost": null,
+          "content_cost": 70000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-05",
+          "post_url": "https://www.instagram.com/reel/DfW4zlfTyOA/",
+          "measured": "2026-11-05",
+          "views": 1.0,
+          "likes": 0.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 1.0,
+          "windows": {
+            "latest": {
+              "views": 1.0,
+              "likes": 0.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 1.0,
+              "at": "2026-11-05T20:12:31+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:DfNDjPuSG4z",
           "id": "thingbyhy",
           "name": "양현선",
@@ -1919,19 +1961,19 @@
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHbWuCB6iV/",
           "measured": "2026-11-05",
-          "views": 5518.0,
+          "views": 5523.0,
           "likes": 28.0,
           "comments": 2.0,
           "shares": 78.0,
           "saves": 48.0,
           "windows": {
             "latest": {
-              "views": 5518.0,
+              "views": 5523.0,
               "likes": 28.0,
               "comments": 2.0,
               "shares": 78.0,
               "saves": 48.0,
-              "at": "2026-11-05T14:12:32+09:00"
+              "at": "2026-11-05T20:12:31+09:00"
             },
             "48h": {
               "views": 3712.0,
@@ -7588,8 +7630,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-05T18:42:32+09:00",
-      "fetched_at": "2026-11-05T11:03:19.898Z",
+      "source_at": "2026-11-05T20:12:31+09:00",
+      "fetched_at": "2026-11-05T11:19:19.114Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8164,6 +8206,6 @@
       "targets": {}
     }
   ],
-  "revision": "728ba6319dd0eadc",
-  "updated_at": "2026-11-05T20:13:16+09:00"
+  "revision": "b18e15062cb89ae6",
+  "updated_at": "2026-11-05T20:19:16+09:00"
 }
