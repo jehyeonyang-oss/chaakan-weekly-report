@@ -1769,19 +1769,19 @@
           "upload": "2026-11-05",
           "post_url": "https://www.instagram.com/reel/DfW4zlfTyOA/",
           "measured": "2026-11-06",
-          "views": 1268.0,
+          "views": 1278.0,
           "likes": 10.0,
           "comments": 3.0,
           "shares": 4.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 1268.0,
+              "views": 1278.0,
               "likes": 10.0,
               "comments": 3.0,
               "shares": 4.0,
               "saves": 9.0,
-              "at": "2026-11-06T00:12:31+09:00"
+              "at": "2026-11-06T00:42:31+09:00"
             }
           },
           "revenue": null,
@@ -1810,20 +1810,20 @@
           "exp_ss": null,
           "upload": "2026-11-02",
           "post_url": "https://www.instagram.com/reel/DfNDjPuSG4z/",
-          "measured": "2026-11-05",
-          "views": 1498.0,
+          "measured": "2026-11-06",
+          "views": 1501.0,
           "likes": 17.0,
           "comments": 1.0,
           "shares": 4.0,
           "saves": 10.0,
           "windows": {
             "latest": {
-              "views": 1498.0,
+              "views": 1501.0,
               "likes": 17.0,
               "comments": 1.0,
               "shares": 4.0,
               "saves": 10.0,
-              "at": "2026-11-05T18:42:32+09:00"
+              "at": "2026-11-06T00:42:31+09:00"
             },
             "48h": {
               "views": 1480.0,
@@ -7638,8 +7638,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-06T00:12:36+09:00",
-      "fetched_at": "2026-11-05T15:35:18.971Z",
+      "source_at": "2026-11-06T00:42:31+09:00",
+      "fetched_at": "2026-11-05T15:51:18.563Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8214,6 +8214,6 @@
       "targets": {}
     }
   ],
-  "revision": "dc7ef9b621443522",
-  "updated_at": "2026-11-06T00:41:16+09:00"
+  "revision": "30a67d35538ee231",
+  "updated_at": "2026-11-06T00:51:16+09:00"
 }
