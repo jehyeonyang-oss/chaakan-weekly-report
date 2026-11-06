@@ -1480,19 +1480,19 @@
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfZJsNWyFyb/",
           "measured": "2026-11-06",
-          "views": 137.0,
-          "likes": 7.0,
-          "comments": 1.0,
+          "views": 144.0,
+          "likes": 8.0,
+          "comments": 2.0,
           "shares": 1.0,
-          "saves": 4.0,
+          "saves": 5.0,
           "windows": {
             "latest": {
-              "views": 137.0,
-              "likes": 7.0,
-              "comments": 1.0,
+              "views": 144.0,
+              "likes": 8.0,
+              "comments": 2.0,
               "shares": 1.0,
-              "saves": 4.0,
-              "at": "2026-11-06T19:57:31+09:00"
+              "saves": 5.0,
+              "at": "2026-11-06T20:27:31+09:00"
             }
           },
           "revenue": null,
@@ -1779,20 +1779,20 @@
           "exp_ss": null,
           "upload": "2026-10-29",
           "post_url": "https://www.instagram.com/reel/DfE47FzzuUt/",
-          "measured": "2026-11-05",
-          "views": 736.0,
+          "measured": "2026-11-06",
+          "views": 762.0,
           "likes": 12.0,
-          "comments": 16.0,
+          "comments": 18.0,
           "shares": 5.0,
           "saves": 8.0,
           "windows": {
             "latest": {
-              "views": 736.0,
+              "views": 762.0,
               "likes": 12.0,
-              "comments": 16.0,
+              "comments": 18.0,
               "shares": 5.0,
               "saves": 8.0,
-              "at": "2026-11-05T20:27:31+09:00"
+              "at": "2026-11-06T20:27:31+09:00"
             },
             "48h": {
               "views": 491.0,
@@ -7497,8 +7497,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-06T20:12:31+09:00",
-      "fetched_at": "2026-11-06T11:19:18.131Z",
+      "source_at": "2026-11-06T20:27:31+09:00",
+      "fetched_at": "2026-11-06T11:35:17.895Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8073,6 +8073,6 @@
       "targets": {}
     }
   ],
-  "revision": "cb36222a5a09b7f6",
-  "updated_at": "2026-11-06T20:19:15+09:00"
+  "revision": "ff9932d0031472e6",
+  "updated_at": "2026-11-06T20:35:15+09:00"
 }
