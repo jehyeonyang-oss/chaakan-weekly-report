@@ -1451,7 +1451,7 @@
           "url": "https://www.instagram.com/thingbyhy/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "방한화 모음 콘텐츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1466,19 +1466,19 @@
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfZJsNWyFyb/",
           "measured": "2026-11-06",
-          "views": 10.0,
-          "likes": 4.0,
+          "views": 75.0,
+          "likes": 6.0,
           "comments": 0.0,
           "shares": 0.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 10.0,
-              "likes": 4.0,
+              "views": 75.0,
+              "likes": 6.0,
               "comments": 0.0,
               "shares": 0.0,
               "saves": 4.0,
-              "at": "2026-11-06T17:27:31+09:00"
+              "at": "2026-11-06T17:57:32+09:00"
             }
           },
           "revenue": null,
@@ -1650,19 +1650,19 @@
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHMWdByse6/",
           "measured": "2026-11-06",
-          "views": 2570.0,
+          "views": 2573.0,
           "likes": 15.0,
           "comments": 0.0,
           "shares": 10.0,
           "saves": 14.0,
           "windows": {
             "latest": {
-              "views": 2570.0,
+              "views": 2573.0,
               "likes": 15.0,
               "comments": 0.0,
               "shares": 10.0,
               "saves": 14.0,
-              "at": "2026-11-06T12:12:31+09:00"
+              "at": "2026-11-06T17:57:32+09:00"
             },
             "48h": {
               "views": 2502.0,
@@ -1671,6 +1671,14 @@
               "shares": 10.0,
               "saves": 13.0,
               "at": "2026-11-01T17:57:33+09:00"
+            },
+            "7d": {
+              "views": 2573.0,
+              "likes": 15.0,
+              "comments": 0.0,
+              "shares": 10.0,
+              "saves": 14.0,
+              "at": "2026-11-06T17:57:32+09:00"
             }
           },
           "revenue": null,
@@ -7467,8 +7475,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-06T17:42:31+09:00",
-      "fetched_at": "2026-11-06T08:55:19.030Z",
+      "source_at": "2026-11-06T17:57:32+09:00",
+      "fetched_at": "2026-11-06T09:11:18.873Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8043,6 +8051,6 @@
       "targets": {}
     }
   ],
-  "revision": "48f89fb9aa257b30",
-  "updated_at": "2026-11-06T17:55:15+09:00"
+  "revision": "633798b1e01e8465",
+  "updated_at": "2026-11-06T18:11:15+09:00"
 }
