@@ -1473,19 +1473,19 @@
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfZJsNWyFyb/",
           "measured": "2026-11-06",
-          "views": 75.0,
-          "likes": 6.0,
-          "comments": 0.0,
-          "shares": 0.0,
+          "views": 115.0,
+          "likes": 7.0,
+          "comments": 1.0,
+          "shares": 1.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 75.0,
-              "likes": 6.0,
-              "comments": 0.0,
-              "shares": 0.0,
+              "views": 115.0,
+              "likes": 7.0,
+              "comments": 1.0,
+              "shares": 1.0,
               "saves": 4.0,
-              "at": "2026-11-06T17:57:32+09:00"
+              "at": "2026-11-06T18:27:31+09:00"
             }
           },
           "revenue": null,
@@ -1515,19 +1515,19 @@
           "upload": "2026-11-05",
           "post_url": "https://www.instagram.com/reel/DfW4zlfTyOA/",
           "measured": "2026-11-06",
-          "views": 1411.0,
+          "views": 1419.0,
           "likes": 12.0,
           "comments": 4.0,
           "shares": 4.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 1411.0,
+              "views": 1419.0,
               "likes": 12.0,
               "comments": 4.0,
               "shares": 4.0,
               "saves": 9.0,
-              "at": "2026-11-06T17:42:31+09:00"
+              "at": "2026-11-06T18:42:31+09:00"
             }
           },
           "revenue": null,
@@ -1557,19 +1557,19 @@
           "upload": "2026-11-02",
           "post_url": "https://www.instagram.com/reel/DfNDjPuSG4z/",
           "measured": "2026-11-06",
-          "views": 1504.0,
-          "likes": 17.0,
+          "views": 1509.0,
+          "likes": 18.0,
           "comments": 1.0,
           "shares": 4.0,
           "saves": 10.0,
           "windows": {
             "latest": {
-              "views": 1504.0,
-              "likes": 17.0,
+              "views": 1509.0,
+              "likes": 18.0,
               "comments": 1.0,
               "shares": 4.0,
               "saves": 10.0,
-              "at": "2026-11-06T12:42:32+09:00"
+              "at": "2026-11-06T18:42:31+09:00"
             },
             "48h": {
               "views": 1480.0,
@@ -3270,20 +3270,20 @@
           "exp_ss": null,
           "upload": "2026-10-14",
           "post_url": "https://www.instagram.com/reel/DeeFGwuhG1_/",
-          "measured": "2026-11-05",
-          "views": 2013.0,
+          "measured": "2026-11-06",
+          "views": 2016.0,
           "likes": 28.0,
           "comments": 0.0,
           "shares": 1.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 2013.0,
+              "views": 2016.0,
               "likes": 28.0,
               "comments": 0.0,
               "shares": 1.0,
               "saves": 9.0,
-              "at": "2026-11-05T18:42:32+09:00"
+              "at": "2026-11-06T18:42:31+09:00"
             },
             "48h": {
               "views": 1214.0,
@@ -7482,8 +7482,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-06T18:12:31+09:00",
-      "fetched_at": "2026-11-06T09:27:18.678Z",
+      "source_at": "2026-11-06T18:42:31+09:00",
+      "fetched_at": "2026-11-06T09:43:18.326Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8058,6 +8058,6 @@
       "targets": {}
     }
   ],
-  "revision": "9519d0aaba1da4db",
-  "updated_at": "2026-11-06T18:27:15+09:00"
+  "revision": "3c8d234e7b4daa5e",
+  "updated_at": "2026-11-06T18:43:15+09:00"
 }
