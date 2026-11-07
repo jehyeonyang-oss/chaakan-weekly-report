@@ -1527,7 +1527,7 @@
               "comments": 10.0,
               "shares": 1.0,
               "saves": 5.0,
-              "at": "2026-11-08T06:27:31+09:00"
+              "at": "2026-11-08T07:27:31+09:00"
             }
           },
           "revenue": null,
@@ -7548,8 +7548,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-08T06:42:32+09:00",
-      "fetched_at": "2026-11-07T22:15:17.989Z",
+      "source_at": "2026-11-08T07:27:31+09:00",
+      "fetched_at": "2026-11-07T22:31:18.389Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8124,6 +8124,6 @@
       "targets": {}
     }
   ],
-  "revision": "3f1d2ffad10fa804",
-  "updated_at": "2026-11-08T07:15:15+09:00"
+  "revision": "0a1df89a9dd20a95",
+  "updated_at": "2026-11-08T07:31:15+09:00"
 }
