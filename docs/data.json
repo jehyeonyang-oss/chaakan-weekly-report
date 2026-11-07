@@ -301,7 +301,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-31~2026-11-07",
+          "revenue_window": "2026-10-31~2026-11-08",
           "source": "live"
         },
         {
@@ -398,7 +398,7 @@
           },
           "revenue": 1266560,
           "purchases": 17,
-          "revenue_window": "2026-10-30~2026-11-07",
+          "revenue_window": "2026-10-30~2026-11-08",
           "source": "live"
         },
         {
@@ -495,7 +495,7 @@
           },
           "revenue": 182160,
           "purchases": 3,
-          "revenue_window": "2026-11-02~2026-11-07",
+          "revenue_window": "2026-11-02~2026-11-08",
           "source": "live"
         },
         {
@@ -564,7 +564,7 @@
           },
           "revenue": 153760,
           "purchases": 3,
-          "revenue_window": "2026-10-30~2026-11-07",
+          "revenue_window": "2026-10-30~2026-11-08",
           "source": "live"
         },
         {
@@ -626,7 +626,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-01~2026-11-07",
+          "revenue_window": "2026-11-01~2026-11-08",
           "source": "live"
         },
         {
@@ -695,7 +695,7 @@
           },
           "revenue": 79920,
           "purchases": 1,
-          "revenue_window": "2026-10-31~2026-11-07",
+          "revenue_window": "2026-10-31~2026-11-08",
           "source": "live"
         },
         {
@@ -790,9 +790,9 @@
               "at": 1793707219512
             }
           },
-          "revenue": 503280,
-          "purchases": 9,
-          "revenue_window": "2026-11-01~2026-11-07",
+          "revenue": 559200,
+          "purchases": 10,
+          "revenue_window": "2026-11-01~2026-11-08",
           "source": "live"
         },
         {
@@ -8116,6 +8116,6 @@
       "targets": {}
     }
   ],
-  "revision": "c8160d6d2d29b7bf",
-  "updated_at": "2026-11-08T00:03:15+09:00"
+  "revision": "22b0ff52f33dd4d5",
+  "updated_at": "2026-11-08T00:11:15+09:00"
 }
