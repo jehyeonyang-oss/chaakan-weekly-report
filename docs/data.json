@@ -1500,6 +1500,48 @@
       "period": "원본 전체 기간 누적",
       "people": [
         {
+          "key": "marketing:DfeRRbnBNxi",
+          "id": "codussx",
+          "name": "김채연",
+          "person_id": "marketing:person:aTZarXSUz1wU5NBDfJEn",
+          "url": "https://www.instagram.com/codussx/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 60000.0,
+          "secondary_cost": null,
+          "content_cost": 60000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-08",
+          "post_url": "https://www.instagram.com/reel/DfeRRbnBNxi/",
+          "measured": "2026-11-08",
+          "views": 0.0,
+          "likes": 0.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 0.0,
+          "windows": {
+            "latest": {
+              "views": 0.0,
+              "likes": 0.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 0.0,
+              "at": "2026-11-08T17:12:31+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:DfZJsNWyFyb",
           "id": "thingbyhy",
           "name": "양현선",
@@ -7555,8 +7597,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-08T16:42:35+09:00",
-      "fetched_at": "2026-11-08T08:07:18.653Z",
+      "source_at": "2026-11-08T17:12:31+09:00",
+      "fetched_at": "2026-11-08T08:23:17.219Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8131,6 +8173,6 @@
       "targets": {}
     }
   ],
-  "revision": "fb4123d3e192150c",
-  "updated_at": "2026-11-08T17:11:15+09:00"
+  "revision": "34d979b6979014a0",
+  "updated_at": "2026-11-08T17:23:14+09:00"
 }
