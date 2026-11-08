@@ -1507,7 +1507,7 @@
           "url": "https://www.instagram.com/hndoldol/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "블래티 슬라우치 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -7648,7 +7648,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-08T19:42:31+09:00",
-      "fetched_at": "2026-11-08T10:47:17.753Z",
+      "fetched_at": "2026-11-08T11:03:17.957Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8223,6 +8223,6 @@
       "targets": {}
     }
   ],
-  "revision": "0a04e034dd571fe3",
-  "updated_at": "2026-11-08T19:47:15+09:00"
+  "revision": "01c61e52e97f99b5",
+  "updated_at": "2026-11-08T20:03:15+09:00"
 }
