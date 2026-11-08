@@ -403,8 +403,8 @@
               "at": 1793960717373
             }
           },
-          "revenue": 1266560,
-          "purchases": 17,
+          "revenue": 1338480,
+          "purchases": 18,
           "revenue_window": "2026-10-30~2026-11-08",
           "source": "live"
         },
@@ -8131,6 +8131,6 @@
       "targets": {}
     }
   ],
-  "revision": "df2d4c76daadcbf0",
-  "updated_at": "2026-11-08T17:07:15+09:00"
+  "revision": "fb4123d3e192150c",
+  "updated_at": "2026-11-08T17:11:15+09:00"
 }
