@@ -1522,19 +1522,19 @@
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/Dfef3bjzG-A/",
           "measured": "2026-11-08",
-          "views": 191.0,
+          "views": 201.0,
           "likes": 5.0,
           "comments": 1.0,
           "shares": 2.0,
           "saves": 6.0,
           "windows": {
             "latest": {
-              "views": 191.0,
+              "views": 201.0,
               "likes": 5.0,
               "comments": 1.0,
               "shares": 2.0,
               "saves": 6.0,
-              "at": "2026-11-08T20:12:31+09:00"
+              "at": "2026-11-08T20:42:31+09:00"
             }
           },
           "revenue": null,
@@ -1564,19 +1564,19 @@
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/DfeRRbnBNxi/",
           "measured": "2026-11-08",
-          "views": 1215.0,
-          "likes": 7.0,
+          "views": 1222.0,
+          "likes": 8.0,
           "comments": 0.0,
           "shares": 4.0,
           "saves": 5.0,
           "windows": {
             "latest": {
-              "views": 1215.0,
-              "likes": 7.0,
+              "views": 1222.0,
+              "likes": 8.0,
               "comments": 0.0,
               "shares": 4.0,
               "saves": 5.0,
-              "at": "2026-11-08T20:12:31+09:00"
+              "at": "2026-11-08T20:42:31+09:00"
             }
           },
           "revenue": null,
@@ -7647,8 +7647,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-08T20:27:31+09:00",
-      "fetched_at": "2026-11-08T11:35:18.646Z",
+      "source_at": "2026-11-08T20:42:31+09:00",
+      "fetched_at": "2026-11-08T11:51:18.047Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8223,6 +8223,6 @@
       "targets": {}
     }
   ],
-  "revision": "7ca559df00f54780",
-  "updated_at": "2026-11-08T20:35:16+09:00"
+  "revision": "51a8c92b87b58473",
+  "updated_at": "2026-11-08T20:51:15+09:00"
 }
