@@ -196,7 +196,7 @@
           "planned_upload": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey_FiYy12f/",
-          "measured": "2026-11-07",
+          "measured": "2026-11-08",
           "views": null,
           "likes": 3.0,
           "comments": 39.0,
@@ -218,7 +218,7 @@
               "comments": 33.0,
               "shares": null,
               "saves": null,
-              "at": 1794040812369
+              "at": 1794127214291
             },
             "14d": {
               "views": null,
@@ -226,7 +226,7 @@
               "comments": 39.0,
               "shares": null,
               "saves": null,
-              "at": 1794040814186
+              "at": 1794127215891
             },
             "latest": {
               "views": null,
@@ -234,7 +234,7 @@
               "comments": 39.0,
               "shares": null,
               "saves": null,
-              "at": 1794040814186
+              "at": 1794127215891
             }
           },
           "revenue": 0,
@@ -661,7 +661,7 @@
           "post_url": "https://www.instagram.com/reel/DfJ_IItTUrJ/",
           "measured": "2026-11-07",
           "views": 6772.0,
-          "likes": null,
+          "likes": 3.0,
           "comments": 44.0,
           "shares": null,
           "saves": 38.0,
@@ -684,7 +684,7 @@
             },
             "7d": {
               "views": 6772.0,
-              "likes": null,
+              "likes": 3.0,
               "comments": 44.0,
               "shares": null,
               "saves": 38.0,
@@ -693,7 +693,7 @@
             "14d": null,
             "latest": {
               "views": 6772.0,
-              "likes": null,
+              "likes": 3.0,
               "comments": 44.0,
               "shares": null,
               "saves": 38.0,
@@ -1507,7 +1507,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "클로이 퍼안감 첼시 방한 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1771,20 +1771,20 @@
           "exp_ss": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHMWdByse6/",
-          "measured": "2026-11-07",
-          "views": 2587.0,
+          "measured": "2026-11-08",
+          "views": 2599.0,
           "likes": 16.0,
           "comments": 0.0,
           "shares": 11.0,
           "saves": 14.0,
           "windows": {
             "latest": {
-              "views": 2587.0,
+              "views": 2599.0,
               "likes": 16.0,
               "comments": 0.0,
               "shares": 11.0,
               "saves": 14.0,
-              "at": "2026-11-07T17:57:32+09:00"
+              "at": "2026-11-08T17:57:31+09:00"
             },
             "48h": {
               "views": 2502.0,
@@ -7605,8 +7605,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-08T17:42:31+09:00",
-      "fetched_at": "2026-11-08T08:55:17.800Z",
+      "source_at": "2026-11-08T17:57:31+09:00",
+      "fetched_at": "2026-11-08T09:11:18.822Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8181,6 +8181,6 @@
       "targets": {}
     }
   ],
-  "revision": "c39aa973cd4f9dc7",
-  "updated_at": "2026-11-08T17:55:15+09:00"
+  "revision": "dd3297706ddff864",
+  "updated_at": "2026-11-08T18:11:15+09:00"
 }
