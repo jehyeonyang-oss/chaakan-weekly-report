@@ -763,12 +763,12 @@
           "planned_upload": null,
           "upload": "2026-11-01",
           "post_url": "https://www.instagram.com/reel/DfMrQ14SbIf/",
-          "measured": "2026-11-03",
-          "views": 109000.0,
-          "likes": 1527.0,
-          "comments": 700.0,
-          "shares": 1712.0,
-          "saves": 1750.0,
+          "measured": "2026-11-08",
+          "views": 117000.0,
+          "likes": 1614.0,
+          "comments": 844.0,
+          "shares": 1894.0,
+          "saves": 1933.0,
           "windows": {
             "24h": {
               "views": 94000.0,
@@ -786,15 +786,22 @@
               "saves": 1750.0,
               "at": 1793707219512
             },
-            "7d": null,
+            "7d": {
+              "views": 117000.0,
+              "likes": 1614.0,
+              "comments": 844.0,
+              "shares": 1894.0,
+              "saves": 1933.0,
+              "at": 1794139517556
+            },
             "14d": null,
             "latest": {
-              "views": 109000.0,
-              "likes": 1527.0,
-              "comments": 700.0,
-              "shares": 1712.0,
-              "saves": 1750.0,
-              "at": 1793707219512
+              "views": 117000.0,
+              "likes": 1614.0,
+              "comments": 844.0,
+              "shares": 1894.0,
+              "saves": 1933.0,
+              "at": 1794139517556
             }
           },
           "revenue": 671040,
@@ -1490,7 +1497,7 @@
       "targets": {},
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
-      "source_at": "2026-11-08T08:41:39.322008+00:00",
+      "source_at": "2026-11-08T12:06:15.629497+00:00",
       "source_state": "ok"
     },
     {
@@ -8223,6 +8230,6 @@
       "targets": {}
     }
   ],
-  "revision": "6c09e44459c35848",
-  "updated_at": "2026-11-08T21:07:15+09:00"
+  "revision": "6189cdd30822e0c7",
+  "updated_at": "2026-11-08T21:15:15+09:00"
 }
