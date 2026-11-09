@@ -126,7 +126,7 @@
           "free": false,
           "price": null,
           "fee_label": "60만 (2차 3개월 포함)",
-          "content_cost": 600000,
+          "content_cost": null,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -8349,6 +8349,6 @@
       "targets": {}
     }
   ],
-  "revision": "6c8f2b7c02217924",
-  "updated_at": "2026-11-09T12:39:17+09:00"
+  "revision": "f4f923de407e4f98",
+  "updated_at": "2026-11-09T12:41:19+09:00"
 }
