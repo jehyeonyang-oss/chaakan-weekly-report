@@ -1586,19 +1586,19 @@
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/Dfef3bjzG-A/",
           "measured": "2026-11-09",
-          "views": 450.0,
+          "views": 455.0,
           "likes": 8.0,
           "comments": 5.0,
           "shares": 2.0,
-          "saves": 7.0,
+          "saves": 8.0,
           "windows": {
             "latest": {
-              "views": 450.0,
+              "views": 455.0,
               "likes": 8.0,
               "comments": 5.0,
               "shares": 2.0,
-              "saves": 7.0,
-              "at": "2026-11-09T17:42:31+09:00"
+              "saves": 8.0,
+              "at": "2026-11-09T18:42:31+09:00"
             }
           },
           "revenue": null,
@@ -3507,20 +3507,20 @@
           "exp_ss": null,
           "upload": "2026-10-14",
           "post_url": "https://www.instagram.com/reel/DeeFGwuhG1_/",
-          "measured": "2026-11-08",
-          "views": 2022.0,
+          "measured": "2026-11-09",
+          "views": 2025.0,
           "likes": 28.0,
           "comments": 0.0,
           "shares": 1.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 2022.0,
+              "views": 2025.0,
               "likes": 28.0,
               "comments": 0.0,
               "shares": 1.0,
               "saves": 9.0,
-              "at": "2026-11-08T18:42:31+09:00"
+              "at": "2026-11-09T18:42:31+09:00"
             },
             "48h": {
               "views": 1214.0,
@@ -7774,7 +7774,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-09T18:42:37+09:00",
-      "fetched_at": "2026-11-09T09:43:19.351Z",
+      "fetched_at": "2026-11-09T09:59:22.575Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8349,6 +8349,6 @@
       "targets": {}
     }
   ],
-  "revision": "357b2018d6d15aa4",
-  "updated_at": "2026-11-09T18:49:15+09:00"
+  "revision": "85e116ad39755617",
+  "updated_at": "2026-11-09T18:59:20+09:00"
 }
