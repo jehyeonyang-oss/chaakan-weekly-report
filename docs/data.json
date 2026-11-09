@@ -403,8 +403,8 @@
               "at": 1793960717373
             }
           },
-          "revenue": 1482320,
-          "purchases": 20,
+          "revenue": 1554240,
+          "purchases": 21,
           "revenue_window": "2026-10-30~2026-11-09",
           "source": "live"
         },
@@ -466,12 +466,12 @@
           "planned_upload": null,
           "upload": "2026-11-02",
           "post_url": "https://www.instagram.com/reel/DfPAY7LPRIU/",
-          "measured": "2026-11-04",
-          "views": 41000.0,
-          "likes": 3.0,
-          "comments": 209.0,
-          "shares": 471.0,
-          "saves": 388.0,
+          "measured": "2026-11-09",
+          "views": 52000.0,
+          "likes": null,
+          "comments": 266.0,
+          "shares": 623.0,
+          "saves": 496.0,
           "windows": {
             "24h": {
               "views": 34000.0,
@@ -489,15 +489,22 @@
               "saves": 388.0,
               "at": 1793785519510
             },
-            "7d": null,
+            "7d": {
+              "views": 52000.0,
+              "likes": null,
+              "comments": 266.0,
+              "shares": 623.0,
+              "saves": 496.0,
+              "at": 1794217518894
+            },
             "14d": null,
             "latest": {
-              "views": 41000.0,
-              "likes": 3.0,
-              "comments": 209.0,
-              "shares": 471.0,
-              "saves": 388.0,
-              "at": 1793785519510
+              "views": 52000.0,
+              "likes": null,
+              "comments": 266.0,
+              "shares": 623.0,
+              "saves": 496.0,
+              "at": 1794217518894
             }
           },
           "revenue": 182160,
@@ -8349,6 +8356,6 @@
       "targets": {}
     }
   ],
-  "revision": "85e116ad39755617",
-  "updated_at": "2026-11-09T18:59:20+09:00"
+  "revision": "4191f69bce5b8ffb",
+  "updated_at": "2026-11-09T19:13:15+09:00"
 }
