@@ -1655,7 +1655,7 @@
           "url": "https://www.instagram.com/thingbyhy/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "방한화 모음 콘텐츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -7774,7 +7774,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-09T15:42:31+09:00",
-      "fetched_at": "2026-11-09T06:47:17.612Z",
+      "fetched_at": "2026-11-09T07:03:17.827Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8349,6 +8349,6 @@
       "targets": {}
     }
   ],
-  "revision": "c83d8e8d12de1ecb",
-  "updated_at": "2026-11-09T15:47:15+09:00"
+  "revision": "267028bedcf07b2a",
+  "updated_at": "2026-11-09T16:03:15+09:00"
 }
