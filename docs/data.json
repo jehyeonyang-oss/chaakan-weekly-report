@@ -1571,7 +1571,7 @@
           "url": "https://www.instagram.com/hndoldol/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "블래티 슬라우치 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1655,7 +1655,7 @@
           "url": "https://www.instagram.com/thingbyhy/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "방한화 모음 콘텐츠",
+          "product": "",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1705,7 +1705,7 @@
           "url": "https://www.instagram.com/hndoldol/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "파라 키높이 스트랩 메리제인 플랫",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -7774,7 +7774,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-09T14:42:31+09:00",
-      "fetched_at": "2026-11-09T05:59:17.318Z",
+      "fetched_at": "2026-11-09T06:15:18.552Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8349,6 +8349,6 @@
       "targets": {}
     }
   ],
-  "revision": "7a026e18f92ee3e9",
-  "updated_at": "2026-11-09T14:59:15+09:00"
+  "revision": "9e9699f865203363",
+  "updated_at": "2026-11-09T15:15:15+09:00"
 }
