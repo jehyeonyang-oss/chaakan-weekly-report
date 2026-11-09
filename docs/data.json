@@ -1514,6 +1514,48 @@
       "period": "원본 전체 기간 누적",
       "people": [
         {
+          "key": "marketing:Dff-U12B6NU",
+          "id": "codussx",
+          "name": "김채연",
+          "person_id": "marketing:person:aTZarXSUz1wU5NBDfJEn",
+          "url": "https://www.instagram.com/codussx/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 60000.0,
+          "secondary_cost": null,
+          "content_cost": 60000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-09",
+          "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
+          "measured": "2026-11-09",
+          "views": 0.0,
+          "likes": 0.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 0.0,
+          "windows": {
+            "latest": {
+              "views": 0.0,
+              "likes": 0.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 0.0,
+              "at": "2026-11-09T08:57:31+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:Dfef3bjzG-A",
           "id": "hndoldol",
           "name": "양현선",
@@ -1563,7 +1605,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "클로이 퍼안감 첼시 방한 부츠",
+          "product": "",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -7723,8 +7765,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-09T08:42:32+09:00",
-      "fetched_at": "2026-11-08T23:51:17.580Z",
+      "source_at": "2026-11-09T08:57:31+09:00",
+      "fetched_at": "2026-11-09T00:07:47.980Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8299,6 +8341,6 @@
       "targets": {}
     }
   ],
-  "revision": "726c21e696953671",
-  "updated_at": "2026-11-09T08:51:15+09:00"
+  "revision": "d54b2311d0d3929c",
+  "updated_at": "2026-11-09T09:07:37+09:00"
 }
