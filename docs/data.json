@@ -1544,19 +1544,19 @@
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
           "measured": "2026-11-09",
-          "views": 1153.0,
+          "views": 1156.0,
           "likes": 2.0,
           "comments": 0.0,
           "shares": 6.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 1153.0,
+              "views": 1156.0,
               "likes": 2.0,
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-09T13:27:31+09:00"
+              "at": "2026-11-09T13:57:32+09:00"
             }
           },
           "revenue": null,
@@ -1571,7 +1571,7 @@
           "url": "https://www.instagram.com/hndoldol/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "블래티 슬라우치 부츠",
+          "product": "",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1705,7 +1705,7 @@
           "url": "https://www.instagram.com/hndoldol/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "파라 키높이 스트랩 메리제인 플랫",
+          "product": "",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -7773,8 +7773,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-09T13:42:32+09:00",
-      "fetched_at": "2026-11-09T04:55:21.461Z",
+      "source_at": "2026-11-09T13:57:32+09:00",
+      "fetched_at": "2026-11-09T05:11:19.887Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8349,6 +8349,6 @@
       "targets": {}
     }
   ],
-  "revision": "d2741d80a4a3ef49",
-  "updated_at": "2026-11-09T13:55:17+09:00"
+  "revision": "7e07c0c4b93f4a37",
+  "updated_at": "2026-11-09T14:11:17+09:00"
 }
