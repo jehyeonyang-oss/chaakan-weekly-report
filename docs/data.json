@@ -1062,18 +1062,32 @@
           "planned_upload": null,
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/DfhAUTxxbD-/",
-          "measured": null,
-          "views": null,
+          "measured": "2026-11-10",
+          "views": 5097.0,
           "likes": null,
-          "comments": null,
+          "comments": 4.0,
           "shares": null,
-          "saves": null,
+          "saves": 25.0,
           "windows": {
-            "24h": null,
+            "24h": {
+              "views": 5097.0,
+              "likes": null,
+              "comments": 4.0,
+              "shares": null,
+              "saves": 25.0,
+              "at": 1794303020900
+            },
             "48h": null,
             "7d": null,
             "14d": null,
-            "latest": null
+            "latest": {
+              "views": 5097.0,
+              "likes": null,
+              "comments": 4.0,
+              "shares": null,
+              "saves": 25.0,
+              "at": 1794303020900
+            }
           },
           "revenue": 0,
           "purchases": 0,
@@ -8442,6 +8456,6 @@
       "targets": {}
     }
   ],
-  "revision": "f74f9899f26b0ee4",
-  "updated_at": "2026-11-10T18:43:15+09:00"
+  "revision": "598531ce70a7ac8b",
+  "updated_at": "2026-11-10T18:53:15+09:00"
 }
