@@ -1075,9 +1075,9 @@
             "14d": null,
             "latest": null
           },
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "revenue": 0,
+          "purchases": 0,
+          "revenue_window": "2026-11-09~2026-11-10",
           "source": "live"
         },
         {
@@ -7859,7 +7859,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-10T10:12:45+09:00",
-      "fetched_at": "2026-11-10T01:27:18.891Z",
+      "fetched_at": "2026-11-10T01:43:18.992Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8434,6 +8434,6 @@
       "targets": {}
     }
   ],
-  "revision": "1b203dff636297e4",
-  "updated_at": "2026-11-10T10:27:16+09:00"
+  "revision": "e7cdf6005b0f971d",
+  "updated_at": "2026-11-10T10:43:16+09:00"
 }
