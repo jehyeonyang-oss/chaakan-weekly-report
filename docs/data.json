@@ -1049,8 +1049,8 @@
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
-          "status": "진행확정",
-          "stage": "⑤",
+          "status": "게시완료",
+          "stage": "⑦",
           "free": true,
           "price": null,
           "fee_label": "무가 (제품제공)",
@@ -1060,8 +1060,8 @@
           "shoot": null,
           "store": "",
           "planned_upload": null,
-          "upload": null,
-          "post_url": "",
+          "upload": "2026-11-09",
+          "post_url": "https://www.instagram.com/reel/DfhAUTxxbD-/",
           "measured": null,
           "views": null,
           "likes": null,
@@ -1519,7 +1519,7 @@
       "targets": {},
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
-      "source_at": "2026-11-09T21:49:54.459292+00:00",
+      "source_at": "2026-11-10T00:26:38.841037+00:00",
       "source_state": "ok"
     },
     {
@@ -8428,6 +8428,6 @@
       "targets": {}
     }
   ],
-  "revision": "e0191047c0a16329",
-  "updated_at": "2026-11-10T09:23:16+09:00"
+  "revision": "cc01f8753970431e",
+  "updated_at": "2026-11-10T09:31:16+09:00"
 }
