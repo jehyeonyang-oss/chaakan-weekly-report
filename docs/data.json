@@ -168,8 +168,8 @@
               "at": 1794281137778
             }
           },
-          "revenue": 69900,
-          "purchases": 1,
+          "revenue": 138800,
+          "purchases": 2,
           "revenue_window": "2026-11-06~2026-11-11",
           "source": "live"
         },
@@ -818,8 +818,8 @@
               "at": 1794139517556
             }
           },
-          "revenue": 671040,
-          "purchases": 12,
+          "revenue": 726960,
+          "purchases": 13,
           "revenue_window": "2026-11-01~2026-11-11",
           "source": "live"
         },
@@ -7897,7 +7897,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-11T11:27:31+09:00",
-      "fetched_at": "2026-11-11T03:55:19.408Z",
+      "fetched_at": "2026-11-11T04:11:22.791Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8472,6 +8472,6 @@
       "targets": {}
     }
   ],
-  "revision": "9df5cdd36a3b9121",
-  "updated_at": "2026-11-11T12:55:16+09:00"
+  "revision": "ea581ed77472a874",
+  "updated_at": "2026-11-11T13:11:17+09:00"
 }
