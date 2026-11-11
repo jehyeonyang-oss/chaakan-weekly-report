@@ -1571,19 +1571,19 @@
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
           "measured": "2026-11-11",
-          "views": 1230.0,
+          "views": 1255.0,
           "likes": 2.0,
           "comments": 0.0,
           "shares": 6.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 1230.0,
+              "views": 1255.0,
               "likes": 2.0,
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-11T14:57:33+09:00"
+              "at": "2026-11-11T20:57:31+09:00"
             },
             "48h": {
               "views": 1215.0,
@@ -2975,20 +2975,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey5to7zwQd/",
-          "measured": "2026-11-10",
-          "views": 22565.0,
+          "measured": "2026-11-11",
+          "views": 22613.0,
           "likes": 216.0,
-          "comments": 60.0,
+          "comments": 63.0,
           "shares": 289.0,
-          "saves": 153.0,
+          "saves": 155.0,
           "windows": {
             "latest": {
-              "views": 22565.0,
+              "views": 22613.0,
               "likes": 216.0,
-              "comments": 60.0,
+              "comments": 63.0,
               "shares": 289.0,
-              "saves": 153.0,
-              "at": "2026-11-10T20:57:32+09:00"
+              "saves": 155.0,
+              "at": "2026-11-11T20:57:31+09:00"
             },
             "48h": {
               "views": 19346.0,
@@ -7896,8 +7896,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-11T20:27:31+09:00",
-      "fetched_at": "2026-11-11T11:43:26.940Z",
+      "source_at": "2026-11-11T20:57:31+09:00",
+      "fetched_at": "2026-11-11T11:59:20.116Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8472,6 +8472,6 @@
       "targets": {}
     }
   ],
-  "revision": "8c3892bac58b2112",
-  "updated_at": "2026-11-11T20:43:24+09:00"
+  "revision": "e791ec7545c31aad",
+  "updated_at": "2026-11-11T20:59:16+09:00"
 }
