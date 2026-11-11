@@ -1540,7 +1540,8 @@
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
       "source_at": "2026-11-10T21:34:53.590985+00:00",
-      "source_state": "ok"
+      "source_state": "error",
+      "source_message": "기존 운영 페이지를 불러오지 못해 마지막 정상 데이터를 표시합니다."
     },
     {
       "slug": "marketing",
@@ -8469,9 +8470,11 @@
         }
       ],
       "ads": [],
-      "targets": {}
+      "targets": {},
+      "source_state": "error",
+      "source_message": "해외시딩 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다."
     }
   ],
-  "revision": "baf64dc6484ed37e",
-  "updated_at": "2026-11-11T09:17:16+09:00"
+  "revision": "66320b43ae3d3003",
+  "updated_at": "2026-11-11T09:25:16+09:00"
 }
