@@ -196,12 +196,12 @@
           "planned_upload": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey_FiYy12f/",
-          "measured": "2026-11-10",
-          "views": null,
+          "measured": "2026-11-09",
+          "views": 5033.0,
           "likes": 3.0,
           "comments": 39.0,
-          "shares": null,
-          "saves": null,
+          "shares": 38.0,
+          "saves": 44.0,
           "windows": {
             "24h": null,
             "48h": {
@@ -220,21 +220,14 @@
               "saves": 44.0,
               "at": 1794197119573
             },
-            "14d": {
-              "views": null,
-              "likes": 3.0,
-              "comments": 39.0,
-              "shares": null,
-              "saves": null,
-              "at": 1794300017494
-            },
+            "14d": null,
             "latest": {
-              "views": null,
+              "views": 5033.0,
               "likes": 3.0,
               "comments": 39.0,
-              "shares": null,
-              "saves": null,
-              "at": 1794300017494
+              "shares": 38.0,
+              "saves": 44.0,
+              "at": 1794197119573
             }
           },
           "revenue": 0,
@@ -7897,7 +7890,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-11T14:57:33+09:00",
-      "fetched_at": "2026-11-11T07:55:22.035Z",
+      "fetched_at": "2026-11-11T08:11:20.266Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8472,6 +8465,6 @@
       "targets": {}
     }
   ],
-  "revision": "7e1eabf288f7642a",
-  "updated_at": "2026-11-11T17:03:16+09:00"
+  "revision": "21b36213db058688",
+  "updated_at": "2026-11-11T17:11:16+09:00"
 }
