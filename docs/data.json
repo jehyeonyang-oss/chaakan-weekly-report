@@ -7894,12 +7894,12 @@
         }
       ],
       "targets": {},
-      "source_url": "https://chaakan-creator-hub.web.app/",
-      "source_state": "ok",
-      "source_message": "",
       "source_at": "2026-11-11T22:27:31+09:00",
       "fetched_at": "2026-11-11T14:07:26.495Z",
-      "cost_basis": "marketing_source"
+      "cost_basis": "marketing_source",
+      "source_url": "https://chaakan-creator-hub.web.app/",
+      "source_state": "error",
+      "source_message": "마케팅 허브를 갱신하지 못해 마지막 정상 데이터를 표시합니다. 인증 상태를 확인해 주세요."
     },
     {
       "slug": "overseas",
@@ -8475,6 +8475,6 @@
       "source_message": "해외시딩 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다."
     }
   ],
-  "revision": "912bdd293a4c84b7",
-  "updated_at": "2026-11-11T23:17:16+09:00"
+  "revision": "f5d868ae4a6bcdb3",
+  "updated_at": "2026-11-11T23:23:16+09:00"
 }
