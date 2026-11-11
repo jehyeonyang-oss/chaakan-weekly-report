@@ -3,7 +3,7 @@
     {
       "slug": "content",
       "name": "콘텐츠기획",
-      "asof": "2026-11-11",
+      "asof": "2026-11-12",
       "period": "",
       "people": [
         {
@@ -1540,13 +1540,12 @@
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
       "source_at": "2026-11-11T12:16:21.449230+00:00",
-      "source_state": "error",
-      "source_message": "기존 운영 페이지를 불러오지 못해 마지막 정상 데이터를 표시합니다."
+      "source_state": "ok"
     },
     {
       "slug": "marketing",
       "name": "마케팅",
-      "asof": "2026-11-11",
+      "asof": "2026-11-12",
       "period": "원본 전체 기간 누적",
       "people": [
         {
@@ -1684,7 +1683,7 @@
               "comments": 0.0,
               "shares": 4.0,
               "saves": 5.0,
-              "at": "2026-11-11T17:12:31+09:00"
+              "at": "2026-11-11T23:12:32+09:00"
             },
             "48h": {
               "views": 1337.0,
@@ -1722,19 +1721,19 @@
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfZJsNWyFyb/",
           "measured": "2026-11-11",
-          "views": 287.0,
-          "likes": 14.0,
+          "views": 291.0,
+          "likes": 15.0,
           "comments": 11.0,
           "shares": 1.0,
           "saves": 5.0,
           "windows": {
             "latest": {
-              "views": 287.0,
-              "likes": 14.0,
+              "views": 291.0,
+              "likes": 15.0,
               "comments": 11.0,
               "shares": 1.0,
               "saves": 5.0,
-              "at": "2026-11-11T17:27:31+09:00"
+              "at": "2026-11-11T23:27:31+09:00"
             },
             "48h": {
               "views": 207.0,
@@ -1879,20 +1878,20 @@
           "exp_ss": null,
           "upload": "2026-11-01",
           "post_url": "https://www.instagram.com/reel/DfKbhTrBOvt/",
-          "measured": "2026-11-11",
-          "views": 2565.0,
+          "measured": "2026-11-12",
+          "views": 2573.0,
           "likes": 19.0,
           "comments": 0.0,
           "shares": 11.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 2565.0,
+              "views": 2573.0,
               "likes": 19.0,
               "comments": 0.0,
               "shares": 11.0,
               "saves": 7.0,
-              "at": "2026-11-11T00:12:32+09:00"
+              "at": "2026-11-12T00:12:32+09:00"
             },
             "48h": {
               "views": 2343.0,
@@ -2918,20 +2917,20 @@
           "exp_ss": null,
           "upload": "2026-10-23",
           "post_url": "https://www.instagram.com/reel/De1xbABB2Bh/",
-          "measured": "2026-11-10",
-          "views": 3442.0,
+          "measured": "2026-11-11",
+          "views": 3474.0,
           "likes": 35.0,
           "comments": 0.0,
           "shares": 16.0,
           "saves": 11.0,
           "windows": {
             "latest": {
-              "views": 3442.0,
+              "views": 3474.0,
               "likes": 35.0,
               "comments": 0.0,
               "shares": 16.0,
               "saves": 11.0,
-              "at": "2026-11-10T23:42:32+09:00"
+              "at": "2026-11-11T23:42:31+09:00"
             },
             "48h": {
               "views": 2973.0,
@@ -3034,20 +3033,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/DezPyIEBX7f/",
-          "measured": "2026-11-10",
-          "views": 1044.0,
+          "measured": "2026-11-11",
+          "views": 1050.0,
           "likes": 23.0,
           "comments": 2.0,
           "shares": 0.0,
           "saves": 1.0,
           "windows": {
             "latest": {
-              "views": 1044.0,
+              "views": 1050.0,
               "likes": 23.0,
               "comments": 2.0,
               "shares": 0.0,
               "saves": 1.0,
-              "at": "2026-11-10T23:57:31+09:00"
+              "at": "2026-11-11T23:57:31+09:00"
             },
             "48h": {
               "views": 759.0,
@@ -3092,20 +3091,20 @@
           "exp_ss": null,
           "upload": "2026-10-20",
           "post_url": "https://www.instagram.com/reel/DeuDgfmhOXv/",
-          "measured": "2026-11-10",
-          "views": 2180.0,
+          "measured": "2026-11-11",
+          "views": 2187.0,
           "likes": 20.0,
           "comments": 0.0,
           "shares": 4.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 2180.0,
+              "views": 2187.0,
               "likes": 20.0,
               "comments": 0.0,
               "shares": 4.0,
               "saves": 9.0,
-              "at": "2026-11-10T23:42:32+09:00"
+              "at": "2026-11-11T23:42:31+09:00"
             },
             "48h": {
               "views": 1407.0,
@@ -7894,18 +7893,18 @@
         }
       ],
       "targets": {},
-      "source_at": "2026-11-11T22:27:31+09:00",
-      "fetched_at": "2026-11-11T14:07:26.495Z",
-      "cost_basis": "marketing_source",
       "source_url": "https://chaakan-creator-hub.web.app/",
-      "source_state": "error",
-      "source_message": "마케팅 허브를 갱신하지 못해 마지막 정상 데이터를 표시합니다. 인증 상태를 확인해 주세요."
+      "source_state": "ok",
+      "source_message": "",
+      "source_at": "2026-11-12T00:12:32+09:00",
+      "fetched_at": "2026-11-11T15:33:26.868Z",
+      "cost_basis": "marketing_source"
     },
     {
       "slug": "overseas",
       "name": "해외시딩",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1qZ0Goun7uHdukWa1xFqyikBRWuVf5zxNjeZq-KPUvSY/edit",
-      "asof": "2026-11-11",
+      "asof": "2026-11-12",
       "period": "",
       "people": [
         {
@@ -8470,11 +8469,9 @@
         }
       ],
       "ads": [],
-      "targets": {},
-      "source_state": "error",
-      "source_message": "해외시딩 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다."
+      "targets": {}
     }
   ],
-  "revision": "f5d868ae4a6bcdb3",
-  "updated_at": "2026-11-11T23:23:16+09:00"
+  "revision": "cf8a076da68e6edf",
+  "updated_at": "2026-11-12T00:33:22+09:00"
 }
