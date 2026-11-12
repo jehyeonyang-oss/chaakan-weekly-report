@@ -1549,6 +1549,48 @@
       "period": "원본 전체 기간 누적",
       "people": [
         {
+          "key": "marketing:Dfo8CDwyzY8",
+          "id": "thingbyhy",
+          "name": "양현선",
+          "person_id": "marketing:person:mcv9XV8gTebY0NljxIKA",
+          "url": "https://www.instagram.com/thingbyhy/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 70000.0,
+          "secondary_cost": null,
+          "content_cost": 70000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-12",
+          "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
+          "measured": "2026-11-12",
+          "views": 8.0,
+          "likes": 1.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 1.0,
+          "windows": {
+            "latest": {
+              "views": 8.0,
+              "likes": 1.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 1.0,
+              "at": "2026-11-12T20:27:32+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:Dff-U12B6NU",
           "id": "codussx",
           "name": "김채연",
@@ -2060,20 +2102,20 @@
           "exp_ss": null,
           "upload": "2026-10-29",
           "post_url": "https://www.instagram.com/reel/DfE47FzzuUt/",
-          "measured": "2026-11-11",
-          "views": 891.0,
+          "measured": "2026-11-12",
+          "views": 911.0,
           "likes": 12.0,
           "comments": 20.0,
           "shares": 6.0,
           "saves": 8.0,
           "windows": {
             "latest": {
-              "views": 891.0,
+              "views": 911.0,
               "likes": 12.0,
               "comments": 20.0,
               "shares": 6.0,
               "saves": 8.0,
-              "at": "2026-11-11T20:27:31+09:00"
+              "at": "2026-11-12T20:27:32+09:00"
             },
             "48h": {
               "views": 491.0,
@@ -7904,8 +7946,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-12T20:12:31+09:00",
-      "fetched_at": "2026-11-12T11:25:16.300Z",
+      "source_at": "2026-11-12T20:27:32+09:00",
+      "fetched_at": "2026-11-12T11:41:17.140Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8480,6 +8522,6 @@
       "targets": {}
     }
   ],
-  "revision": "7db0f067a02833c6",
-  "updated_at": "2026-11-12T20:25:14+09:00"
+  "revision": "e93a4144275ed7e0",
+  "updated_at": "2026-11-12T20:41:14+09:00"
 }
