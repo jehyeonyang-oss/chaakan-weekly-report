@@ -1613,19 +1613,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8nk0hZ-3/",
           "measured": "2026-11-13",
-          "views": 2939.0,
+          "views": 2984.0,
           "likes": 18.0,
           "comments": 0.0,
           "shares": 35.0,
           "saves": 25.0,
           "windows": {
             "latest": {
-              "views": 2939.0,
+              "views": 2984.0,
               "likes": 18.0,
               "comments": 0.0,
               "shares": 35.0,
               "saves": 25.0,
-              "at": "2026-11-13T06:12:31+09:00"
+              "at": "2026-11-13T07:12:36+09:00"
             }
           },
           "revenue": null,
@@ -1705,19 +1705,19 @@
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/Dfef3bjzG-A/",
           "measured": "2026-11-13",
-          "views": 678.0,
+          "views": 690.0,
           "likes": 10.0,
           "comments": 7.0,
           "shares": 2.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 678.0,
+              "views": 690.0,
               "likes": 10.0,
               "comments": 7.0,
               "shares": 2.0,
               "saves": 9.0,
-              "at": "2026-11-13T01:12:33+09:00"
+              "at": "2026-11-13T07:12:36+09:00"
             },
             "48h": {
               "views": 508.0,
@@ -7988,8 +7988,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-13T06:57:31+09:00",
-      "fetched_at": "2026-11-12T22:05:16.915Z",
+      "source_at": "2026-11-13T07:12:36+09:00",
+      "fetched_at": "2026-11-12T22:21:16.710Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8564,6 +8564,6 @@
       "targets": {}
     }
   ],
-  "revision": "bf9b0b45b7d4963c",
-  "updated_at": "2026-11-13T07:05:14+09:00"
+  "revision": "3745e6935f8d646e",
+  "updated_at": "2026-11-13T07:21:14+09:00"
 }
