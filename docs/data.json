@@ -1591,6 +1591,48 @@
           "source": "live"
         },
         {
+          "key": "marketing:Dfo8nk0hZ-3",
+          "id": "codussx",
+          "name": "김채연",
+          "person_id": "marketing:person:aTZarXSUz1wU5NBDfJEn",
+          "url": "https://www.instagram.com/codussx/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 60000.0,
+          "secondary_cost": null,
+          "content_cost": 60000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-12",
+          "post_url": "https://www.instagram.com/reel/Dfo8nk0hZ-3/",
+          "measured": "2026-11-12",
+          "views": 0.0,
+          "likes": 0.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 0.0,
+          "windows": {
+            "latest": {
+              "views": 0.0,
+              "likes": 0.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 0.0,
+              "at": "2026-11-12T20:42:31+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:Dff-U12B6NU",
           "id": "codussx",
           "name": "김채연",
@@ -7946,8 +7988,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-12T20:27:32+09:00",
-      "fetched_at": "2026-11-12T11:41:17.140Z",
+      "source_at": "2026-11-12T20:42:31+09:00",
+      "fetched_at": "2026-11-12T11:57:17.449Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8522,6 +8564,6 @@
       "targets": {}
     }
   ],
-  "revision": "e93a4144275ed7e0",
-  "updated_at": "2026-11-12T20:41:14+09:00"
+  "revision": "1064c418ebc87fee",
+  "updated_at": "2026-11-12T20:57:14+09:00"
 }
