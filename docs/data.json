@@ -396,8 +396,8 @@
               "at": 1793960717373
             }
           },
-          "revenue": 1698080,
-          "purchases": 23,
+          "revenue": 1770000,
+          "purchases": 24,
           "revenue_window": "2026-10-30~2026-11-12",
           "source": "live"
         },
@@ -500,8 +500,8 @@
               "at": 1794217518894
             }
           },
-          "revenue": 182160,
-          "purchases": 3,
+          "revenue": 242880,
+          "purchases": 4,
           "revenue_window": "2026-11-02~2026-11-12",
           "source": "live"
         },
@@ -811,8 +811,8 @@
               "at": 1794139517556
             }
           },
-          "revenue": 782880,
-          "purchases": 14,
+          "revenue": 838800,
+          "purchases": 15,
           "revenue_window": "2026-11-01~2026-11-12",
           "source": "live"
         },
@@ -8472,6 +8472,6 @@
       "targets": {}
     }
   ],
-  "revision": "50bd61e8aa0632b2",
-  "updated_at": "2026-11-12T15:05:15+09:00"
+  "revision": "6ea11b2be4ea2fc5",
+  "updated_at": "2026-11-12T15:11:15+09:00"
 }
