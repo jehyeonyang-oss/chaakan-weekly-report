@@ -170,7 +170,7 @@
           },
           "revenue": 194720,
           "purchases": 3,
-          "revenue_window": "2026-11-06~2026-11-12",
+          "revenue_window": "2026-11-06~2026-11-13",
           "source": "live"
         },
         {
@@ -301,7 +301,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-31~2026-11-12",
+          "revenue_window": "2026-10-31~2026-11-13",
           "source": "live"
         },
         {
@@ -398,7 +398,7 @@
           },
           "revenue": 1770000,
           "purchases": 24,
-          "revenue_window": "2026-10-30~2026-11-12",
+          "revenue_window": "2026-10-30~2026-11-13",
           "source": "live"
         },
         {
@@ -502,7 +502,7 @@
           },
           "revenue": 242880,
           "purchases": 4,
-          "revenue_window": "2026-11-02~2026-11-12",
+          "revenue_window": "2026-11-02~2026-11-13",
           "source": "live"
         },
         {
@@ -571,7 +571,7 @@
           },
           "revenue": 153760,
           "purchases": 3,
-          "revenue_window": "2026-10-30~2026-11-12",
+          "revenue_window": "2026-10-30~2026-11-13",
           "source": "live"
         },
         {
@@ -640,7 +640,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-01~2026-11-12",
+          "revenue_window": "2026-11-01~2026-11-13",
           "source": "live"
         },
         {
@@ -709,7 +709,7 @@
           },
           "revenue": 79920,
           "purchases": 1,
-          "revenue_window": "2026-10-31~2026-11-12",
+          "revenue_window": "2026-10-31~2026-11-13",
           "source": "live"
         },
         {
@@ -813,7 +813,7 @@
           },
           "revenue": 838800,
           "purchases": 15,
-          "revenue_window": "2026-11-01~2026-11-12",
+          "revenue_window": "2026-11-01~2026-11-13",
           "source": "live"
         },
         {
@@ -1091,7 +1091,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-09~2026-11-12",
+          "revenue_window": "2026-11-09~2026-11-13",
           "source": "live"
         },
         {
@@ -8564,6 +8564,6 @@
       "targets": {}
     }
   ],
-  "revision": "e0de0cdf918c087a",
-  "updated_at": "2026-11-13T00:09:15+09:00"
+  "revision": "9ceb77339ff20cd3",
+  "updated_at": "2026-11-13T00:17:15+09:00"
 }
