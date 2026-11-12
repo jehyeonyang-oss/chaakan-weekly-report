@@ -1556,7 +1556,7 @@
           "url": "https://www.instagram.com/thingbyhy/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "듀마 퍼안감 방한 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1571,19 +1571,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
           "measured": "2026-11-12",
-          "views": 8.0,
-          "likes": 1.0,
+          "views": 78.0,
+          "likes": 3.0,
           "comments": 0.0,
           "shares": 0.0,
           "saves": 1.0,
           "windows": {
             "latest": {
-              "views": 8.0,
-              "likes": 1.0,
+              "views": 78.0,
+              "likes": 3.0,
               "comments": 0.0,
               "shares": 0.0,
               "saves": 1.0,
-              "at": "2026-11-12T20:27:32+09:00"
+              "at": "2026-11-12T20:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1598,7 +1598,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "듀마 퍼안감 방한 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1613,19 +1613,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8nk0hZ-3/",
           "measured": "2026-11-12",
-          "views": 0.0,
+          "views": 179.0,
           "likes": 0.0,
           "comments": 0.0,
           "shares": 0.0,
           "saves": 0.0,
           "windows": {
             "latest": {
-              "views": 0.0,
+              "views": 179.0,
               "likes": 0.0,
               "comments": 0.0,
               "shares": 0.0,
               "saves": 0.0,
-              "at": "2026-11-12T20:42:31+09:00"
+              "at": "2026-11-12T21:12:32+09:00"
             }
           },
           "revenue": null,
@@ -1655,19 +1655,19 @@
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
           "measured": "2026-11-12",
-          "views": 1268.0,
+          "views": 1274.0,
           "likes": 1.0,
           "comments": 0.0,
           "shares": 6.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 1268.0,
+              "views": 1274.0,
               "likes": 1.0,
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-12T14:57:32+09:00"
+              "at": "2026-11-12T20:57:31+09:00"
             },
             "48h": {
               "views": 1215.0,
@@ -3067,20 +3067,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey5to7zwQd/",
-          "measured": "2026-11-11",
-          "views": 22613.0,
-          "likes": 216.0,
+          "measured": "2026-11-12",
+          "views": 22686.0,
+          "likes": 217.0,
           "comments": 63.0,
-          "shares": 289.0,
-          "saves": 155.0,
+          "shares": 290.0,
+          "saves": 154.0,
           "windows": {
             "latest": {
-              "views": 22613.0,
-              "likes": 216.0,
+              "views": 22686.0,
+              "likes": 217.0,
               "comments": 63.0,
-              "shares": 289.0,
-              "saves": 155.0,
-              "at": "2026-11-11T20:57:31+09:00"
+              "shares": 290.0,
+              "saves": 154.0,
+              "at": "2026-11-12T20:57:31+09:00"
             },
             "48h": {
               "views": 19346.0,
@@ -7988,8 +7988,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-12T20:42:31+09:00",
-      "fetched_at": "2026-11-12T11:57:17.449Z",
+      "source_at": "2026-11-12T21:12:32+09:00",
+      "fetched_at": "2026-11-12T12:13:16.626Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8564,6 +8564,6 @@
       "targets": {}
     }
   ],
-  "revision": "1064c418ebc87fee",
-  "updated_at": "2026-11-12T20:57:14+09:00"
+  "revision": "efdb258b633de479",
+  "updated_at": "2026-11-12T21:13:14+09:00"
 }
