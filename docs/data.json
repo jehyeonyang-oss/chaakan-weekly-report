@@ -177,7 +177,7 @@
           },
           "revenue": 194720,
           "purchases": 3,
-          "revenue_window": "2026-11-06~2026-11-13",
+          "revenue_window": "2026-11-06~2026-11-14",
           "source": "live"
         },
         {
@@ -308,7 +308,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-10-31~2026-11-13",
+          "revenue_window": "2026-10-31~2026-11-14",
           "source": "live"
         },
         {
@@ -453,7 +453,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-12~2026-11-13",
+          "revenue_window": "2026-11-12~2026-11-14",
           "source": "live"
         },
         {
@@ -522,7 +522,7 @@
           },
           "revenue": 242880,
           "purchases": 4,
-          "revenue_window": "2026-11-02~2026-11-13",
+          "revenue_window": "2026-11-02~2026-11-14",
           "source": "live"
         },
         {
@@ -660,7 +660,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-01~2026-11-13",
+          "revenue_window": "2026-11-01~2026-11-14",
           "source": "live"
         },
         {
@@ -729,7 +729,7 @@
           },
           "revenue": 79920,
           "purchases": 1,
-          "revenue_window": "2026-10-31~2026-11-13",
+          "revenue_window": "2026-10-31~2026-11-14",
           "source": "live"
         },
         {
@@ -833,7 +833,7 @@
           },
           "revenue": 1509840,
           "purchases": 27,
-          "revenue_window": "2026-11-01~2026-11-13",
+          "revenue_window": "2026-11-01~2026-11-14",
           "source": "live"
         },
         {
@@ -1111,7 +1111,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-09~2026-11-13",
+          "revenue_window": "2026-11-09~2026-11-14",
           "source": "live"
         },
         {
@@ -1590,20 +1590,20 @@
           "exp_ss": null,
           "upload": "2026-11-13",
           "post_url": "https://www.instagram.com/reel/DfrVwnXyplA/",
-          "measured": "2026-11-13",
-          "views": 196.0,
+          "measured": "2026-11-14",
+          "views": 200.0,
           "likes": 4.0,
           "comments": 1.0,
           "shares": 0.0,
           "saves": 2.0,
           "windows": {
             "latest": {
-              "views": 196.0,
+              "views": 200.0,
               "likes": 4.0,
               "comments": 1.0,
               "shares": 0.0,
               "saves": 2.0,
-              "at": "2026-11-13T23:57:32+09:00"
+              "at": "2026-11-14T00:27:32+09:00"
             }
           },
           "revenue": null,
@@ -1632,20 +1632,20 @@
           "exp_ss": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
-          "measured": "2026-11-13",
-          "views": 1473.0,
+          "measured": "2026-11-14",
+          "views": 1479.0,
           "likes": 10.0,
           "comments": 0.0,
           "shares": 9.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1473.0,
+              "views": 1479.0,
               "likes": 10.0,
               "comments": 0.0,
               "shares": 9.0,
               "saves": 7.0,
-              "at": "2026-11-13T23:27:32+09:00"
+              "at": "2026-11-14T00:27:32+09:00"
             }
           },
           "revenue": null,
@@ -8058,8 +8058,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-14T00:12:31+09:00",
-      "fetched_at": "2026-11-13T15:25:16.984Z",
+      "source_at": "2026-11-14T00:27:32+09:00",
+      "fetched_at": "2026-11-13T15:41:17.507Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8634,6 +8634,6 @@
       "targets": {}
     }
   ],
-  "revision": "2005a879bcf72814",
-  "updated_at": "2026-11-14T00:25:15+09:00"
+  "revision": "afc2c54414bac848",
+  "updated_at": "2026-11-14T00:41:15+09:00"
 }
