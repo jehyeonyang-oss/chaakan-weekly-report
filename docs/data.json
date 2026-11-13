@@ -423,7 +423,7 @@
           "free": false,
           "price": null,
           "fee_label": "20만 (2차 1개월 포함)",
-          "content_cost": null,
+          "content_cost": 200000,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -431,13 +431,26 @@
           "planned_upload": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/DfoiaXDRSSD/",
-          "measured": null,
-          "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null,
-          "windows": {},
+          "measured": "2026-11-13",
+          "views": 11562.0,
+          "likes": 90.0,
+          "comments": 15.0,
+          "shares": 122.0,
+          "saves": 174.0,
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": null,
+            "14d": null,
+            "latest": {
+              "views": 11562.0,
+              "likes": 90.0,
+              "comments": 15.0,
+              "shares": 122.0,
+              "saves": 174.0,
+              "at": 1794541149000
+            }
+          },
           "revenue": null,
           "purchases": null,
           "revenue_window": null,
@@ -8571,6 +8584,6 @@
       "targets": {}
     }
   ],
-  "revision": "5fc3be17814519ba",
-  "updated_at": "2026-11-13T14:11:14+09:00"
+  "revision": "7311351fc205441b",
+  "updated_at": "2026-11-13T14:13:14+09:00"
 }
