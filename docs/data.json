@@ -1571,19 +1571,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
           "measured": "2026-11-13",
-          "views": 1147.0,
+          "views": 1317.0,
           "likes": 9.0,
           "comments": 0.0,
-          "shares": 5.0,
-          "saves": 5.0,
+          "shares": 7.0,
+          "saves": 6.0,
           "windows": {
             "latest": {
-              "views": 1147.0,
+              "views": 1317.0,
               "likes": 9.0,
               "comments": 0.0,
-              "shares": 5.0,
-              "saves": 5.0,
-              "at": "2026-11-13T07:57:31+09:00"
+              "shares": 7.0,
+              "saves": 6.0,
+              "at": "2026-11-13T08:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1613,19 +1613,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8nk0hZ-3/",
           "measured": "2026-11-13",
-          "views": 3164.0,
-          "likes": 18.0,
+          "views": 3302.0,
+          "likes": 20.0,
           "comments": 0.0,
-          "shares": 36.0,
-          "saves": 26.0,
+          "shares": 37.0,
+          "saves": 27.0,
           "windows": {
             "latest": {
-              "views": 3164.0,
-              "likes": 18.0,
+              "views": 3302.0,
+              "likes": 20.0,
               "comments": 0.0,
-              "shares": 36.0,
-              "saves": 26.0,
-              "at": "2026-11-13T08:12:31+09:00"
+              "shares": 37.0,
+              "saves": 27.0,
+              "at": "2026-11-13T09:12:31+09:00"
             }
           },
           "revenue": null,
@@ -1667,7 +1667,7 @@
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-13T02:57:31+09:00"
+              "at": "2026-11-13T08:57:31+09:00"
             },
             "48h": {
               "views": 1215.0,
@@ -7988,8 +7988,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-13T08:12:31+09:00",
-      "fetched_at": "2026-11-12T23:57:17.652Z",
+      "source_at": "2026-11-13T09:12:31+09:00",
+      "fetched_at": "2026-11-13T00:13:18.264Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8564,6 +8564,6 @@
       "targets": {}
     }
   ],
-  "revision": "86367fdfed94b277",
-  "updated_at": "2026-11-13T08:57:15+09:00"
+  "revision": "83f58d283aea3c4b",
+  "updated_at": "2026-11-13T09:13:15+09:00"
 }
