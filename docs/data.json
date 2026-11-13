@@ -1591,19 +1591,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
           "measured": "2026-11-13",
-          "views": 1394.0,
+          "views": 1399.0,
           "likes": 9.0,
           "comments": 0.0,
           "shares": 7.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1394.0,
+              "views": 1399.0,
               "likes": 9.0,
               "comments": 0.0,
               "shares": 7.0,
               "saves": 7.0,
-              "at": "2026-11-13T13:57:31+09:00"
+              "at": "2026-11-13T14:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1675,19 +1675,19 @@
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
           "measured": "2026-11-13",
-          "views": 1275.0,
+          "views": 1279.0,
           "likes": 1.0,
           "comments": 0.0,
           "shares": 6.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 1275.0,
+              "views": 1279.0,
               "likes": 1.0,
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-13T08:57:31+09:00"
+              "at": "2026-11-13T14:57:31+09:00"
             },
             "48h": {
               "views": 1215.0,
@@ -8008,8 +8008,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-13T14:12:31+09:00",
-      "fetched_at": "2026-11-13T05:49:17.162Z",
+      "source_at": "2026-11-13T14:57:31+09:00",
+      "fetched_at": "2026-11-13T06:05:17.038Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8584,6 +8584,6 @@
       "targets": {}
     }
   ],
-  "revision": "f454cc750470ce6a",
-  "updated_at": "2026-11-13T14:49:14+09:00"
+  "revision": "e5f3f3146d601532",
+  "updated_at": "2026-11-13T15:05:14+09:00"
 }
