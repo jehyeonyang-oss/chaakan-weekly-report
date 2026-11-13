@@ -8009,7 +8009,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-13T15:12:31+09:00",
-      "fetched_at": "2026-11-13T06:37:17.040Z",
+      "fetched_at": "2026-11-13T06:53:17.173Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8584,6 +8584,6 @@
       "targets": {}
     }
   ],
-  "revision": "074f0e8b72b7c5c3",
-  "updated_at": "2026-11-13T15:37:15+09:00"
+  "revision": "bb7a306f6012e4b9",
+  "updated_at": "2026-11-13T15:53:15+09:00"
 }
