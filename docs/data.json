@@ -1563,7 +1563,7 @@
           "url": "https://www.instagram.com/thingbyhy/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "듀마 퍼안감 방한 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1578,19 +1578,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
           "measured": "2026-11-13",
-          "views": 1367.0,
+          "views": 1384.0,
           "likes": 9.0,
           "comments": 0.0,
           "shares": 7.0,
-          "saves": 6.0,
+          "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1367.0,
+              "views": 1384.0,
               "likes": 9.0,
               "comments": 0.0,
               "shares": 7.0,
-              "saves": 6.0,
-              "at": "2026-11-13T11:57:31+09:00"
+              "saves": 7.0,
+              "at": "2026-11-13T12:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1620,19 +1620,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8nk0hZ-3/",
           "measured": "2026-11-13",
-          "views": 3544.0,
+          "views": 3674.0,
           "likes": 21.0,
           "comments": 0.0,
           "shares": 38.0,
-          "saves": 33.0,
+          "saves": 35.0,
           "windows": {
             "latest": {
-              "views": 3544.0,
+              "views": 3674.0,
               "likes": 21.0,
               "comments": 0.0,
               "shares": 38.0,
-              "saves": 33.0,
-              "at": "2026-11-13T12:12:31+09:00"
+              "saves": 35.0,
+              "at": "2026-11-13T13:12:31+09:00"
             }
           },
           "revenue": null,
@@ -1712,19 +1712,19 @@
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/Dfef3bjzG-A/",
           "measured": "2026-11-13",
-          "views": 690.0,
+          "views": 703.0,
           "likes": 10.0,
           "comments": 7.0,
           "shares": 2.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 690.0,
+              "views": 703.0,
               "likes": 10.0,
               "comments": 7.0,
               "shares": 2.0,
               "saves": 9.0,
-              "at": "2026-11-13T07:12:36+09:00"
+              "at": "2026-11-13T13:12:31+09:00"
             },
             "48h": {
               "views": 508.0,
@@ -7995,8 +7995,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-13T12:12:31+09:00",
-      "fetched_at": "2026-11-13T03:57:22.149Z",
+      "source_at": "2026-11-13T13:12:31+09:00",
+      "fetched_at": "2026-11-13T04:13:18.086Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8571,6 +8571,6 @@
       "targets": {}
     }
   ],
-  "revision": "a9a5d386d5e6507f",
-  "updated_at": "2026-11-13T12:57:17+09:00"
+  "revision": "4feb5ddce1b057a5",
+  "updated_at": "2026-11-13T13:13:15+09:00"
 }
