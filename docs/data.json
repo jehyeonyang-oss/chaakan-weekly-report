@@ -134,12 +134,12 @@
           "planned_upload": null,
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfYmFnWPEqg/",
-          "measured": "2026-11-11",
-          "views": 43000.0,
-          "likes": 262.0,
-          "comments": 281.0,
-          "shares": 416.0,
-          "saves": 398.0,
+          "measured": "2026-11-13",
+          "views": null,
+          "likes": 271.0,
+          "comments": 297.0,
+          "shares": 444.0,
+          "saves": 402.0,
           "windows": {
             "24h": {
               "views": null,
@@ -157,15 +157,22 @@
               "saves": 361.0,
               "at": 1794107419855
             },
-            "7d": null,
+            "7d": {
+              "views": null,
+              "likes": 271.0,
+              "comments": 297.0,
+              "shares": 444.0,
+              "saves": 402.0,
+              "at": 1794539417827
+            },
             "14d": null,
             "latest": {
-              "views": 43000.0,
-              "likes": 262.0,
-              "comments": 281.0,
-              "shares": 416.0,
-              "saves": 398.0,
-              "at": 1794370522094
+              "views": null,
+              "likes": 271.0,
+              "comments": 297.0,
+              "shares": 444.0,
+              "saves": 402.0,
+              "at": 1794539417827
             }
           },
           "revenue": 194720,
@@ -7989,7 +7996,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-13T12:12:31+09:00",
-      "fetched_at": "2026-11-13T03:25:18.055Z",
+      "fetched_at": "2026-11-13T03:41:17.668Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8564,6 +8571,6 @@
       "targets": {}
     }
   ],
-  "revision": "ee4db80449af4b1d",
-  "updated_at": "2026-11-13T12:25:15+09:00"
+  "revision": "0a8696cb8915df36",
+  "updated_at": "2026-11-13T12:41:15+09:00"
 }
