@@ -1569,6 +1569,48 @@
       "period": "원본 전체 기간 누적",
       "people": [
         {
+          "key": "marketing:DfrVwnXyplA",
+          "id": "thingbyhy",
+          "name": "양현선",
+          "person_id": "marketing:person:mcv9XV8gTebY0NljxIKA",
+          "url": "https://www.instagram.com/thingbyhy/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "버칸 메리제인 퍼안감 방한화",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 70000.0,
+          "secondary_cost": null,
+          "content_cost": 70000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-13",
+          "post_url": "https://www.instagram.com/reel/DfrVwnXyplA/",
+          "measured": "2026-11-13",
+          "views": 7.0,
+          "likes": 2.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 2.0,
+          "windows": {
+            "latest": {
+              "views": 7.0,
+              "likes": 2.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 2.0,
+              "at": "2026-11-13T18:57:31+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:Dfo8CDwyzY8",
           "id": "thingbyhy",
           "name": "양현선",
@@ -1591,19 +1633,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
           "measured": "2026-11-13",
-          "views": 1430.0,
+          "views": 1436.0,
           "likes": 9.0,
           "comments": 0.0,
           "shares": 9.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1430.0,
+              "views": 1436.0,
               "likes": 9.0,
               "comments": 0.0,
               "shares": 9.0,
               "saves": 7.0,
-              "at": "2026-11-13T17:57:32+09:00"
+              "at": "2026-11-13T18:57:31+09:00"
             }
           },
           "revenue": null,
@@ -8016,8 +8058,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-13T18:12:31+09:00",
-      "fetched_at": "2026-11-13T09:49:16.526Z",
+      "source_at": "2026-11-13T18:57:31+09:00",
+      "fetched_at": "2026-11-13T10:05:16.607Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8592,6 +8634,6 @@
       "targets": {}
     }
   ],
-  "revision": "463cd7d943c5bb98",
-  "updated_at": "2026-11-13T18:49:14+09:00"
+  "revision": "21de08a945a937cf",
+  "updated_at": "2026-11-13T19:05:14+09:00"
 }
