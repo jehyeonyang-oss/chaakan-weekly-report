@@ -369,12 +369,12 @@
           "planned_upload": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHXE3Tz6hv/",
-          "measured": "2026-11-06",
-          "views": 209000.0,
-          "likes": 2085.0,
-          "comments": 1414.0,
-          "shares": 4171.0,
-          "saves": 4373.0,
+          "measured": "2026-11-14",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null,
           "windows": {
             "24h": null,
             "48h": {
@@ -393,14 +393,21 @@
               "saves": 4373.0,
               "at": 1793960717373
             },
-            "14d": null,
+            "14d": {
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794645627929
+            },
             "latest": {
-              "views": 209000.0,
-              "likes": 2085.0,
-              "comments": 1414.0,
-              "shares": 4171.0,
-              "saves": 4373.0,
-              "at": 1793960717373
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794645627929
             }
           },
           "revenue": 1841920,
@@ -431,24 +438,31 @@
           "planned_upload": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/DfoiaXDRSSD/",
-          "measured": "2026-11-13",
-          "views": 11562.0,
-          "likes": 90.0,
-          "comments": 15.0,
-          "shares": 122.0,
-          "saves": 174.0,
+          "measured": "2026-11-14",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null,
           "windows": {
             "24h": null,
-            "48h": null,
+            "48h": {
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794645625418
+            },
             "7d": null,
             "14d": null,
             "latest": {
-              "views": 11562.0,
-              "likes": 90.0,
-              "comments": 15.0,
-              "shares": 122.0,
-              "saves": 174.0,
-              "at": 1794541149000
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794645625418
             }
           },
           "revenue": 0,
@@ -548,12 +562,12 @@
           "planned_upload": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHepfrgwT5/",
-          "measured": "2026-11-06",
-          "views": 27000.0,
-          "likes": 2844.0,
-          "comments": 172.0,
-          "shares": 607.0,
-          "saves": 105.0,
+          "measured": "2026-11-14",
+          "views": null,
+          "likes": null,
+          "comments": null,
+          "shares": null,
+          "saves": null,
           "windows": {
             "24h": {
               "views": 8516.0,
@@ -579,14 +593,21 @@
               "saves": 105.0,
               "at": 1793964916256
             },
-            "14d": null,
+            "14d": {
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794645623156
+            },
             "latest": {
-              "views": 27000.0,
-              "likes": 2844.0,
-              "comments": 172.0,
-              "shares": 607.0,
-              "saves": 105.0,
-              "at": 1793964916256
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794645623156
             }
           },
           "revenue": 102840,
@@ -8634,6 +8655,6 @@
       "targets": {}
     }
   ],
-  "revision": "b7033037778a33e8",
-  "updated_at": "2026-11-14T18:03:16+09:00"
+  "revision": "22e0841f4de09462",
+  "updated_at": "2026-11-14T18:11:16+09:00"
 }
