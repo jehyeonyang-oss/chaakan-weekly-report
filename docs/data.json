@@ -1945,20 +1945,20 @@
           "exp_ss": null,
           "upload": "2026-11-05",
           "post_url": "https://www.instagram.com/reel/DfW4zlfTyOA/",
-          "measured": "2026-11-13",
-          "views": 1576.0,
+          "measured": "2026-11-14",
+          "views": 1586.0,
           "likes": 13.0,
           "comments": 4.0,
           "shares": 6.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 1576.0,
+              "views": 1586.0,
               "likes": 13.0,
               "comments": 4.0,
               "shares": 6.0,
               "saves": 9.0,
-              "at": "2026-11-13T20:12:31+09:00"
+              "at": "2026-11-14T20:12:31+09:00"
             },
             "48h": {
               "views": 1463.0,
@@ -2177,20 +2177,20 @@
           "exp_ss": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHbWuCB6iV/",
-          "measured": "2026-11-13",
-          "views": 5669.0,
+          "measured": "2026-11-14",
+          "views": 5691.0,
           "likes": 27.0,
           "comments": 2.0,
           "shares": 79.0,
-          "saves": 48.0,
+          "saves": 49.0,
           "windows": {
             "latest": {
-              "views": 5669.0,
+              "views": 5691.0,
               "likes": 27.0,
               "comments": 2.0,
               "shares": 79.0,
-              "saves": 48.0,
-              "at": "2026-11-13T20:12:31+09:00"
+              "saves": 49.0,
+              "at": "2026-11-14T20:12:31+09:00"
             },
             "48h": {
               "views": 3712.0,
@@ -8079,8 +8079,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-14T19:57:31+09:00",
-      "fetched_at": "2026-11-14T11:11:19.353Z",
+      "source_at": "2026-11-14T20:12:31+09:00",
+      "fetched_at": "2026-11-14T11:27:18.998Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8655,6 +8655,6 @@
       "targets": {}
     }
   ],
-  "revision": "62346600c8513bbf",
-  "updated_at": "2026-11-14T20:11:15+09:00"
+  "revision": "ca20b52bcee43a53",
+  "updated_at": "2026-11-14T20:27:15+09:00"
 }
