@@ -1612,19 +1612,19 @@
           "upload": "2026-11-13",
           "post_url": "https://www.instagram.com/reel/DfrVwnXyplA/",
           "measured": "2026-11-15",
-          "views": 1197.0,
+          "views": 1198.0,
           "likes": 10.0,
           "comments": 1.0,
           "shares": 5.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1197.0,
+              "views": 1198.0,
               "likes": 10.0,
               "comments": 1.0,
               "shares": 5.0,
               "saves": 7.0,
-              "at": "2026-11-15T03:57:31+09:00"
+              "at": "2026-11-15T05:01:34+09:00"
             }
           },
           "revenue": null,
@@ -1853,20 +1853,20 @@
           "exp_ss": null,
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/DfeRRbnBNxi/",
-          "measured": "2026-11-14",
-          "views": 1397.0,
+          "measured": "2026-11-15",
+          "views": 1399.0,
           "likes": 10.0,
           "comments": 0.0,
           "shares": 4.0,
           "saves": 5.0,
           "windows": {
             "latest": {
-              "views": 1397.0,
+              "views": 1399.0,
               "likes": 10.0,
               "comments": 0.0,
               "shares": 4.0,
               "saves": 5.0,
-              "at": "2026-11-14T23:12:31+09:00"
+              "at": "2026-11-15T05:12:31+09:00"
             },
             "48h": {
               "views": 1337.0,
@@ -8095,8 +8095,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-15T03:57:31+09:00",
-      "fetched_at": "2026-11-14T20:01:18.562Z",
+      "source_at": "2026-11-15T05:12:31+09:00",
+      "fetched_at": "2026-11-14T20:17:18.283Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8671,6 +8671,6 @@
       "targets": {}
     }
   ],
-  "revision": "5d271dbf86bd11eb",
-  "updated_at": "2026-11-15T05:01:15+09:00"
+  "revision": "ed226631488d77a7",
+  "updated_at": "2026-11-15T05:17:15+09:00"
 }
