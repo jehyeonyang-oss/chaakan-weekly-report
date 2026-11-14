@@ -1612,19 +1612,19 @@
           "upload": "2026-11-13",
           "post_url": "https://www.instagram.com/reel/DfrVwnXyplA/",
           "measured": "2026-11-14",
-          "views": 1186.0,
+          "views": 1187.0,
           "likes": 10.0,
           "comments": 1.0,
           "shares": 5.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1186.0,
+              "views": 1187.0,
               "likes": 10.0,
               "comments": 1.0,
               "shares": 5.0,
               "saves": 7.0,
-              "at": "2026-11-14T19:57:31+09:00"
+              "at": "2026-11-14T20:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1754,19 +1754,19 @@
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
           "measured": "2026-11-14",
-          "views": 1300.0,
+          "views": 1303.0,
           "likes": 1.0,
           "comments": 0.0,
           "shares": 6.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 1300.0,
+              "views": 1303.0,
               "likes": 1.0,
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-14T14:57:31+09:00"
+              "at": "2026-11-14T20:57:31+09:00"
             },
             "48h": {
               "views": 1215.0,
@@ -3174,20 +3174,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey5to7zwQd/",
-          "measured": "2026-11-13",
-          "views": 22734.0,
-          "likes": 218.0,
+          "measured": "2026-11-14",
+          "views": 22768.0,
+          "likes": 219.0,
           "comments": 63.0,
           "shares": 290.0,
           "saves": 154.0,
           "windows": {
             "latest": {
-              "views": 22734.0,
-              "likes": 218.0,
+              "views": 22768.0,
+              "likes": 219.0,
               "comments": 63.0,
               "shares": 290.0,
               "saves": 154.0,
-              "at": "2026-11-13T20:57:31+09:00"
+              "at": "2026-11-14T20:57:31+09:00"
             },
             "48h": {
               "views": 19346.0,
@@ -8095,8 +8095,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-14T20:42:32+09:00",
-      "fetched_at": "2026-11-14T11:43:18.780Z",
+      "source_at": "2026-11-14T20:57:31+09:00",
+      "fetched_at": "2026-11-14T11:59:18.288Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8671,6 +8671,6 @@
       "targets": {}
     }
   ],
-  "revision": "d77b9b2d7614aa9e",
-  "updated_at": "2026-11-14T20:43:15+09:00"
+  "revision": "282adea321e04c19",
+  "updated_at": "2026-11-14T20:59:15+09:00"
 }
