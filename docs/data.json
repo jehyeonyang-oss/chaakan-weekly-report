@@ -1706,7 +1706,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "카민스 키높이 비율 보정 롱부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1721,19 +1721,19 @@
           "upload": "2026-11-15",
           "post_url": "https://www.instagram.com/reel/DfwmeeJhe2v/",
           "measured": "2026-11-15",
-          "views": 1161.0,
+          "views": 1259.0,
           "likes": 9.0,
           "comments": 0.0,
-          "shares": 5.0,
-          "saves": 5.0,
+          "shares": 3.0,
+          "saves": 6.0,
           "windows": {
             "latest": {
-              "views": 1161.0,
+              "views": 1259.0,
               "likes": 9.0,
               "comments": 0.0,
-              "shares": 5.0,
-              "saves": 5.0,
-              "at": "2026-11-15T21:27:31+09:00"
+              "shares": 3.0,
+              "saves": 6.0,
+              "at": "2026-11-15T21:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1848,7 +1848,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "듀마 퍼안감 방한 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -8270,8 +8270,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-15T21:36:07+09:00",
-      "fetched_at": "2026-11-15T12:49:17.931Z",
+      "source_at": "2026-11-15T21:57:31+09:00",
+      "fetched_at": "2026-11-15T13:05:18.249Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8846,6 +8846,6 @@
       "targets": {}
     }
   ],
-  "revision": "0b578a689c5aebc8",
-  "updated_at": "2026-11-15T21:49:15+09:00"
+  "revision": "a0cb54c2a3519af4",
+  "updated_at": "2026-11-15T22:05:15+09:00"
 }
