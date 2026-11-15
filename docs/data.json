@@ -1697,7 +1697,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "시트롱 퍼안감 플랫폼 방한화(부츠)",
+          "product": "",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1712,19 +1712,19 @@
           "upload": "2026-11-15",
           "post_url": "https://www.instagram.com/reel/DfwmeeJhe2v/",
           "measured": "2026-11-15",
-          "views": 99.0,
-          "likes": 0.0,
+          "views": 441.0,
+          "likes": 1.0,
           "comments": 0.0,
-          "shares": 0.0,
-          "saves": 1.0,
+          "shares": 2.0,
+          "saves": 2.0,
           "windows": {
             "latest": {
-              "views": 99.0,
-              "likes": 0.0,
+              "views": 441.0,
+              "likes": 1.0,
               "comments": 0.0,
-              "shares": 0.0,
-              "saves": 1.0,
-              "at": "2026-11-15T20:27:31+09:00"
+              "shares": 2.0,
+              "saves": 2.0,
+              "at": "2026-11-15T20:57:33+09:00"
             }
           },
           "revenue": null,
@@ -1839,7 +1839,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "듀마 퍼안감 방한 부츠",
+          "product": "",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1889,7 +1889,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "클로이 퍼안감 첼시 방한 부츠",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -1904,19 +1904,19 @@
           "upload": "2026-11-09",
           "post_url": "https://www.instagram.com/reel/Dff-U12B6NU/",
           "measured": "2026-11-15",
-          "views": 1315.0,
+          "views": 1316.0,
           "likes": 1.0,
           "comments": 0.0,
           "shares": 6.0,
           "saves": 4.0,
           "windows": {
             "latest": {
-              "views": 1315.0,
+              "views": 1316.0,
               "likes": 1.0,
               "comments": 0.0,
               "shares": 6.0,
               "saves": 4.0,
-              "at": "2026-11-15T14:57:31+09:00"
+              "at": "2026-11-15T20:57:33+09:00"
             },
             "48h": {
               "views": 1215.0,
@@ -1997,7 +1997,7 @@
           "url": "https://www.instagram.com/codussx/",
           "who": "마케팅팀",
           "campaign": "크리에이터",
-          "product": "",
+          "product": "버칸 메리제인 퍼안감 방한화",
           "country": "한국",
           "channel": "인스타그램",
           "group": "한국",
@@ -3340,20 +3340,20 @@
           "exp_ss": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey5to7zwQd/",
-          "measured": "2026-11-14",
-          "views": 22768.0,
+          "measured": "2026-11-15",
+          "views": 22799.0,
           "likes": 219.0,
           "comments": 63.0,
           "shares": 290.0,
           "saves": 154.0,
           "windows": {
             "latest": {
-              "views": 22768.0,
+              "views": 22799.0,
               "likes": 219.0,
               "comments": 63.0,
               "shares": 290.0,
               "saves": 154.0,
-              "at": "2026-11-14T20:57:31+09:00"
+              "at": "2026-11-15T20:57:33+09:00"
             },
             "48h": {
               "views": 19346.0,
@@ -8261,8 +8261,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-15T20:42:31+09:00",
-      "fetched_at": "2026-11-15T11:45:18.436Z",
+      "source_at": "2026-11-15T20:57:33+09:00",
+      "fetched_at": "2026-11-15T12:01:19.088Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8837,6 +8837,6 @@
       "targets": {}
     }
   ],
-  "revision": "ef047a2086353670",
-  "updated_at": "2026-11-15T20:45:15+09:00"
+  "revision": "7b111cfc79aecb5e",
+  "updated_at": "2026-11-15T21:01:16+09:00"
 }
