@@ -946,8 +946,8 @@
               "collectionDelaySeconds": null
             }
           },
-          "revenue": 1789440,
-          "purchases": 32,
+          "revenue": 1901280,
+          "purchases": 34,
           "revenue_window": "2026-11-01~2026-11-15",
           "source": "live"
         },
@@ -8837,6 +8837,6 @@
       "targets": {}
     }
   ],
-  "revision": "02bd3ac7f4165fbc",
-  "updated_at": "2026-11-15T20:29:15+09:00"
+  "revision": "20328ecb82c2a209",
+  "updated_at": "2026-11-15T20:41:15+09:00"
 }
