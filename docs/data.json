@@ -1690,6 +1690,48 @@
       "period": "원본 전체 기간 누적",
       "people": [
         {
+          "key": "marketing:DfwmeeJhe2v",
+          "id": "codussx",
+          "name": "김채연",
+          "person_id": "marketing:person:aTZarXSUz1wU5NBDfJEn",
+          "url": "https://www.instagram.com/codussx/",
+          "who": "마케팅팀",
+          "campaign": "크리에이터",
+          "product": "시트롱 퍼안감 플랫폼 방한화(부츠)",
+          "country": "한국",
+          "channel": "인스타그램",
+          "group": "한국",
+          "status": "업로드 완료",
+          "stage": "⑦",
+          "free": false,
+          "price": 60000.0,
+          "secondary_cost": null,
+          "content_cost": 60000.0,
+          "avg": null,
+          "exp_ss": null,
+          "upload": "2026-11-15",
+          "post_url": "https://www.instagram.com/reel/DfwmeeJhe2v/",
+          "measured": "2026-11-15",
+          "views": 0.0,
+          "likes": 0.0,
+          "comments": 0.0,
+          "shares": 0.0,
+          "saves": 0.0,
+          "windows": {
+            "latest": {
+              "views": 0.0,
+              "likes": 0.0,
+              "comments": 0.0,
+              "shares": 0.0,
+              "saves": 0.0,
+              "at": "2026-11-15T19:57:31+09:00"
+            }
+          },
+          "revenue": null,
+          "revenue_window": null,
+          "source": "live"
+        },
+        {
           "key": "marketing:DfrVwnXyplA",
           "id": "thingbyhy",
           "name": "양현선",
@@ -2085,20 +2127,20 @@
           "exp_ss": null,
           "upload": "2026-11-05",
           "post_url": "https://www.instagram.com/reel/DfW4zlfTyOA/",
-          "measured": "2026-11-14",
-          "views": 1586.0,
+          "measured": "2026-11-15",
+          "views": 1599.0,
           "likes": 13.0,
           "comments": 4.0,
           "shares": 6.0,
-          "saves": 9.0,
+          "saves": 10.0,
           "windows": {
             "latest": {
-              "views": 1586.0,
+              "views": 1599.0,
               "likes": 13.0,
               "comments": 4.0,
               "shares": 6.0,
-              "saves": 9.0,
-              "at": "2026-11-14T20:12:31+09:00"
+              "saves": 10.0,
+              "at": "2026-11-15T20:12:31+09:00"
             },
             "48h": {
               "views": 1463.0,
@@ -2317,20 +2359,20 @@
           "exp_ss": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHbWuCB6iV/",
-          "measured": "2026-11-14",
-          "views": 5691.0,
+          "measured": "2026-11-15",
+          "views": 5712.0,
           "likes": 27.0,
           "comments": 2.0,
           "shares": 79.0,
           "saves": 49.0,
           "windows": {
             "latest": {
-              "views": 5691.0,
+              "views": 5712.0,
               "likes": 27.0,
               "comments": 2.0,
               "shares": 79.0,
               "saves": 49.0,
-              "at": "2026-11-14T20:12:31+09:00"
+              "at": "2026-11-15T20:12:31+09:00"
             },
             "48h": {
               "views": 3712.0,
@@ -8219,8 +8261,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-15T19:12:31+09:00",
-      "fetched_at": "2026-11-15T10:57:18.174Z",
+      "source_at": "2026-11-15T20:12:31+09:00",
+      "fetched_at": "2026-11-15T11:13:17.867Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8795,6 +8837,6 @@
       "targets": {}
     }
   ],
-  "revision": "6bc448a3a873b5af",
-  "updated_at": "2026-11-15T19:57:15+09:00"
+  "revision": "a62aee1f4248b8d7",
+  "updated_at": "2026-11-15T20:13:15+09:00"
 }
