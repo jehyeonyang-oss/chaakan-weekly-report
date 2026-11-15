@@ -183,9 +183,9 @@
               "collectionDelaySeconds": null
             }
           },
-          "revenue": 194720,
-          "purchases": 3,
-          "revenue_window": "2026-11-06~2026-11-15",
+          "revenue": 250640,
+          "purchases": 4,
+          "revenue_window": "2026-11-06~2026-11-16",
           "source": "live"
         },
         {
@@ -508,9 +508,9 @@
               "collectionDelaySeconds": 59825
             }
           },
-          "revenue": 0,
-          "purchases": 0,
-          "revenue_window": "2026-11-12~2026-11-15",
+          "revenue": 60720,
+          "purchases": 1,
+          "revenue_window": "2026-11-12~2026-11-16",
           "source": "live"
         },
         {
@@ -587,7 +587,7 @@
           },
           "revenue": 242880,
           "purchases": 4,
-          "revenue_window": "2026-11-02~2026-11-15",
+          "revenue_window": "2026-11-02~2026-11-16",
           "source": "live"
         },
         {
@@ -1250,7 +1250,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-09~2026-11-15",
+          "revenue_window": "2026-11-09~2026-11-16",
           "source": "live"
         },
         {
@@ -8855,6 +8855,6 @@
       "targets": {}
     }
   ],
-  "revision": "8ca64911a0ebe016",
-  "updated_at": "2026-11-16T00:29:15+09:00"
+  "revision": "32467cb3a0b0b549",
+  "updated_at": "2026-11-16T00:41:15+09:00"
 }
