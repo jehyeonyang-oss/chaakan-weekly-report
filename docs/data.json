@@ -545,12 +545,12 @@
           "planned_upload": null,
           "upload": "2026-11-02",
           "post_url": "https://www.instagram.com/reel/DfPAY7LPRIU/",
-          "measured": "2026-11-09",
-          "views": 52000.0,
-          "likes": 3.0,
-          "comments": 266.0,
-          "shares": 623.0,
-          "saves": 496.0,
+          "measured": "2026-11-16",
+          "views": 96000.0,
+          "likes": null,
+          "comments": 286.0,
+          "shares": 726.0,
+          "saves": 509.0,
           "windows": {
             "24h": {
               "views": 34000.0,
@@ -582,16 +582,25 @@
               "isLate": false,
               "collectionDelaySeconds": null
             },
-            "14d": null,
-            "latest": {
-              "views": 52000.0,
-              "likes": 3.0,
-              "comments": 266.0,
-              "shares": 623.0,
-              "saves": 496.0,
-              "at": 1794217518894,
+            "14d": {
+              "views": 96000.0,
+              "likes": null,
+              "comments": 286.0,
+              "shares": 726.0,
+              "saves": 509.0,
+              "at": 1794822318613,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": 323
+            },
+            "latest": {
+              "views": 96000.0,
+              "likes": null,
+              "comments": 286.0,
+              "shares": 726.0,
+              "saves": 509.0,
+              "at": 1794822318613,
+              "isLate": false,
+              "collectionDelaySeconds": 323
             }
           },
           "revenue": 242880,
@@ -8971,6 +8980,6 @@
       "targets": {}
     }
   ],
-  "revision": "4186d17dbe3dd1c0",
-  "updated_at": "2026-11-16T19:09:15+09:00"
+  "revision": "47d985d2f34b90bb",
+  "updated_at": "2026-11-16T19:11:15+09:00"
 }
