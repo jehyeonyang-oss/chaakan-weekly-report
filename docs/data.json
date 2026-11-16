@@ -3335,20 +3335,20 @@
           "exp_ss": null,
           "upload": "2026-10-23",
           "post_url": "https://www.instagram.com/reel/De1xbABB2Bh/",
-          "measured": "2026-11-15",
-          "views": 3547.0,
+          "measured": "2026-11-16",
+          "views": 3572.0,
           "likes": 35.0,
           "comments": 0.0,
           "shares": 17.0,
           "saves": 12.0,
           "windows": {
             "latest": {
-              "views": 3547.0,
+              "views": 3572.0,
               "likes": 35.0,
               "comments": 0.0,
               "shares": 17.0,
               "saves": 12.0,
-              "at": "2026-11-15T23:42:31+09:00"
+              "at": "2026-11-16T23:42:32+09:00"
             },
             "48h": {
               "views": 2973.0,
@@ -3509,20 +3509,20 @@
           "exp_ss": null,
           "upload": "2026-10-20",
           "post_url": "https://www.instagram.com/reel/DeuDgfmhOXv/",
-          "measured": "2026-11-15",
-          "views": 2207.0,
+          "measured": "2026-11-16",
+          "views": 2218.0,
           "likes": 20.0,
           "comments": 0.0,
           "shares": 4.0,
           "saves": 9.0,
           "windows": {
             "latest": {
-              "views": 2207.0,
+              "views": 2218.0,
               "likes": 20.0,
               "comments": 0.0,
               "shares": 4.0,
               "saves": 9.0,
-              "at": "2026-11-15T23:42:31+09:00"
+              "at": "2026-11-16T23:42:32+09:00"
             },
             "48h": {
               "views": 1407.0,
@@ -8404,8 +8404,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-16T23:27:36+09:00",
-      "fetched_at": "2026-11-16T14:41:18.365Z",
+      "source_at": "2026-11-16T23:42:32+09:00",
+      "fetched_at": "2026-11-16T14:57:18.266Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8980,6 +8980,6 @@
       "targets": {}
     }
   ],
-  "revision": "eb2b7e37b717246b",
-  "updated_at": "2026-11-16T23:41:15+09:00"
+  "revision": "fccc0a8e20ff0e4b",
+  "updated_at": "2026-11-16T23:57:14+09:00"
 }
