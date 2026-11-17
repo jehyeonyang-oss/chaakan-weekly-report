@@ -1,4 +1,4 @@
 {
-  "state": "error",
-  "message": "엑셀 입력 확인이 필요합니다. 마지막 정상 집계가 표시됩니다."
+  "state": "ok",
+  "message": ""
 }
