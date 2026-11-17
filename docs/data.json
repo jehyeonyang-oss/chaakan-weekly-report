@@ -8928,8 +8928,8 @@
           "country": "대만",
           "channel": "인스타그램",
           "group": "대만·홍콩",
-          "status": "④ 협상 완료",
-          "stage": "④",
+          "status": "보류 보류",
+          "stage": "보류",
           "free": false,
           "price": 200000,
           "avg": 298556,
@@ -9120,6 +9120,6 @@
       "targets": {}
     }
   ],
-  "revision": "e7a95d409bc66d73",
-  "updated_at": "2026-11-17T19:25:16+09:00"
+  "revision": "7daae7b38aa62d5e",
+  "updated_at": "2026-11-17T19:27:15+09:00"
 }
