@@ -8413,7 +8413,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-18T02:42:37+09:00",
-      "fetched_at": "2026-11-17T19:13:19.356Z",
+      "fetched_at": "2026-11-17T19:29:18.563Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -9128,6 +9128,6 @@
       "targets": {}
     }
   ],
-  "revision": "55fee674901ec8f7",
-  "updated_at": "2026-11-18T04:13:15+09:00"
+  "revision": "ce7ad707def01d91",
+  "updated_at": "2026-11-18T04:29:15+09:00"
 }
