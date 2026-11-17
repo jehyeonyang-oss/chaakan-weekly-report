@@ -1757,19 +1757,19 @@
           "upload": "2026-11-15",
           "post_url": "https://www.instagram.com/reel/DfwmeeJhe2v/",
           "measured": "2026-11-17",
-          "views": 1624.0,
+          "views": 1625.0,
           "likes": 15.0,
           "comments": 0.0,
           "shares": 10.0,
           "saves": 10.0,
           "windows": {
             "latest": {
-              "views": 1624.0,
+              "views": 1625.0,
               "likes": 15.0,
               "comments": 0.0,
               "shares": 10.0,
               "saves": 10.0,
-              "at": "2026-11-17T11:57:31+09:00"
+              "at": "2026-11-17T12:57:31+09:00"
             }
           },
           "revenue": null,
@@ -1799,19 +1799,19 @@
           "upload": "2026-11-13",
           "post_url": "https://www.instagram.com/reel/DfrVwnXyplA/",
           "measured": "2026-11-17",
-          "views": 1209.0,
+          "views": 1210.0,
           "likes": 10.0,
           "comments": 1.0,
           "shares": 5.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1209.0,
+              "views": 1210.0,
               "likes": 10.0,
               "comments": 1.0,
               "shares": 5.0,
               "saves": 7.0,
-              "at": "2026-11-17T06:57:31+09:00"
+              "at": "2026-11-17T12:57:31+09:00"
             },
             "48h": {
               "views": 1202.0,
@@ -8404,8 +8404,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-17T11:57:31+09:00",
-      "fetched_at": "2026-11-17T03:45:21.984Z",
+      "source_at": "2026-11-17T12:57:31+09:00",
+      "fetched_at": "2026-11-17T04:01:18.620Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -8980,6 +8980,6 @@
       "targets": {}
     }
   ],
-  "revision": "b62ab7275233e062",
-  "updated_at": "2026-11-17T12:45:18+09:00"
+  "revision": "2e6fc0c46122a3ae",
+  "updated_at": "2026-11-17T13:01:15+09:00"
 }
