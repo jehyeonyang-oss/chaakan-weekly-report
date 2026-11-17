@@ -8603,11 +8603,11 @@
           "planned_upload": null,
           "upload": "2026-11-03",
           "post_url": "https://www.instagram.com/reel/DfQxlYsPcIX/",
-          "measured": null,
+          "measured": "2026-11-10",
           "likes": null,
-          "saves": null,
-          "shares": null,
-          "views": null,
+          "saves": 121,
+          "shares": 176,
+          "views": 16367,
           "comments": null,
           "content_cost": null
         },
@@ -8631,11 +8631,11 @@
           "planned_upload": null,
           "upload": "2026-11-05",
           "post_url": "https://www.instagram.com/reel/DfUHuKIN6AZ/",
-          "measured": null,
-          "likes": null,
-          "saves": null,
-          "shares": null,
-          "views": null,
+          "measured": "2026-11-12",
+          "likes": 380,
+          "saves": 32,
+          "shares": 138,
+          "views": 49231,
           "comments": null,
           "content_cost": null
         },
@@ -8855,11 +8855,11 @@
           "planned_upload": null,
           "upload": "2026-10-27",
           "post_url": "https://www.instagram.com/reel/De-3GhzytNk/",
-          "measured": null,
+          "measured": "2026-11-03",
           "likes": null,
-          "saves": null,
-          "shares": null,
-          "views": null,
+          "saves": 28,
+          "shares": 18,
+          "views": 10512,
           "comments": null,
           "content_cost": null
         },
@@ -9120,6 +9120,6 @@
       "targets": {}
     }
   ],
-  "revision": "bfde69c04ff72b16",
-  "updated_at": "2026-11-17T19:19:16+09:00"
+  "revision": "217b3fe0abf8fdd3",
+  "updated_at": "2026-11-17T19:23:16+09:00"
 }
