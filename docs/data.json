@@ -478,7 +478,7 @@
           "free": false,
           "price": null,
           "fee_label": "20만 (2차 1개월 포함)",
-          "content_cost": null,
+          "content_cost": 218480.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -537,7 +537,7 @@
           "free": false,
           "price": null,
           "fee_label": "15만 (2차 포함)",
-          "content_cost": 150000,
+          "content_cost": 168480.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -795,7 +795,7 @@
           "free": false,
           "price": null,
           "fee_label": "30만 + 2차 10만(추후 진행 시)",
-          "content_cost": 300000,
+          "content_cost": 321280.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -8980,6 +8980,6 @@
       "targets": {}
     }
   ],
-  "revision": "00d323506b971714",
-  "updated_at": "2026-11-17T11:09:15+09:00"
+  "revision": "6b9e5d2622b4c14f",
+  "updated_at": "2026-11-17T11:11:15+09:00"
 }
