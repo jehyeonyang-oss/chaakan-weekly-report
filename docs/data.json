@@ -134,12 +134,12 @@
           "planned_upload": null,
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfYmFnWPEqg/",
-          "measured": "2026-11-16",
+          "measured": "2026-11-18",
           "views": null,
-          "likes": 282.0,
-          "comments": 305.0,
-          "shares": 475.0,
-          "saves": 406.0,
+          "likes": 294.0,
+          "comments": 307.0,
+          "shares": 505.0,
+          "saves": 409.0,
           "windows": {
             "24h": {
               "views": null,
@@ -174,13 +174,13 @@
             "14d": null,
             "latest": {
               "views": null,
-              "likes": 282.0,
-              "comments": 305.0,
-              "shares": 475.0,
-              "saves": 406.0,
-              "at": 1794798923367,
+              "likes": 294.0,
+              "comments": 307.0,
+              "shares": 505.0,
+              "saves": 409.0,
+              "at": 1794964613409,
               "isLate": false,
-              "collectionDelaySeconds": 143
+              "collectionDelaySeconds": null
             }
           },
           "revenue": 250640,
@@ -211,17 +211,17 @@
           "planned_upload": null,
           "upload": "2026-10-22",
           "post_url": "https://www.instagram.com/reel/Dey_FiYy12f/",
-          "measured": "2026-11-16",
-          "views": null,
+          "measured": "2026-11-18",
+          "views": 5330.0,
           "likes": null,
           "comments": 39.0,
-          "shares": 40.0,
+          "shares": 42.0,
           "saves": 47.0,
           "windows": {
             "24h": null,
             "48h": {
               "views": 5203.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 34.0,
               "shares": 34.0,
               "saves": 42.0,
@@ -231,7 +231,7 @@
             },
             "7d": {
               "views": 5033.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 39.0,
               "shares": 38.0,
               "saves": 44.0,
@@ -250,14 +250,14 @@
               "collectionDelaySeconds": 319
             },
             "latest": {
-              "views": null,
+              "views": 5330.0,
               "likes": null,
               "comments": 39.0,
-              "shares": 40.0,
+              "shares": 42.0,
               "saves": 47.0,
-              "at": 1794801919885,
+              "at": 1794964730545,
               "isLate": false,
-              "collectionDelaySeconds": 319
+              "collectionDelaySeconds": null
             }
           },
           "revenue": 0,
@@ -288,7 +288,7 @@
           "planned_upload": null,
           "upload": "2026-10-31",
           "post_url": "https://www.instagram.com/reel/DfJ3mZLzXpJ/",
-          "measured": "2026-11-15",
+          "measured": "2026-11-18",
           "views": null,
           "likes": 12.0,
           "comments": 30.0,
@@ -341,9 +341,9 @@
               "comments": 30.0,
               "shares": 12.0,
               "saves": 20.0,
-              "at": 1794701940913,
-              "isLate": true,
-              "collectionDelaySeconds": 52325
+              "at": 1794964807134,
+              "isLate": false,
+              "collectionDelaySeconds": null
             }
           },
           "revenue": 0,
@@ -564,7 +564,7 @@
             },
             "48h": {
               "views": 41000.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 209.0,
               "shares": 471.0,
               "saves": 388.0,
@@ -574,7 +574,7 @@
             },
             "7d": {
               "views": 52000.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 266.0,
               "shares": 623.0,
               "saves": 496.0,
@@ -631,12 +631,12 @@
           "planned_upload": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHepfrgwT5/",
-          "measured": "2026-11-15",
+          "measured": "2026-11-18",
           "views": null,
-          "likes": 2844.0,
-          "comments": 172.0,
+          "likes": 2845.0,
+          "comments": 173.0,
           "shares": 618.0,
-          "saves": 112.0,
+          "saves": 114.0,
           "windows": {
             "24h": {
               "views": 8516.0,
@@ -680,13 +680,13 @@
             },
             "latest": {
               "views": null,
-              "likes": 2844.0,
-              "comments": 172.0,
+              "likes": 2845.0,
+              "comments": 173.0,
               "shares": 618.0,
-              "saves": 112.0,
-              "at": 1794702017015,
-              "isLate": true,
-              "collectionDelaySeconds": 132593
+              "saves": 114.0,
+              "at": 1794965257060,
+              "isLate": false,
+              "collectionDelaySeconds": null
             }
           },
           "revenue": 102840,
@@ -736,7 +736,7 @@
             },
             "48h": {
               "views": 14000.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 28.0,
               "shares": null,
               "saves": 138.0,
@@ -822,7 +822,7 @@
             },
             "48h": {
               "views": 6296.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 44.0,
               "shares": null,
               "saves": 36.0,
@@ -832,7 +832,7 @@
             },
             "7d": {
               "views": 6772.0,
-              "likes": 3.0,
+              "likes": null,
               "comments": 44.0,
               "shares": null,
               "saves": 38.0,
@@ -924,12 +924,12 @@
           "planned_upload": null,
           "upload": "2026-11-01",
           "post_url": "https://www.instagram.com/reel/DfMrQ14SbIf/",
-          "measured": "2026-11-15",
-          "views": null,
-          "likes": 1804.0,
-          "comments": 1061.0,
-          "shares": 2377.0,
-          "saves": 2063.0,
+          "measured": "2026-11-18",
+          "views": 226000.0,
+          "likes": 1875.0,
+          "comments": 1161.0,
+          "shares": 2589.0,
+          "saves": 2097.0,
           "windows": {
             "24h": {
               "views": 94000.0,
@@ -972,14 +972,14 @@
               "collectionDelaySeconds": 507
             },
             "latest": {
-              "views": null,
-              "likes": 1804.0,
-              "comments": 1061.0,
-              "shares": 2377.0,
-              "saves": 2063.0,
-              "at": 1794744317259,
+              "views": 226000.0,
+              "likes": 1875.0,
+              "comments": 1161.0,
+              "shares": 2589.0,
+              "saves": 2097.0,
+              "at": 1794964450262,
               "isLate": false,
-              "collectionDelaySeconds": 507
+              "collectionDelaySeconds": null
             }
           },
           "revenue": 1957200,
@@ -1045,18 +1045,36 @@
           "planned_upload": null,
           "upload": "2026-10-23",
           "post_url": "https://www.youtube.com/watch?v=VDMkpUBpl50",
-          "measured": null,
-          "views": null,
-          "likes": null,
-          "comments": null,
+          "measured": "2026-11-11",
+          "views": 22624.0,
+          "likes": 250.0,
+          "comments": 38.0,
           "shares": null,
           "saves": null,
           "windows": {
             "24h": null,
             "48h": null,
             "7d": null,
-            "14d": null,
-            "latest": null
+            "14d": {
+              "views": 22624.0,
+              "likes": 250.0,
+              "comments": 38.0,
+              "shares": null,
+              "saves": null,
+              "at": 1794383806280,
+              "isLate": true,
+              "collectionDelaySeconds": 460606.28
+            },
+            "latest": {
+              "views": 22624.0,
+              "likes": 250.0,
+              "comments": 38.0,
+              "shares": null,
+              "saves": null,
+              "at": 1794383806280,
+              "isLate": true,
+              "collectionDelaySeconds": 460606.28
+            }
           },
           "revenue": null,
           "purchases": null,
@@ -9128,6 +9146,6 @@
       "targets": {}
     }
   ],
-  "revision": "30264ba286f9f7c6",
-  "updated_at": "2026-11-18T10:31:20+09:00"
+  "revision": "53870663a19d0c02",
+  "updated_at": "2026-11-18T10:33:20+09:00"
 }
