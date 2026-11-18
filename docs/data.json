@@ -520,7 +520,7 @@
               "at": 1794701719577,
               "isLate": true,
               "collectionDelaySeconds": 59825,
-              "viewsStatus": null
+              "viewsStatus": "trial_insights_required"
             },
             "7d": null,
             "14d": null,
@@ -9869,6 +9869,6 @@
       "targets": {}
     }
   ],
-  "revision": "9dbb6de010a72644",
-  "updated_at": "2026-11-18T12:07:16+09:00"
+  "revision": "b83162577e5c4423",
+  "updated_at": "2026-11-18T12:11:16+09:00"
 }
