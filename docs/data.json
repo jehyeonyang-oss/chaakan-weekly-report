@@ -150,7 +150,7 @@
               "at": 1794020720005,
               "isLate": false,
               "collectionDelaySeconds": null,
-              "viewsStatus": null
+              "viewsStatus": "historical_unavailable"
             },
             "48h": {
               "views": null,
@@ -161,7 +161,7 @@
               "at": 1794107419855,
               "isLate": false,
               "collectionDelaySeconds": null,
-              "viewsStatus": "unavailable"
+              "viewsStatus": "historical_unavailable"
             },
             "7d": {
               "views": null,
@@ -172,7 +172,7 @@
               "at": 1794539417827,
               "isLate": false,
               "collectionDelaySeconds": null,
-              "viewsStatus": null
+              "viewsStatus": "historical_unavailable"
             },
             "14d": null,
             "latest": {
@@ -254,7 +254,7 @@
               "at": 1794801919885,
               "isLate": false,
               "collectionDelaySeconds": 319,
-              "viewsStatus": null
+              "viewsStatus": "historical_unavailable"
             },
             "latest": {
               "views": 5330.0,
@@ -345,7 +345,7 @@
               "at": 1794701940913,
               "isLate": true,
               "collectionDelaySeconds": 52325,
-              "viewsStatus": null
+              "viewsStatus": "historical_unavailable"
             },
             "latest": {
               "views": 2678.0,
@@ -704,7 +704,7 @@
               "at": 1794702017015,
               "isLate": true,
               "collectionDelaySeconds": 132593,
-              "viewsStatus": null
+              "viewsStatus": "historical_unavailable"
             },
             "latest": {
               "views": 28000.0,
@@ -1097,8 +1097,28 @@
           "saves": null,
           "windows": {
             "24h": null,
-            "48h": null,
-            "7d": null,
+            "48h": {
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794300021160,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": "historical_unavailable"
+            },
+            "7d": {
+              "views": null,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1794300022866,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": "historical_unavailable"
+            },
             "14d": {
               "views": 22624.0,
               "likes": 250.0,
@@ -9869,6 +9889,6 @@
       "targets": {}
     }
   ],
-  "revision": "7291197c79f2fd19",
-  "updated_at": "2026-11-18T12:17:16+09:00"
+  "revision": "aa63a63a3868b4f6",
+  "updated_at": "2026-11-18T12:19:16+09:00"
 }
