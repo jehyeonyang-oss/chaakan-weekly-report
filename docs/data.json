@@ -1089,10 +1089,10 @@
           "planned_upload": null,
           "upload": "2026-10-23",
           "post_url": "https://www.youtube.com/watch?v=VDMkpUBpl50",
-          "measured": "2026-11-11",
-          "views": 22624.0,
-          "likes": 250.0,
-          "comments": 38.0,
+          "measured": "2026-11-18",
+          "views": null,
+          "likes": null,
+          "comments": null,
           "shares": null,
           "saves": null,
           "windows": {
@@ -1103,7 +1103,7 @@
               "comments": null,
               "shares": null,
               "saves": null,
-              "at": 1794300021160,
+              "at": 1794991217903,
               "isLate": false,
               "collectionDelaySeconds": null,
               "viewsStatus": "historical_unavailable"
@@ -1114,7 +1114,7 @@
               "comments": null,
               "shares": null,
               "saves": null,
-              "at": 1794300022866,
+              "at": 1794991219512,
               "isLate": false,
               "collectionDelaySeconds": null,
               "viewsStatus": "historical_unavailable"
@@ -1131,15 +1131,15 @@
               "viewsStatus": null
             },
             "latest": {
-              "views": 22624.0,
-              "likes": 250.0,
-              "comments": 38.0,
+              "views": null,
+              "likes": null,
+              "comments": null,
               "shares": null,
               "saves": null,
-              "at": 1794383806280,
-              "isLate": true,
-              "collectionDelaySeconds": 460606.28,
-              "viewsStatus": null
+              "at": 1794991219512,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": "historical_unavailable"
             }
           },
           "revenue": null,
@@ -9889,6 +9889,6 @@
       "targets": {}
     }
   ],
-  "revision": "25c879878074db38",
-  "updated_at": "2026-11-18T18:05:15+09:00"
+  "revision": "3625b0cc266e74ff",
+  "updated_at": "2026-11-18T18:11:15+09:00"
 }
