@@ -135,10 +135,10 @@
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfYmFnWPEqg/",
           "measured": "2026-11-18",
-          "views": null,
-          "likes": 294.0,
+          "views": 80000.0,
+          "likes": 295.0,
           "comments": 307.0,
-          "shares": 505.0,
+          "shares": 507.0,
           "saves": 409.0,
           "windows": {
             "24h": {
@@ -149,7 +149,8 @@
               "saves": 154.0,
               "at": 1794020720005,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": null,
@@ -159,7 +160,8 @@
               "saves": 361.0,
               "at": 1794107419855,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": "unavailable"
             },
             "7d": {
               "views": null,
@@ -169,18 +171,20 @@
               "saves": 402.0,
               "at": 1794539417827,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": null,
             "latest": {
-              "views": null,
-              "likes": 294.0,
+              "views": 80000.0,
+              "likes": 295.0,
               "comments": 307.0,
-              "shares": 505.0,
+              "shares": 507.0,
               "saves": 409.0,
-              "at": 1794964613409,
+              "at": 1794970055623,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": "verified"
             }
           },
           "revenue": 250640,
@@ -227,7 +231,8 @@
               "saves": 42.0,
               "at": 1793100318786,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 5033.0,
@@ -237,7 +242,8 @@
               "saves": 44.0,
               "at": 1794197119573,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": null,
@@ -247,7 +253,8 @@
               "saves": 47.0,
               "at": 1794801919885,
               "isLate": false,
-              "collectionDelaySeconds": 319
+              "collectionDelaySeconds": 319,
+              "viewsStatus": null
             },
             "latest": {
               "views": 5330.0,
@@ -257,7 +264,8 @@
               "saves": 47.0,
               "at": 1794964730545,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             }
           },
           "revenue": 0,
@@ -289,7 +297,7 @@
           "upload": "2026-10-31",
           "post_url": "https://www.instagram.com/reel/DfJ3mZLzXpJ/",
           "measured": "2026-11-18",
-          "views": null,
+          "views": 2678.0,
           "likes": 12.0,
           "comments": 30.0,
           "shares": 12.0,
@@ -303,7 +311,8 @@
               "saves": 8.0,
               "at": 1793526617563,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 2063.0,
@@ -313,7 +322,8 @@
               "saves": 12.0,
               "at": 1793613019521,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 2578.0,
@@ -323,7 +333,8 @@
               "saves": 17.0,
               "at": 1794045317199,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": null,
@@ -333,17 +344,19 @@
               "saves": 20.0,
               "at": 1794701940913,
               "isLate": true,
-              "collectionDelaySeconds": 52325
+              "collectionDelaySeconds": 52325,
+              "viewsStatus": null
             },
             "latest": {
-              "views": null,
+              "views": 2678.0,
               "likes": 12.0,
               "comments": 30.0,
               "shares": 12.0,
               "saves": 20.0,
-              "at": 1794964807134,
+              "at": 1794970216196,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": "verified"
             }
           },
           "revenue": 0,
@@ -425,7 +438,8 @@
               "saves": 3970.0,
               "at": 1793587256366,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 209000.0,
@@ -435,7 +449,8 @@
               "saves": 4373.0,
               "at": 1793960717373,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": 275000.0,
@@ -445,7 +460,8 @@
               "saves": 4577.0,
               "at": 1794702617783,
               "isLate": true,
-              "collectionDelaySeconds": 137163
+              "collectionDelaySeconds": 137163,
+              "viewsStatus": null
             },
             "latest": {
               "views": 275000.0,
@@ -455,7 +471,8 @@
               "saves": 4577.0,
               "at": 1794702617783,
               "isLate": true,
-              "collectionDelaySeconds": 137163
+              "collectionDelaySeconds": 137163,
+              "viewsStatus": null
             }
           },
           "revenue": 1841920,
@@ -486,12 +503,12 @@
           "planned_upload": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/DfoiaXDRSSD/",
-          "measured": "2026-11-15",
+          "measured": "2026-11-18",
           "views": null,
-          "likes": 167.0,
-          "comments": 27.0,
-          "shares": 195.0,
-          "saves": 319.0,
+          "likes": 191.0,
+          "comments": 33.0,
+          "shares": 237.0,
+          "saves": 384.0,
           "windows": {
             "24h": null,
             "48h": {
@@ -502,19 +519,21 @@
               "saves": 319.0,
               "at": 1794701719577,
               "isLate": true,
-              "collectionDelaySeconds": 59825
+              "collectionDelaySeconds": 59825,
+              "viewsStatus": null
             },
             "7d": null,
             "14d": null,
             "latest": {
               "views": null,
-              "likes": 167.0,
-              "comments": 27.0,
-              "shares": 195.0,
-              "saves": 319.0,
-              "at": 1794701719577,
-              "isLate": true,
-              "collectionDelaySeconds": 59825
+              "likes": 191.0,
+              "comments": 33.0,
+              "shares": 237.0,
+              "saves": 384.0,
+              "at": 1794970307043,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": "trial_insights_required"
             }
           },
           "revenue": 60720,
@@ -560,7 +579,8 @@
               "saves": 322.0,
               "at": 1793713219898,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 41000.0,
@@ -570,7 +590,8 @@
               "saves": 388.0,
               "at": 1793785519510,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 52000.0,
@@ -580,7 +601,8 @@
               "saves": 496.0,
               "at": 1794217518894,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": 96000.0,
@@ -590,7 +612,8 @@
               "saves": 509.0,
               "at": 1794822318613,
               "isLate": false,
-              "collectionDelaySeconds": 323
+              "collectionDelaySeconds": 323,
+              "viewsStatus": null
             },
             "latest": {
               "views": 96000.0,
@@ -600,7 +623,8 @@
               "saves": 509.0,
               "at": 1794822318613,
               "isLate": false,
-              "collectionDelaySeconds": 323
+              "collectionDelaySeconds": 323,
+              "viewsStatus": null
             }
           },
           "revenue": 242880,
@@ -632,8 +656,8 @@
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHepfrgwT5/",
           "measured": "2026-11-18",
-          "views": null,
-          "likes": 2845.0,
+          "views": 28000.0,
+          "likes": 2846.0,
           "comments": 173.0,
           "shares": 618.0,
           "saves": 114.0,
@@ -646,7 +670,8 @@
               "saves": 93.0,
               "at": 1793455934480,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 10000.0,
@@ -656,7 +681,8 @@
               "saves": 100.0,
               "at": 1793538616207,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 27000.0,
@@ -666,7 +692,8 @@
               "saves": 105.0,
               "at": 1793964916256,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": null,
@@ -676,17 +703,19 @@
               "saves": 112.0,
               "at": 1794702017015,
               "isLate": true,
-              "collectionDelaySeconds": 132593
+              "collectionDelaySeconds": 132593,
+              "viewsStatus": null
             },
             "latest": {
-              "views": null,
-              "likes": 2845.0,
+              "views": 28000.0,
+              "likes": 2846.0,
               "comments": 173.0,
               "shares": 618.0,
               "saves": 114.0,
-              "at": 1794965257060,
+              "at": 1794970614060,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": "verified"
             }
           },
           "revenue": 102840,
@@ -732,7 +761,8 @@
               "saves": 40.0,
               "at": 1793629517794,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 14000.0,
@@ -742,7 +772,8 @@
               "saves": 138.0,
               "at": 1793715917005,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 20021.0,
@@ -752,7 +783,8 @@
               "saves": 175.0,
               "at": 1794448500000,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": 20000.0,
@@ -762,7 +794,8 @@
               "saves": 180.0,
               "at": 1794752718839,
               "isLate": false,
-              "collectionDelaySeconds": 147
+              "collectionDelaySeconds": 147,
+              "viewsStatus": null
             },
             "latest": {
               "views": 20000.0,
@@ -772,7 +805,8 @@
               "saves": 180.0,
               "at": 1794752718839,
               "isLate": false,
-              "collectionDelaySeconds": 147
+              "collectionDelaySeconds": 147,
+              "viewsStatus": null
             }
           },
           "revenue": 60720,
@@ -818,7 +852,8 @@
               "saves": 35.0,
               "at": 1793541916604,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 6296.0,
@@ -828,7 +863,8 @@
               "saves": 36.0,
               "at": 1793616917451,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 6772.0,
@@ -838,7 +874,8 @@
               "saves": 38.0,
               "at": 1794048918030,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
               "views": 7062.0,
@@ -848,7 +885,8 @@
               "saves": 38.0,
               "at": 1794702318883,
               "isLate": true,
-              "collectionDelaySeconds": 48757
+              "collectionDelaySeconds": 48757,
+              "viewsStatus": null
             },
             "latest": {
               "views": 7062.0,
@@ -858,7 +896,8 @@
               "saves": 38.0,
               "at": 1794702318883,
               "isLate": true,
-              "collectionDelaySeconds": 48757
+              "collectionDelaySeconds": 48757,
+              "viewsStatus": null
             }
           },
           "revenue": 79920,
@@ -939,7 +978,8 @@
               "saves": 1528.0,
               "at": 1793620817317,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 109000.0,
@@ -949,7 +989,8 @@
               "saves": 1750.0,
               "at": 1793707219512,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 117000.0,
@@ -959,17 +1000,19 @@
               "saves": 1933.0,
               "at": 1794139517556,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "14d": {
-              "views": null,
+              "views": 193000.0,
               "likes": 1804.0,
               "comments": 1061.0,
               "shares": 2377.0,
               "saves": 2063.0,
               "at": 1794744317259,
               "isLate": false,
-              "collectionDelaySeconds": 507
+              "collectionDelaySeconds": 507,
+              "viewsStatus": "verified"
             },
             "latest": {
               "views": 226000.0,
@@ -979,7 +1022,8 @@
               "saves": 2097.0,
               "at": 1794964450262,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             }
           },
           "revenue": 1957200,
@@ -1063,7 +1107,8 @@
               "saves": null,
               "at": 1794383806280,
               "isLate": true,
-              "collectionDelaySeconds": 460606.28
+              "collectionDelaySeconds": 460606.28,
+              "viewsStatus": null
             },
             "latest": {
               "views": 22624.0,
@@ -1073,7 +1118,8 @@
               "saves": null,
               "at": 1794383806280,
               "isLate": true,
-              "collectionDelaySeconds": 460606.28
+              "collectionDelaySeconds": 460606.28,
+              "viewsStatus": null
             }
           },
           "revenue": null,
@@ -1259,7 +1305,8 @@
               "saves": 25.0,
               "at": 1794303020900,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "48h": {
               "views": 5350.0,
@@ -1269,7 +1316,8 @@
               "saves": 41.0,
               "at": 1794389430348,
               "isLate": false,
-              "collectionDelaySeconds": null
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
             },
             "7d": {
               "views": 5701.0,
@@ -1279,7 +1327,8 @@
               "saves": 42.0,
               "at": 1794821718404,
               "isLate": false,
-              "collectionDelaySeconds": 581
+              "collectionDelaySeconds": 581,
+              "viewsStatus": null
             },
             "14d": null,
             "latest": {
@@ -1290,7 +1339,8 @@
               "saves": 42.0,
               "at": 1794821718404,
               "isLate": false,
-              "collectionDelaySeconds": 581
+              "collectionDelaySeconds": 581,
+              "viewsStatus": null
             }
           },
           "revenue": 0,
@@ -1743,7 +1793,7 @@
       "targets": {},
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
-      "source_at": "2026-11-18T02:59:52.256939+00:00",
+      "source_at": "2026-11-18T03:01:39.124163+00:00",
       "source_state": "ok"
     },
     {
@@ -9819,6 +9869,6 @@
       "targets": {}
     }
   ],
-  "revision": "bc19728b96eddaf1",
-  "updated_at": "2026-11-18T12:03:15+09:00"
+  "revision": "44689b028ce0d127",
+  "updated_at": "2026-11-18T12:05:16+09:00"
 }
