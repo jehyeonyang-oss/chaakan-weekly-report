@@ -1099,7 +1099,7 @@
           "planned_upload": null,
           "upload": "2026-10-23",
           "post_url": "https://www.youtube.com/watch?v=VDMkpUBpl50",
-          "measured": "2026-11-18",
+          "measured": "2026-11-19",
           "views": null,
           "likes": null,
           "comments": null,
@@ -1113,7 +1113,7 @@
               "comments": null,
               "shares": null,
               "saves": null,
-              "at": 1794991217903,
+              "at": 1795077622649,
               "isLate": false,
               "collectionDelaySeconds": null,
               "viewsStatus": "historical_unavailable"
@@ -1124,7 +1124,7 @@
               "comments": null,
               "shares": null,
               "saves": null,
-              "at": 1794991219512,
+              "at": 1795077624042,
               "isLate": false,
               "collectionDelaySeconds": null,
               "viewsStatus": "historical_unavailable"
@@ -1146,7 +1146,7 @@
               "comments": null,
               "shares": null,
               "saves": null,
-              "at": 1794991219512,
+              "at": 1795077624042,
               "isLate": false,
               "collectionDelaySeconds": null,
               "viewsStatus": "historical_unavailable"
@@ -9917,6 +9917,6 @@
       "targets": {}
     }
   ],
-  "revision": "d4029bced811a260",
-  "updated_at": "2026-11-19T18:07:16+09:00"
+  "revision": "a29e8893a8ed2b3b",
+  "updated_at": "2026-11-19T18:11:16+09:00"
 }
