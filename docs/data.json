@@ -1955,19 +1955,19 @@
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
           "measured": "2026-11-19",
-          "views": 1574.0,
+          "views": 1578.0,
           "likes": 13.0,
           "comments": 0.0,
           "shares": 11.0,
           "saves": 8.0,
           "windows": {
             "latest": {
-              "views": 1574.0,
+              "views": 1578.0,
               "likes": 13.0,
               "comments": 0.0,
               "shares": 11.0,
               "saves": 8.0,
-              "at": "2026-11-19T14:27:31+09:00"
+              "at": "2026-11-19T20:27:31+09:00"
             },
             "48h": {
               "views": 1516.0,
@@ -1976,6 +1976,14 @@
               "shares": 10.0,
               "saves": 8.0,
               "at": "2026-11-14T20:27:31+09:00"
+            },
+            "7d": {
+              "views": 1578.0,
+              "likes": 13.0,
+              "comments": 0.0,
+              "shares": 11.0,
+              "saves": 8.0,
+              "at": "2026-11-19T20:27:31+09:00"
             }
           },
           "revenue": null,
@@ -2576,20 +2584,20 @@
           "exp_ss": null,
           "upload": "2026-10-29",
           "post_url": "https://www.instagram.com/reel/DfE47FzzuUt/",
-          "measured": "2026-11-18",
-          "views": 1006.0,
+          "measured": "2026-11-19",
+          "views": 1026.0,
           "likes": 12.0,
           "comments": 20.0,
           "shares": 7.0,
           "saves": 8.0,
           "windows": {
             "latest": {
-              "views": 1006.0,
+              "views": 1026.0,
               "likes": 12.0,
               "comments": 20.0,
               "shares": 7.0,
               "saves": 8.0,
-              "at": "2026-11-18T20:27:31+09:00"
+              "at": "2026-11-19T20:27:31+09:00"
             },
             "48h": {
               "views": 491.0,
@@ -8528,8 +8536,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-19T20:12:31+09:00",
-      "fetched_at": "2026-11-19T11:15:18.293Z",
+      "source_at": "2026-11-19T20:27:31+09:00",
+      "fetched_at": "2026-11-19T11:31:18.720Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -9917,6 +9925,6 @@
       "targets": {}
     }
   ],
-  "revision": "73a18bc928821715",
-  "updated_at": "2026-11-19T20:15:15+09:00"
+  "revision": "857bb54729ee8513",
+  "updated_at": "2026-11-19T20:31:15+09:00"
 }
