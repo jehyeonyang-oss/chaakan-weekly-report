@@ -134,12 +134,12 @@
           "planned_upload": null,
           "upload": "2026-11-06",
           "post_url": "https://www.instagram.com/reel/DfYmFnWPEqg/",
-          "measured": "2026-11-18",
-          "views": 80000.0,
-          "likes": 295.0,
-          "comments": 307.0,
-          "shares": 507.0,
-          "saves": 409.0,
+          "measured": "2026-11-20",
+          "views": 90000.0,
+          "likes": 302.0,
+          "comments": 309.0,
+          "shares": 522.0,
+          "saves": 411.0,
           "windows": {
             "24h": {
               "views": null,
@@ -174,17 +174,27 @@
               "collectionDelaySeconds": null,
               "viewsStatus": "historical_unavailable"
             },
-            "14d": null,
-            "latest": {
-              "views": 80000.0,
-              "likes": 295.0,
-              "comments": 307.0,
-              "shares": 507.0,
-              "saves": 409.0,
-              "at": 1794970055623,
+            "14d": {
+              "views": 90000.0,
+              "likes": 302.0,
+              "comments": 309.0,
+              "shares": 522.0,
+              "saves": 411.0,
+              "at": 1795144219563,
               "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "verified"
+              "collectionDelaySeconds": 469,
+              "viewsStatus": null
+            },
+            "latest": {
+              "views": 90000.0,
+              "likes": 302.0,
+              "comments": 309.0,
+              "shares": 522.0,
+              "saves": 411.0,
+              "at": 1795144219563,
+              "isLate": false,
+              "collectionDelaySeconds": 469,
+              "viewsStatus": null
             }
           },
           "revenue": 250640,
@@ -1823,7 +1833,7 @@
       "targets": {},
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
-      "source_at": "2026-11-20T02:51:19.837560+00:00",
+      "source_at": "2026-11-20T03:11:19.509015+00:00",
       "source_state": "ok"
     },
     {
@@ -9987,6 +9997,6 @@
       "targets": {}
     }
   ],
-  "revision": "ee611312eed2b580",
-  "updated_at": "2026-11-20T12:07:15+09:00"
+  "revision": "5b32311005421301",
+  "updated_at": "2026-11-20T12:17:15+09:00"
 }
