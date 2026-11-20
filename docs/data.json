@@ -1461,7 +1461,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": null,
+          "revenue_window": "2026-11-16~2026-11-20",
           "source": "live"
         },
         {
@@ -10038,6 +10038,6 @@
       "targets": {}
     }
   ],
-  "revision": "fb30d2dfab07060c",
-  "updated_at": "2026-11-20T16:07:15+09:00"
+  "revision": "6a9b4281451ed48b",
+  "updated_at": "2026-11-20T16:11:15+09:00"
 }
