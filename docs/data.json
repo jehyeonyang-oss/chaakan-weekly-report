@@ -1452,7 +1452,13 @@
           "comments": null,
           "shares": null,
           "saves": null,
-          "windows": {},
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": null,
+            "14d": null,
+            "latest": null
+          },
           "revenue": null,
           "purchases": null,
           "revenue_window": null,
@@ -8644,7 +8650,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-20T14:57:35+09:00",
-      "fetched_at": "2026-11-20T06:35:18.620Z",
+      "fetched_at": "2026-11-20T06:51:18.805Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10032,6 +10038,6 @@
       "targets": {}
     }
   ],
-  "revision": "445cea8470c00219",
-  "updated_at": "2026-11-20T15:47:16+09:00"
+  "revision": "0639982ca1c02b48",
+  "updated_at": "2026-11-20T15:51:15+09:00"
 }
