@@ -558,7 +558,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-12~2026-11-20",
+          "revenue_window": "2026-11-12~2026-11-21",
           "source": "live"
         },
         {
@@ -1385,7 +1385,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-09~2026-11-20",
+          "revenue_window": "2026-11-09~2026-11-21",
           "source": "live"
         },
         {
@@ -1481,7 +1481,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": "2026-11-16~2026-11-20",
+          "revenue_window": "2026-11-16~2026-11-21",
           "source": "live"
         },
         {
@@ -10066,6 +10066,6 @@
       "targets": {}
     }
   ],
-  "revision": "456877ca0209bbd5",
-  "updated_at": "2026-11-21T00:57:15+09:00"
+  "revision": "6fec28cda5c3c69f",
+  "updated_at": "2026-11-21T01:11:15+09:00"
 }
