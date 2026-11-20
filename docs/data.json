@@ -1895,7 +1895,8 @@
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
       "source_at": "2026-11-20T08:41:38.651165+00:00",
-      "source_state": "ok"
+      "source_state": "error",
+      "source_message": "기존 운영 페이지를 불러오지 못해 마지막 정상 데이터를 표시합니다."
     },
     {
       "slug": "marketing",
@@ -1976,19 +1977,19 @@
           "upload": "2026-11-13",
           "post_url": "https://www.instagram.com/reel/DfrVwnXyplA/",
           "measured": "2026-11-20",
-          "views": 1238.0,
+          "views": 1239.0,
           "likes": 12.0,
           "comments": 2.0,
           "shares": 5.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1238.0,
+              "views": 1239.0,
               "likes": 12.0,
               "comments": 2.0,
               "shares": 5.0,
               "saves": 7.0,
-              "at": "2026-11-20T12:57:31+09:00"
+              "at": "2026-11-20T18:57:31+09:00"
             },
             "48h": {
               "views": 1202.0,
@@ -1997,6 +1998,14 @@
               "shares": 5.0,
               "saves": 7.0,
               "at": "2026-11-15T18:57:31+09:00"
+            },
+            "7d": {
+              "views": 1239.0,
+              "likes": 12.0,
+              "comments": 2.0,
+              "shares": 5.0,
+              "saves": 7.0,
+              "at": "2026-11-20T18:57:31+09:00"
             }
           },
           "revenue": null,
@@ -8669,8 +8678,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-20T18:12:31+09:00",
-      "fetched_at": "2026-11-20T09:47:20.494Z",
+      "source_at": "2026-11-20T18:57:31+09:00",
+      "fetched_at": "2026-11-20T10:03:24.216Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10058,6 +10067,6 @@
       "targets": {}
     }
   ],
-  "revision": "cf9942a89e31b08c",
-  "updated_at": "2026-11-20T18:47:16+09:00"
+  "revision": "0e5470ddec958ae4",
+  "updated_at": "2026-11-20T19:03:17+09:00"
 }
