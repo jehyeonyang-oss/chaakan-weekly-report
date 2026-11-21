@@ -8696,7 +8696,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-21T21:36:07+09:00",
-      "fetched_at": "2026-11-21T12:47:17.122Z",
+      "fetched_at": "2026-11-21T13:03:18.791Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10084,6 +10084,6 @@
       "targets": {}
     }
   ],
-  "revision": "52c672b226113253",
-  "updated_at": "2026-11-21T21:47:14+09:00"
+  "revision": "e34c0fc532f6527b",
+  "updated_at": "2026-11-21T22:03:14+09:00"
 }
