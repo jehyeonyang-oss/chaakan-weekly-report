@@ -10081,11 +10081,9 @@
         }
       ],
       "ads": [],
-      "targets": {},
-      "source_state": "error",
-      "source_message": "해외시딩 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다."
+      "targets": {}
     }
   ],
-  "revision": "d9adf5d714ac5c17",
-  "updated_at": "2026-11-21T20:11:15+09:00"
+  "revision": "c99e8b175ccc12fb",
+  "updated_at": "2026-11-21T20:13:15+09:00"
 }
