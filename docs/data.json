@@ -8696,7 +8696,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-21T19:12:31+09:00",
-      "fetched_at": "2026-11-21T10:55:17.638Z",
+      "fetched_at": "2026-11-21T11:11:46.847Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10086,6 +10086,6 @@
       "source_message": "해외시딩 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다."
     }
   ],
-  "revision": "ce544c3dead6b864",
-  "updated_at": "2026-11-21T20:09:15+09:00"
+  "revision": "d9adf5d714ac5c17",
+  "updated_at": "2026-11-21T20:11:15+09:00"
 }
