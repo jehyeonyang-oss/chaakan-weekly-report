@@ -558,7 +558,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-12~2026-11-22",
+          "revenue_window": "2026-11-12~2026-11-23",
           "source": "live"
         },
         {
@@ -1365,7 +1365,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-09~2026-11-22",
+          "revenue_window": "2026-11-09~2026-11-23",
           "source": "live"
         },
         {
@@ -1461,7 +1461,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": "2026-11-16~2026-11-22",
+          "revenue_window": "2026-11-16~2026-11-23",
           "source": "live"
         },
         {
@@ -8684,7 +8684,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-22T22:27:31+09:00",
-      "fetched_at": "2026-11-22T14:55:17.486Z",
+      "fetched_at": "2026-11-22T15:11:18.072Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10072,6 +10072,6 @@
       "targets": {}
     }
   ],
-  "revision": "7aea33a844a5638b",
-  "updated_at": "2026-11-23T00:01:15+09:00"
+  "revision": "ab23ae0194d1b0ff",
+  "updated_at": "2026-11-23T00:11:15+09:00"
 }
