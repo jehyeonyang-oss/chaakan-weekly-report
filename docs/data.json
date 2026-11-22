@@ -1322,7 +1322,7 @@
           "free": true,
           "price": null,
           "fee_label": "무가 (제품제공)",
-          "content_cost": null,
+          "content_cost": 18480.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -10084,6 +10084,6 @@
       "targets": {}
     }
   ],
-  "revision": "1e512d9b179028b6",
-  "updated_at": "2026-11-22T14:51:15+09:00"
+  "revision": "d7dfb47134b31de1",
+  "updated_at": "2026-11-22T14:53:15+09:00"
 }
