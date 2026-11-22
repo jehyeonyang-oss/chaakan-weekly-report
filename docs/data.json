@@ -1429,9 +1429,9 @@
           "measured": "2026-11-20",
           "views": 18000.0,
           "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null,
+          "comments": 205.0,
+          "shares": 62.0,
+          "saves": 80.0,
           "windows": {
             "24h": null,
             "48h": {
@@ -1450,13 +1450,13 @@
             "latest": {
               "views": 18000.0,
               "likes": null,
-              "comments": null,
-              "shares": null,
-              "saves": null,
-              "at": 1795162880822,
-              "isLate": true,
-              "collectionDelaySeconds": 165342.822,
-              "viewsStatus": null
+              "comments": 205.0,
+              "shares": 62.0,
+              "saves": 80.0,
+              "at": 1795160896126,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": "verified"
             }
           },
           "revenue": null,
@@ -10072,6 +10072,6 @@
       "targets": {}
     }
   ],
-  "revision": "1f920b8c681f4767",
-  "updated_at": "2026-11-22T21:55:14+09:00"
+  "revision": "854b24157ecba726",
+  "updated_at": "2026-11-22T21:59:14+09:00"
 }
