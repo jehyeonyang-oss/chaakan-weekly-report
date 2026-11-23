@@ -2379,20 +2379,20 @@
           "exp_ss": null,
           "upload": "2026-11-05",
           "post_url": "https://www.instagram.com/reel/DfW4zlfTyOA/",
-          "measured": "2026-11-22",
-          "views": 1655.0,
+          "measured": "2026-11-23",
+          "views": 1657.0,
           "likes": 13.0,
           "comments": 5.0,
           "shares": 6.0,
           "saves": 10.0,
           "windows": {
             "latest": {
-              "views": 1655.0,
+              "views": 1657.0,
               "likes": 13.0,
               "comments": 5.0,
               "shares": 6.0,
               "saves": 10.0,
-              "at": "2026-11-22T20:12:31+09:00"
+              "at": "2026-11-23T20:12:31+09:00"
             },
             "48h": {
               "views": 1463.0,
@@ -2611,20 +2611,20 @@
           "exp_ss": null,
           "upload": "2026-10-30",
           "post_url": "https://www.instagram.com/reel/DfHbWuCB6iV/",
-          "measured": "2026-11-22",
-          "views": 5896.0,
+          "measured": "2026-11-23",
+          "views": 5936.0,
           "likes": 27.0,
           "comments": 2.0,
           "shares": 84.0,
           "saves": 49.0,
           "windows": {
             "latest": {
-              "views": 5896.0,
+              "views": 5936.0,
               "likes": 27.0,
               "comments": 2.0,
               "shares": 84.0,
               "saves": 49.0,
-              "at": "2026-11-22T20:12:31+09:00"
+              "at": "2026-11-23T20:12:31+09:00"
             },
             "48h": {
               "views": 3712.0,
@@ -8711,8 +8711,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-23T19:57:31+09:00",
-      "fetched_at": "2026-11-23T11:11:18.016Z",
+      "source_at": "2026-11-23T20:12:31+09:00",
+      "fetched_at": "2026-11-23T11:27:17.695Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10100,6 +10100,6 @@
       "targets": {}
     }
   ],
-  "revision": "814603998892fe21",
-  "updated_at": "2026-11-23T20:11:15+09:00"
+  "revision": "9c6d539b24000557",
+  "updated_at": "2026-11-23T20:27:15+09:00"
 }
