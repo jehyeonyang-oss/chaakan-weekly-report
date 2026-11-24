@@ -430,9 +430,9 @@
               "viewsStatus": "reference_missing"
             }
           },
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "revenue": 0,
+          "purchases": 0,
+          "revenue_window": "2026-11-20~2026-11-24",
           "source": "live"
         },
         {
@@ -1525,7 +1525,7 @@
           "free": false,
           "price": 300000.0,
           "fee_label": "30만",
-          "content_cost": null,
+          "content_cost": 300000,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -1533,16 +1533,42 @@
           "planned_upload": null,
           "upload": "2026-11-14",
           "post_url": "https://www.instagram.com/p/DfuHSxBGIJ7/",
-          "measured": null,
+          "measured": "2026-11-24",
           "views": null,
           "likes": null,
-          "comments": null,
+          "comments": 2.0,
           "shares": null,
           "saves": null,
-          "windows": {},
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": {
+              "views": null,
+              "likes": null,
+              "comments": 2.0,
+              "shares": null,
+              "saves": null,
+              "at": 1795497137389,
+              "isLate": true,
+              "collectionDelaySeconds": 236134,
+              "viewsStatus": null
+            },
+            "14d": null,
+            "latest": {
+              "views": null,
+              "likes": null,
+              "comments": 2.0,
+              "shares": null,
+              "saves": null,
+              "at": 1795497137389,
+              "isLate": true,
+              "collectionDelaySeconds": 236134,
+              "viewsStatus": null
+            }
+          },
+          "revenue": 55920,
+          "purchases": 1,
+          "revenue_window": "2026-11-14~2026-11-24",
           "source": "live"
         },
         {
@@ -10144,6 +10170,6 @@
       "targets": {}
     }
   ],
-  "revision": "b29984d140a6f575",
-  "updated_at": "2026-11-24T14:35:15+09:00"
+  "revision": "0b1315c8a0aa708a",
+  "updated_at": "2026-11-24T14:41:15+09:00"
 }
