@@ -56,7 +56,7 @@
           "free": false,
           "price": null,
           "fee_label": "40만 + 2차 5만(1개월)",
-          "content_cost": null,
+          "content_cost": 462160.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -70,10 +70,16 @@
           "comments": null,
           "shares": null,
           "saves": null,
-          "windows": {},
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": null,
+            "14d": null,
+            "latest": null
+          },
+          "revenue": 0,
+          "purchases": 0,
+          "revenue_window": "2026-11-24~2026-11-24",
           "source": "live"
         },
         {
@@ -10170,6 +10176,6 @@
       "targets": {}
     }
   ],
-  "revision": "e511dbf5f0e45d82",
-  "updated_at": "2026-11-24T21:01:15+09:00"
+  "revision": "b2b033141ecb5008",
+  "updated_at": "2026-11-24T21:13:15+09:00"
 }
