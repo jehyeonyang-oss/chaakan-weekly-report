@@ -389,7 +389,7 @@
           "free": false,
           "price": null,
           "fee_label": "20만 + 2차 10만(추후 진행 시)",
-          "content_cost": null,
+          "content_cost": 200000,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -403,7 +403,13 @@
           "comments": null,
           "shares": null,
           "saves": null,
-          "windows": {},
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": null,
+            "14d": null,
+            "latest": null
+          },
           "revenue": null,
           "purchases": null,
           "revenue_window": null,
@@ -10110,6 +10116,6 @@
       "targets": {}
     }
   ],
-  "revision": "09a59baffd4851a1",
-  "updated_at": "2026-11-24T13:37:16+09:00"
+  "revision": "a396d7ee700cdede",
+  "updated_at": "2026-11-24T13:43:15+09:00"
 }
