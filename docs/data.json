@@ -397,18 +397,38 @@
           "planned_upload": null,
           "upload": "2026-11-20",
           "post_url": "https://www.instagram.com/reel/Df92b4fv4dg/",
-          "measured": null,
+          "measured": "2026-11-24",
           "views": null,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null,
+          "likes": 59.0,
+          "comments": 8.0,
+          "shares": 15.0,
+          "saves": 17.0,
           "windows": {
             "24h": null,
-            "48h": null,
+            "48h": {
+              "views": null,
+              "likes": 59.0,
+              "comments": 8.0,
+              "shares": 15.0,
+              "saves": 17.0,
+              "at": 1795495549090,
+              "isLate": true,
+              "collectionDelaySeconds": 138514,
+              "viewsStatus": "reference_missing"
+            },
             "7d": null,
             "14d": null,
-            "latest": null
+            "latest": {
+              "views": null,
+              "likes": 59.0,
+              "comments": 8.0,
+              "shares": 15.0,
+              "saves": 17.0,
+              "at": 1795495549090,
+              "isLate": true,
+              "collectionDelaySeconds": 138514,
+              "viewsStatus": "reference_missing"
+            }
           },
           "revenue": null,
           "purchases": null,
@@ -10116,6 +10136,6 @@
       "targets": {}
     }
   ],
-  "revision": "06a0efbd6013e1c8",
-  "updated_at": "2026-11-24T14:03:15+09:00"
+  "revision": "e90e0d3c7ae42cea",
+  "updated_at": "2026-11-24T14:11:16+09:00"
 }
