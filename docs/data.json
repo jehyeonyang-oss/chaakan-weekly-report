@@ -1954,7 +1954,7 @@
       "targets": {},
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
-      "source_at": "2026-11-24T08:06:39.025974+00:00",
+      "source_at": "2026-11-24T08:10:04.303090+00:00",
       "source_state": "ok"
     },
     {
@@ -2333,20 +2333,20 @@
           "exp_ss": null,
           "upload": "2026-11-08",
           "post_url": "https://www.instagram.com/reel/DfeRRbnBNxi/",
-          "measured": "2026-11-23",
-          "views": 1443.0,
+          "measured": "2026-11-24",
+          "views": 1462.0,
           "likes": 11.0,
           "comments": 0.0,
           "shares": 4.0,
           "saves": 6.0,
           "windows": {
             "latest": {
-              "views": 1443.0,
+              "views": 1462.0,
               "likes": 11.0,
               "comments": 0.0,
               "shares": 4.0,
               "saves": 6.0,
-              "at": "2026-11-23T17:12:31+09:00"
+              "at": "2026-11-24T17:12:32+09:00"
             },
             "48h": {
               "views": 1337.0,
@@ -8781,8 +8781,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-24T16:27:39+09:00",
-      "fetched_at": "2026-11-24T07:59:18.567Z",
+      "source_at": "2026-11-24T17:12:32+09:00",
+      "fetched_at": "2026-11-24T08:15:18.624Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10170,6 +10170,6 @@
       "targets": {}
     }
   ],
-  "revision": "422f43531244f172",
-  "updated_at": "2026-11-24T17:09:17+09:00"
+  "revision": "ccc74cdfc4e1c8ef",
+  "updated_at": "2026-11-24T17:15:15+09:00"
 }
