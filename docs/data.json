@@ -513,12 +513,12 @@
           "planned_upload": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/DfoiaXDRSSD/",
-          "measured": "2026-11-20",
-          "views": null,
-          "likes": 196.0,
-          "comments": 37.0,
-          "shares": 244.0,
-          "saves": 390.0,
+          "measured": "2026-11-24",
+          "views": 30000.0,
+          "likes": 231.0,
+          "comments": 46.0,
+          "shares": 259.0,
+          "saves": 408.0,
           "windows": {
             "24h": null,
             "48h": {
@@ -545,15 +545,15 @@
             },
             "14d": null,
             "latest": {
-              "views": null,
-              "likes": 196.0,
-              "comments": 37.0,
-              "shares": 244.0,
-              "saves": 390.0,
-              "at": 1795160549655,
-              "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "trial_insights_required"
+              "views": 30000.0,
+              "likes": 231.0,
+              "comments": 46.0,
+              "shares": 259.0,
+              "saves": 408.0,
+              "at": 1795487220548,
+              "isLate": true,
+              "collectionDelaySeconds": 52020,
+              "viewsStatus": "reference_missing"
             }
           },
           "revenue": 60720,
@@ -1436,12 +1436,12 @@
           "planned_upload": null,
           "upload": "2026-11-16",
           "post_url": "https://www.instagram.com/reel/DfzIv-BuqWE/",
-          "measured": "2026-11-20",
-          "views": 18000.0,
+          "measured": "2026-11-23",
+          "views": 19000.0,
           "likes": null,
-          "comments": 205.0,
-          "shares": 62.0,
-          "saves": 80.0,
+          "comments": 223.0,
+          "shares": 68.0,
+          "saves": 86.0,
           "windows": {
             "24h": null,
             "48h": {
@@ -1455,18 +1455,28 @@
               "collectionDelaySeconds": 165342.822,
               "viewsStatus": null
             },
-            "7d": null,
+            "7d": {
+              "views": 19000.0,
+              "likes": null,
+              "comments": 223.0,
+              "shares": 68.0,
+              "saves": 86.0,
+              "at": 1795429829728,
+              "isLate": false,
+              "collectionDelaySeconds": 291,
+              "viewsStatus": null
+            },
             "14d": null,
             "latest": {
-              "views": 18000.0,
+              "views": 19000.0,
               "likes": null,
-              "comments": 205.0,
-              "shares": 62.0,
-              "saves": 80.0,
-              "at": 1795160896126,
+              "comments": 223.0,
+              "shares": 68.0,
+              "saves": 86.0,
+              "at": 1795429829728,
               "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "verified"
+              "collectionDelaySeconds": 291,
+              "viewsStatus": null
             }
           },
           "revenue": null,
@@ -10100,6 +10110,6 @@
       "targets": {}
     }
   ],
-  "revision": "e8d686aa6f19b22a",
-  "updated_at": "2026-11-24T11:35:15+09:00"
+  "revision": "3404b22b58e52906",
+  "updated_at": "2026-11-24T11:37:15+09:00"
 }
