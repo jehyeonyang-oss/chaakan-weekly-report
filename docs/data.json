@@ -79,7 +79,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-24~2026-11-24",
+          "revenue_window": "2026-11-24~2026-11-25",
           "source": "live"
         },
         {
@@ -438,7 +438,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-20~2026-11-24",
+          "revenue_window": "2026-11-20~2026-11-25",
           "source": "live"
         },
         {
@@ -590,7 +590,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-12~2026-11-24",
+          "revenue_window": "2026-11-12~2026-11-25",
           "source": "live"
         },
         {
@@ -1513,7 +1513,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": "2026-11-16~2026-11-24",
+          "revenue_window": "2026-11-16~2026-11-25",
           "source": "live"
         },
         {
@@ -1574,7 +1574,7 @@
           },
           "revenue": 55920,
           "purchases": 1,
-          "revenue_window": "2026-11-14~2026-11-24",
+          "revenue_window": "2026-11-14~2026-11-25",
           "source": "live"
         },
         {
@@ -10176,6 +10176,6 @@
       "targets": {}
     }
   ],
-  "revision": "d95fb4d9d1614339",
-  "updated_at": "2026-11-25T01:01:15+09:00"
+  "revision": "cf1a69da91017b03",
+  "updated_at": "2026-11-25T01:11:15+09:00"
 }
