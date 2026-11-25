@@ -1366,9 +1366,9 @@
             "14d": null,
             "latest": null
           },
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "revenue": 0,
+          "purchases": 0,
+          "revenue_window": "2026-11-25~2026-11-25",
           "source": "live"
         },
         {
@@ -10228,6 +10228,6 @@
       "targets": {}
     }
   ],
-  "revision": "848d69eb5db17d6b",
-  "updated_at": "2026-11-25T23:11:23+09:00"
+  "revision": "3962adcc78f4faf5",
+  "updated_at": "2026-11-25T23:13:16+09:00"
 }
