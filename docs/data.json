@@ -65,26 +65,36 @@
           "upload": "2026-11-24",
           "post_url": "https://www.instagram.com/p/DgH3EikB4Zs/",
           "measured": "2026-11-25",
-          "views": 5365.0,
-          "likes": null,
-          "comments": null,
-          "shares": null,
+          "views": null,
+          "likes": 15.0,
+          "comments": 67.0,
+          "shares": 16.0,
           "saves": null,
           "windows": {
-            "24h": null,
+            "24h": {
+              "views": null,
+              "likes": 15.0,
+              "comments": 67.0,
+              "shares": 16.0,
+              "saves": null,
+              "at": 1795607118256,
+              "isLate": false,
+              "collectionDelaySeconds": 606,
+              "viewsStatus": "reference_missing"
+            },
             "48h": null,
             "7d": null,
             "14d": null,
             "latest": {
-              "views": 5365.0,
-              "likes": null,
-              "comments": null,
-              "shares": null,
+              "views": null,
+              "likes": 15.0,
+              "comments": 67.0,
+              "shares": 16.0,
               "saves": null,
-              "at": 1795585388000,
+              "at": 1795607118256,
               "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "verified"
+              "collectionDelaySeconds": 606,
+              "viewsStatus": "reference_missing"
             }
           },
           "revenue": 0,
@@ -10202,6 +10212,6 @@
       "targets": {}
     }
   ],
-  "revision": "816952c5990f68a2",
-  "updated_at": "2026-11-25T21:03:16+09:00"
+  "revision": "972629e3837f4f0b",
+  "updated_at": "2026-11-25T21:11:16+09:00"
 }
