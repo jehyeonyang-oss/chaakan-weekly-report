@@ -64,8 +64,8 @@
           "planned_upload": null,
           "upload": "2026-11-24",
           "post_url": "https://www.instagram.com/p/DgH3EikB4Zs/",
-          "measured": null,
-          "views": null,
+          "measured": "2026-11-25",
+          "views": 5365.0,
           "likes": null,
           "comments": null,
           "shares": null,
@@ -75,7 +75,17 @@
             "48h": null,
             "7d": null,
             "14d": null,
-            "latest": null
+            "latest": {
+              "views": 5365.0,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1795585388000,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": "verified"
+            }
           },
           "revenue": 0,
           "purchases": 0,
@@ -312,8 +322,8 @@
           "planned_upload": null,
           "upload": "2026-10-31",
           "post_url": "https://www.instagram.com/reel/DfJ3mZLzXpJ/",
-          "measured": "2026-11-18",
-          "views": 2678.0,
+          "measured": "2026-11-15",
+          "views": null,
           "likes": 12.0,
           "comments": 30.0,
           "shares": 12.0,
@@ -364,15 +374,15 @@
               "viewsStatus": "historical_unavailable"
             },
             "latest": {
-              "views": 2678.0,
+              "views": null,
               "likes": 12.0,
               "comments": 30.0,
               "shares": 12.0,
               "saves": 20.0,
-              "at": 1794970216196,
-              "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "verified"
+              "at": 1794701940913,
+              "isLate": true,
+              "collectionDelaySeconds": 52325,
+              "viewsStatus": "historical_unavailable"
             }
           },
           "revenue": 0,
@@ -8788,7 +8798,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-25T09:14:14+09:00",
-      "fetched_at": "2026-11-25T06:25:18.834Z",
+      "fetched_at": "2026-11-25T06:41:18.546Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10176,6 +10186,6 @@
       "targets": {}
     }
   ],
-  "revision": "866636d4aa56cfbd",
-  "updated_at": "2026-11-25T15:25:15+09:00"
+  "revision": "271f80ee7a7879db",
+  "updated_at": "2026-11-25T15:41:15+09:00"
 }
