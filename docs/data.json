@@ -1127,25 +1127,35 @@
           "upload": "2026-11-24",
           "post_url": "https://www.instagram.com/reel/DgH-K58z2uQ/",
           "measured": "2026-11-25",
-          "views": 3529.0,
-          "likes": null,
-          "comments": null,
-          "shares": null,
-          "saves": null,
+          "views": 3865.0,
+          "likes": 25.0,
+          "comments": 20.0,
+          "shares": 2.0,
+          "saves": 23.0,
           "windows": {
-            "24h": null,
+            "24h": {
+              "views": 3865.0,
+              "likes": 25.0,
+              "comments": 20.0,
+              "shares": 2.0,
+              "saves": 23.0,
+              "at": 1795610720744,
+              "isLate": false,
+              "collectionDelaySeconds": 485,
+              "viewsStatus": null
+            },
             "48h": null,
             "7d": null,
             "14d": null,
             "latest": {
-              "views": 3529.0,
-              "likes": null,
-              "comments": null,
-              "shares": null,
-              "saves": null,
-              "at": 1795593935827,
+              "views": 3865.0,
+              "likes": 25.0,
+              "comments": 20.0,
+              "shares": 2.0,
+              "saves": 23.0,
+              "at": 1795610720744,
               "isLate": false,
-              "collectionDelaySeconds": null,
+              "collectionDelaySeconds": 485,
               "viewsStatus": null
             }
           },
@@ -10212,6 +10222,6 @@
       "targets": {}
     }
   ],
-  "revision": "6e1aa19476907a1d",
-  "updated_at": "2026-11-25T22:07:15+09:00"
+  "revision": "33ce22036604a98b",
+  "updated_at": "2026-11-25T22:11:15+09:00"
 }
