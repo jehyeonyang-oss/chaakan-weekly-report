@@ -1108,7 +1108,7 @@
           "free": false,
           "price": null,
           "fee_label": "40만 (코드·광고 1개월 포함)",
-          "content_cost": null,
+          "content_cost": 415820.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -1116,16 +1116,32 @@
           "planned_upload": null,
           "upload": "2026-11-24",
           "post_url": "https://www.instagram.com/reel/DgH-K58z2uQ/",
-          "measured": null,
-          "views": null,
+          "measured": "2026-11-25",
+          "views": 3529.0,
           "likes": null,
           "comments": null,
           "shares": null,
           "saves": null,
-          "windows": {},
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": null,
+            "14d": null,
+            "latest": {
+              "views": 3529.0,
+              "likes": null,
+              "comments": null,
+              "shares": null,
+              "saves": null,
+              "at": 1795593935827,
+              "isLate": false,
+              "collectionDelaySeconds": null,
+              "viewsStatus": null
+            }
+          },
+          "revenue": 60720,
+          "purchases": 1,
+          "revenue_window": "2026-11-24~2026-11-25",
           "source": "live"
         },
         {
@@ -10186,6 +10202,6 @@
       "targets": {}
     }
   ],
-  "revision": "4c124a4082928749",
-  "updated_at": "2026-11-25T17:11:19+09:00"
+  "revision": "3c92d35d90726f33",
+  "updated_at": "2026-11-25T17:13:17+09:00"
 }
