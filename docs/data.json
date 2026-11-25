@@ -517,8 +517,8 @@
               "viewsStatus": null
             }
           },
-          "revenue": 1841920,
-          "purchases": 25,
+          "revenue": 1770000,
+          "purchases": 24,
           "revenue_window": "2026-10-30~2026-11-13",
           "source": "live"
         },
@@ -10176,6 +10176,6 @@
       "targets": {}
     }
   ],
-  "revision": "29afd34c89f1ef74",
-  "updated_at": "2026-11-25T14:37:15+09:00"
+  "revision": "bf20de457208c18a",
+  "updated_at": "2026-11-25T14:43:16+09:00"
 }
