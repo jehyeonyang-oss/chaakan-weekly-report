@@ -3,7 +3,7 @@
     {
       "slug": "content",
       "name": "콘텐츠기획",
-      "asof": "2026-11-25",
+      "asof": "2026-11-26",
       "period": "",
       "people": [
         {
@@ -2018,7 +2018,7 @@
     {
       "slug": "marketing",
       "name": "마케팅",
-      "asof": "2026-11-25",
+      "asof": "2026-11-26",
       "period": "원본 전체 기간 누적",
       "people": [
         {
@@ -8847,7 +8847,7 @@
       "slug": "overseas",
       "name": "해외시딩",
       "sheet_url": "https://docs.google.com/spreadsheets/d/1qZ0Goun7uHdukWa1xFqyikBRWuVf5zxNjeZq-KPUvSY/edit",
-      "asof": "2026-11-25",
+      "asof": "2026-11-26",
       "period": "",
       "people": [
         {
@@ -10228,6 +10228,6 @@
       "targets": {}
     }
   ],
-  "revision": "5ad55cd960353adc",
-  "updated_at": "2026-11-25T23:59:16+09:00"
+  "revision": "df824fb6b69f17b1",
+  "updated_at": "2026-11-26T00:01:16+09:00"
 }
