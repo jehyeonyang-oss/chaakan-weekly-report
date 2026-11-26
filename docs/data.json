@@ -2224,20 +2224,20 @@
           "exp_ss": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/Dfo8CDwyzY8/",
-          "measured": "2026-11-25",
-          "views": 1623.0,
-          "likes": 13.0,
+          "measured": "2026-11-26",
+          "views": 1635.0,
+          "likes": 14.0,
           "comments": 0.0,
           "shares": 11.0,
           "saves": 8.0,
           "windows": {
             "latest": {
-              "views": 1623.0,
-              "likes": 13.0,
+              "views": 1635.0,
+              "likes": 14.0,
               "comments": 0.0,
               "shares": 11.0,
               "saves": 8.0,
-              "at": "2026-11-25T20:27:31+09:00"
+              "at": "2026-11-26T20:27:31+09:00"
             },
             "48h": {
               "views": 1516.0,
@@ -2862,20 +2862,20 @@
           "exp_ss": null,
           "upload": "2026-10-29",
           "post_url": "https://www.instagram.com/reel/DfE47FzzuUt/",
-          "measured": "2026-11-25",
-          "views": 1130.0,
+          "measured": "2026-11-26",
+          "views": 1138.0,
           "likes": 13.0,
           "comments": 20.0,
-          "shares": 7.0,
+          "shares": 8.0,
           "saves": 7.0,
           "windows": {
             "latest": {
-              "views": 1130.0,
+              "views": 1138.0,
               "likes": 13.0,
               "comments": 20.0,
-              "shares": 7.0,
+              "shares": 8.0,
               "saves": 7.0,
-              "at": "2026-11-25T20:27:31+09:00"
+              "at": "2026-11-26T20:27:31+09:00"
             },
             "48h": {
               "views": 491.0,
@@ -8904,8 +8904,8 @@
       "source_url": "https://chaakan-creator-hub.web.app/",
       "source_state": "ok",
       "source_message": "",
-      "source_at": "2026-11-26T20:12:33+09:00",
-      "fetched_at": "2026-11-26T11:17:19.373Z",
+      "source_at": "2026-11-26T20:27:31+09:00",
+      "fetched_at": "2026-11-26T11:33:18.306Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10293,6 +10293,6 @@
       "targets": {}
     }
   ],
-  "revision": "b8d9592a346d516d",
-  "updated_at": "2026-11-26T20:17:15+09:00"
+  "revision": "994124a9e365b875",
+  "updated_at": "2026-11-26T20:33:15+09:00"
 }
