@@ -565,12 +565,12 @@
           "planned_upload": null,
           "upload": "2026-11-12",
           "post_url": "https://www.instagram.com/reel/DfoiaXDRSSD/",
-          "measured": "2026-11-25",
-          "views": 45000.0,
-          "likes": 245.0,
-          "comments": 48.0,
-          "shares": 271.0,
-          "saves": 408.0,
+          "measured": "2026-11-26",
+          "views": 49000.0,
+          "likes": 270.0,
+          "comments": 54.0,
+          "shares": 322.0,
+          "saves": 419.0,
           "windows": {
             "24h": null,
             "48h": {
@@ -595,17 +595,27 @@
               "collectionDelaySeconds": 124,
               "viewsStatus": "trial_insights_required"
             },
-            "14d": null,
-            "latest": {
-              "views": 45000.0,
-              "likes": 245.0,
-              "comments": 48.0,
-              "shares": 271.0,
-              "saves": 408.0,
-              "at": 1795617873000,
+            "14d": {
+              "views": 49000.0,
+              "likes": 270.0,
+              "comments": 54.0,
+              "shares": 322.0,
+              "saves": 419.0,
+              "at": 1795680925142,
               "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "verified"
+              "collectionDelaySeconds": 2231,
+              "viewsStatus": null
+            },
+            "latest": {
+              "views": 49000.0,
+              "likes": 270.0,
+              "comments": 54.0,
+              "shares": 322.0,
+              "saves": 419.0,
+              "at": 1795680925142,
+              "isLate": false,
+              "collectionDelaySeconds": 2231,
+              "viewsStatus": null
             }
           },
           "revenue": 60720,
@@ -10248,6 +10258,6 @@
       "targets": {}
     }
   ],
-  "revision": "b5e94ed2d7bf8bda",
-  "updated_at": "2026-11-26T17:37:16+09:00"
+  "revision": "8130c3f07c874719",
+  "updated_at": "2026-11-26T17:43:17+09:00"
 }
