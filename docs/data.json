@@ -8840,7 +8840,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-26T09:14:13+09:00",
-      "fetched_at": "2026-11-26T03:17:19.817Z",
+      "fetched_at": "2026-11-26T03:33:19.519Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10228,6 +10228,6 @@
       "targets": {}
     }
   ],
-  "revision": "73a551b1d057f509",
-  "updated_at": "2026-11-26T12:17:16+09:00"
+  "revision": "c01ab5a054da17d1",
+  "updated_at": "2026-11-26T12:33:15+09:00"
 }
