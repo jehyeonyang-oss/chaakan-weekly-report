@@ -64,11 +64,11 @@
           "planned_upload": null,
           "upload": "2026-11-24",
           "post_url": "https://www.instagram.com/p/DgH3EikB4Zs/",
-          "measured": "2026-11-25",
+          "measured": "2026-11-26",
           "views": null,
-          "likes": 15.0,
-          "comments": 67.0,
-          "shares": 16.0,
+          "likes": 20.0,
+          "comments": 69.0,
+          "shares": 22.0,
           "saves": null,
           "windows": {
             "24h": {
@@ -82,18 +82,28 @@
               "collectionDelaySeconds": 606,
               "viewsStatus": "reference_missing"
             },
-            "48h": null,
+            "48h": {
+              "views": null,
+              "likes": 20.0,
+              "comments": 69.0,
+              "shares": 22.0,
+              "saves": null,
+              "at": 1795693529100,
+              "isLate": false,
+              "collectionDelaySeconds": 617,
+              "viewsStatus": "reference_missing"
+            },
             "7d": null,
             "14d": null,
             "latest": {
               "views": null,
-              "likes": 15.0,
-              "comments": 67.0,
-              "shares": 16.0,
+              "likes": 20.0,
+              "comments": 69.0,
+              "shares": 22.0,
               "saves": null,
-              "at": 1795607118256,
+              "at": 1795693529100,
               "isLate": false,
-              "collectionDelaySeconds": 606,
+              "collectionDelaySeconds": 617,
               "viewsStatus": "reference_missing"
             }
           },
@@ -10293,6 +10303,6 @@
       "targets": {}
     }
   ],
-  "revision": "a95485cf89149d6c",
-  "updated_at": "2026-11-26T21:05:15+09:00"
+  "revision": "9aea6c253e1b1e61",
+  "updated_at": "2026-11-26T21:13:15+09:00"
 }
