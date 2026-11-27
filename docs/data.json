@@ -3,7 +3,7 @@
     {
       "slug": "content",
       "name": "콘텐츠기획",
-      "asof": "2026-11-27",
+      "asof": "2026-11-28",
       "period": "",
       "people": [
         {
@@ -2292,7 +2292,7 @@
     {
       "slug": "marketing",
       "name": "마케팅",
-      "asof": "2026-11-27",
+      "asof": "2026-11-28",
       "period": "원본 전체 기간 누적",
       "people": [
         {
@@ -9110,12 +9110,12 @@
         }
       ],
       "targets": {},
-      "source_url": "https://chaakan-creator-hub.web.app/",
-      "source_state": "ok",
-      "source_message": "",
       "source_at": "2026-11-27T21:36:08+09:00",
       "fetched_at": "2026-11-27T14:45:22.883Z",
-      "cost_basis": "marketing_source"
+      "cost_basis": "marketing_source",
+      "source_url": "https://chaakan-creator-hub.web.app/",
+      "source_state": "error",
+      "source_message": "마케팅 허브를 갱신하지 못해 마지막 정상 데이터를 표시합니다. 인증 상태를 확인해 주세요."
     },
     {
       "slug": "overseas",
@@ -10504,6 +10504,6 @@
       "source_message": "해외시딩 시트 읽기 실패 · 마지막 정상 데이터를 표시합니다."
     }
   ],
-  "revision": "565f41f9ab23a407",
-  "updated_at": "2026-11-27T23:51:15+09:00"
+  "revision": "b2c4825075f8d989",
+  "updated_at": "2026-11-28T00:01:16+09:00"
 }
