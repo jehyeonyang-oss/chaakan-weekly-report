@@ -1385,8 +1385,8 @@
           "post_url": "https://www.instagram.com/p/DgJq_aRTVzu/",
           "measured": "2026-11-27",
           "views": null,
-          "likes": 227.0,
-          "comments": 46.0,
+          "likes": 229.0,
+          "comments": 48.0,
           "shares": 320.0,
           "saves": null,
           "windows": {
@@ -1416,13 +1416,13 @@
             "14d": null,
             "latest": {
               "views": null,
-              "likes": 227.0,
-              "comments": 46.0,
+              "likes": 229.0,
+              "comments": 48.0,
               "shares": 320.0,
               "saves": null,
-              "at": 1795754735832,
+              "at": 1795756528948,
               "isLate": false,
-              "collectionDelaySeconds": 1047,
+              "collectionDelaySeconds": 1108,
               "viewsStatus": "reference_missing"
             }
           },
@@ -10323,6 +10323,6 @@
       "targets": {}
     }
   ],
-  "revision": "0f4d702fdac2120f",
-  "updated_at": "2026-11-27T14:41:15+09:00"
+  "revision": "59656728a25d3ba3",
+  "updated_at": "2026-11-27T14:43:15+09:00"
 }
