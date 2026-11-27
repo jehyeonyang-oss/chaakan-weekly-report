@@ -470,7 +470,7 @@
           "upload": "2026-11-20",
           "post_url": "https://www.instagram.com/reel/Df92b4fv4dg/",
           "measured": "2026-11-27",
-          "views": 4318.0,
+          "views": 4324.0,
           "likes": 63.0,
           "comments": 13.0,
           "shares": 19.0,
@@ -490,20 +490,32 @@
               "collectionDelaySeconds": 138514,
               "viewsStatus": "reference_missing"
             },
-            "7d": null,
-            "14d": null,
-            "latest": {
-              "views": 4318.0,
+            "7d": {
+              "views": 4324.0,
               "likes": 63.0,
               "comments": 13.0,
               "shares": 19.0,
               "saves": 19.0,
-              "at": 1795775251232,
-              "viewsAt": 1795775299887,
+              "at": 1795789232025,
+              "viewsAt": 1795789266000,
               "metricStatus": {},
               "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "verified"
+              "collectionDelaySeconds": 197,
+              "viewsStatus": null
+            },
+            "14d": null,
+            "latest": {
+              "views": 4324.0,
+              "likes": 63.0,
+              "comments": 13.0,
+              "shares": 19.0,
+              "saves": 19.0,
+              "at": 1795789232025,
+              "viewsAt": 1795789266000,
+              "metricStatus": {},
+              "isLate": false,
+              "collectionDelaySeconds": 197,
+              "viewsStatus": null
             }
           },
           "revenue": 0,
@@ -1429,7 +1441,7 @@
           "free": false,
           "price": null,
           "fee_label": "30만 (세전 · 제품 제공 · 파트너십 광고 제외)",
-          "content_cost": 300000,
+          "content_cost": 359920.0,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -10489,6 +10501,6 @@
       "targets": {}
     }
   ],
-  "revision": "8260246445c6d937",
-  "updated_at": "2026-11-27T23:37:16+09:00"
+  "revision": "91322066c43b08f3",
+  "updated_at": "2026-11-27T23:43:16+09:00"
 }
