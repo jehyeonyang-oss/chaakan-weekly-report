@@ -1429,7 +1429,7 @@
           "free": false,
           "price": null,
           "fee_label": "30만 (세전 · 제품 제공 · 파트너십 광고 제외)",
-          "content_cost": null,
+          "content_cost": 300000,
           "avg": null,
           "exp_ss": null,
           "shoot": null,
@@ -1443,10 +1443,16 @@
           "comments": null,
           "shares": null,
           "saves": null,
-          "windows": {},
-          "revenue": null,
-          "purchases": null,
-          "revenue_window": null,
+          "windows": {
+            "24h": null,
+            "48h": null,
+            "7d": null,
+            "14d": null,
+            "latest": null
+          },
+          "revenue": 26920,
+          "purchases": 1,
+          "revenue_window": "2026-11-27~2026-11-27",
           "source": "live"
         },
         {
@@ -9095,7 +9101,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-27T21:36:08+09:00",
-      "fetched_at": "2026-11-27T13:57:20.239Z",
+      "fetched_at": "2026-11-27T14:13:26.323Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10483,6 +10489,6 @@
       "targets": {}
     }
   ],
-  "revision": "35137fa198a7fbba",
-  "updated_at": "2026-11-27T23:01:19+09:00"
+  "revision": "45d5279cd537bb26",
+  "updated_at": "2026-11-27T23:13:17+09:00"
 }
