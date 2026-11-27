@@ -2265,7 +2265,7 @@
       "targets": {},
       "store_ads": [],
       "source_url": "https://jehyeonyang-oss.github.io/chaakan-creator-guide/edit-status/",
-      "source_at": "2026-11-27T10:36:41.626011+00:00",
+      "source_at": "2026-11-27T10:41:54.493358+00:00",
       "source_state": "ok"
     },
     {
@@ -9093,7 +9093,7 @@
       "source_state": "ok",
       "source_message": "",
       "source_at": "2026-11-27T19:12:32+09:00",
-      "fetched_at": "2026-11-27T10:29:22.527Z",
+      "fetched_at": "2026-11-27T10:45:36.774Z",
       "cost_basis": "marketing_source"
     },
     {
@@ -10481,6 +10481,6 @@
       "targets": {}
     }
   ],
-  "revision": "d4ff8bae13ec56d2",
-  "updated_at": "2026-11-27T19:43:23+09:00"
+  "revision": "6a45e43a9d68724e",
+  "updated_at": "2026-11-27T19:45:28+09:00"
 }
