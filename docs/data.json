@@ -115,7 +115,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-24~2026-11-27",
+          "revenue_window": "2026-11-24~2026-11-29",
           "source": "live"
         },
         {
@@ -520,7 +520,7 @@
           },
           "revenue": 0,
           "purchases": 0,
-          "revenue_window": "2026-11-20~2026-11-27",
+          "revenue_window": "2026-11-20~2026-11-29",
           "source": "live"
         },
         {
@@ -1323,7 +1323,7 @@
           },
           "revenue": 60720,
           "purchases": 1,
-          "revenue_window": "2026-11-24~2026-11-27",
+          "revenue_window": "2026-11-24~2026-11-29",
           "source": "live"
         },
         {
@@ -1449,22 +1449,46 @@
           "planned_upload": null,
           "upload": "2026-11-27",
           "post_url": "https://www.instagram.com/p/DgPeGJLklIZ/",
-          "measured": null,
+          "measured": "2026-11-29",
           "views": null,
           "likes": null,
-          "comments": null,
+          "comments": 5.0,
           "shares": null,
           "saves": null,
           "windows": {
-            "24h": null,
+            "24h": {
+              "views": null,
+              "likes": null,
+              "comments": 5.0,
+              "shares": null,
+              "saves": null,
+              "at": 1795884022078,
+              "viewsAt": null,
+              "metricStatus": {},
+              "isLate": true,
+              "collectionDelaySeconds": 22168,
+              "viewsStatus": "reference_missing"
+            },
             "48h": null,
             "7d": null,
             "14d": null,
-            "latest": null
+            "latest": {
+              "views": null,
+              "likes": null,
+              "comments": 5.0,
+              "shares": null,
+              "saves": null,
+              "at": 1795884022078,
+              "viewsAt": null,
+              "metricStatus": {},
+              "isLate": true,
+              "collectionDelaySeconds": 22168,
+              "viewsStatus": "reference_missing"
+            }
           },
-          "revenue": 26920,
-          "purchases": 1,
-          "revenue_window": "2026-11-27~2026-11-27",
+          "revenue": 224940,
+          "purchases": 3,
+          "revenue_window": "2026-11-27~2026-11-29",
           "source": "live"
         },
         {
@@ -1574,9 +1598,9 @@
               "viewsStatus": "verified"
             }
           },
-          "revenue": 0,
-          "purchases": 0,
-          "revenue_window": "2026-11-25~2026-11-27",
+          "revenue": 111840,
+          "purchases": 2,
+          "revenue_window": "2026-11-25~2026-11-29",
           "source": "live"
         },
         {
@@ -1794,7 +1818,7 @@
           },
           "revenue": null,
           "purchases": null,
-          "revenue_window": "2026-11-16~2026-11-27",
+          "revenue_window": "2026-11-16~2026-11-29",
           "source": "live"
         },
         {
@@ -1820,7 +1844,7 @@
           "planned_upload": null,
           "upload": "2026-11-14",
           "post_url": "https://www.instagram.com/p/DfuHSxBGIJ7/",
-          "measured": "2026-11-27",
+          "measured": "2026-11-29",
           "views": null,
           "likes": null,
           "comments": 2.0,
@@ -1842,29 +1866,36 @@
               "collectionDelaySeconds": 236134,
               "viewsStatus": null
             },
-            "14d": null,
+            "14d": {
+              "views": null,
+              "likes": null,
+              "comments": 2.0,
+              "shares": null,
+              "saves": null,
+              "at": 1795884319277,
+              "viewsAt": null,
+              "metricStatus": {},
+              "isLate": true,
+              "collectionDelaySeconds": 18517,
+              "viewsStatus": "reference_missing"
+            },
             "latest": {
               "views": null,
               "likes": null,
               "comments": 2.0,
               "shares": null,
               "saves": null,
-              "at": 1795775346722,
+              "at": 1795884319277,
               "viewsAt": null,
-              "metricStatus": {
-                "saves": "not_public",
-                "likes": "hidden",
-                "views": "not_public",
-                "shares": "not_displayed"
-              },
-              "isLate": false,
-              "collectionDelaySeconds": null,
-              "viewsStatus": "not_public"
+              "metricStatus": {},
+              "isLate": true,
+              "collectionDelaySeconds": 18517,
+              "viewsStatus": "reference_missing"
             }
           },
           "revenue": 55920,
           "purchases": 1,
-          "revenue_window": "2026-11-14~2026-11-27",
+          "revenue_window": "2026-11-14~2026-11-28",
           "source": "live"
         },
         {
@@ -10501,6 +10532,6 @@
       "targets": {}
     }
   ],
-  "revision": "c89e2d69b83c4f67",
-  "updated_at": "2026-11-29T02:05:16+09:00"
+  "revision": "d7570785f4b31764",
+  "updated_at": "2026-11-29T02:13:16+09:00"
 }
